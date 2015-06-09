@@ -1,5 +1,5 @@
 # Run SoapUI test suite from Jenkin with Host as parameter
-cd /opt/code/ccs-soapui-tests/
+sudo cd /opt/code/ccs-soapui-tests/
 echo * * * * * * list of files * * * * * * * * *
 pwd
 echo * * * * * * git command start * * * * * * * * * 
