@@ -307,6 +307,9 @@ COUNT = testRunner.testCase.testSuite.getPropertyValue("COUNT")
 	int d = c.toInteger()
 
 	for (i=1; i&lt;d-1; i++){
+		
+		log.info("***** Running test for &amp; chapter count is: "+i + " ***" )
+		
 		def act = "ChapterID" + i
 		act_l1 = testRunner.testCase.testSuite.getPropertyValue("$act")
 		testRunner.testCase.testSuite.setPropertyValue("act_l1", act_l1)
