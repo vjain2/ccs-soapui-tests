@@ -23,8 +23,6 @@ echo !!!Maven test suite END’s!!!
 
 # Run SoapUI test suite from Jenkin with Host as parameter
 
-defhost=localhost
-HOST=${1-$defhost}
 echo Running SOAPUI TestSuite on: $HOST
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
 sh testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
