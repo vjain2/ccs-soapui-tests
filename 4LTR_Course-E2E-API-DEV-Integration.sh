@@ -2,6 +2,13 @@
 cd /Users/mindtap/SOAPUI/ccs-soapui-tests
 git pull
 
+defhost=localhost
+HOST=${1-$defhost}
+defuser=vinay.thakur@contractor.cengage.com
+USER=${2-$defhost}
+defpass=Techizen_123
+PASS=${3-$defpass}
+
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /Users/mindtap/Documents/workspace/cgi
 pwd
@@ -10,7 +17,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home
 ls -l
 mvn -version
 #mvn clean test
-mvn clean test -Denv.CBURL=https://d-login.cengage.com/cb/login.htm -Denv.OLRURL=http://d-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=vinay.thakur@contractor.cengage.com -Denv.PASS=Techizen_123
+mvn clean test -Denv.CBURL=https://d-login.cengage.com/cb/login.htm -Denv.OLRURL=http://d-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS
 
 echo !!!Maven test suite END’s!!!
 
