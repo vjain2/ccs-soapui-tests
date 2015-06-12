@@ -4,10 +4,12 @@ git pull
 
 defhost=localhost
 HOST=${1-$defhost}
+defshost=localhost
+SHOST=${2-$defshost}
 defuser=vinay.thakur@contractor.cengage.com
-USER=${2-$defhost}
+USER=${3-$defuser}
 defpass=Techizen_123
-PASS=${3-$defpass}
+PASS=${4-$defpass}
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /Users/mindtap/Documents/workspace/cgi
@@ -25,3 +27,4 @@ echo !!!Maven test suite END’s!!!
 echo Running SOAPUI TestSuite on: $HOST
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
 sh testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
+sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
