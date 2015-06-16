@@ -31,6 +31,6 @@ echo !!!Maven test suite END’s!!!
 
 echo Running SOAPUI TestSuite on: $HOST
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
-sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
+sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
 sh testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
 
