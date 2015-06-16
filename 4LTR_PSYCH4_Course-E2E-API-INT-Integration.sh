@@ -10,6 +10,10 @@ defuser=soapui_psych4@ng.com
 USER=${3-$defuser}
 defpass=Techizen_123
 PASS=${4-$defpass}
+defolruser=vinay.thakur@contractor.cengage.com
+OLRUSER=${5-$defolruser}
+defolrpass=Techizen_123
+OLRPASS=${6-$defolrpass}
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /Users/mindtap/Documents/workspace/cgi
@@ -17,7 +21,8 @@ export PATH=$PATH:/usr/local/apache-maven/apache-maven-3.3.3/bin
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre
 ls -l
 mvn -version
-mvn clean test -Denv.CBURL=https://kt-login.cengage.com/cb/login.htm -Denv.OLRURL=http://kt-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS
+mvn clean test -Denv.CBURL=https://kt-login.cengage.com/cb/login.htm -Denv.OLRURL=http://kt-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS -Denv.OLRUSER=$OLRUSER -Denv.OLRPASS=$OLRPASS
+
 echo !!!Maven test suite END’s!!!
 
 # Run SoapUI test suite from Jenkin with Host as parameter
