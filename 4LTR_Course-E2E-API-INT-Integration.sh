@@ -11,9 +11,9 @@ USER=${3-$defuser}
 defpass=Techizen_123
 PASS=${4-$defpass}
 defolruser=vinay.thakur@contractor.cengage.com
-OLRUSER=${3-$defolruser}
+OLRUSER=${5-$defolruser}
 defolrpass=Techizen_123
-OLRPASS=${4-$defolrpass}
+OLRPASS=${6-$defolrpass}
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /Users/mindtap/Documents/workspace/cgi
