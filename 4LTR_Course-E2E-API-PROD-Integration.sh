@@ -6,10 +6,14 @@ defhost=localhost
 HOST=${1-$defhost}
 defshost=localhost
 SHOST=${2-$defshost}
-defuser=vinay.thakur@contractor.cengage.com
+defuser=ish.kumar@contractor.cengage.com
 USER=${3-$defuser}
-defpass=Techizen_123
+defpass=Cengage1
 PASS=${4-$defpass}
+defolruser=vinay.thakur@contractor.cengage.com
+OLRUSER=${5-$defolruser}
+defolrpass=Techizen_123
+OLRPASS=${6-$defolrpass}
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /Users/mindtap/Documents/workspace/cgi
@@ -19,13 +23,14 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home
 ls -l
 mvn -version
 #mvn clean test
-mvn clean test -Denv.CBURL=https://login.cengage.com/cb/login.htm -Denv.OLRURL=http://olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS 
+mvn clean test -Denv.CBURL=https://login.cengage.com/cb/login.htm -Denv.OLRURL=http://olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS -Denv.OLRUSER=$OLRUSER -Denv.OLRPASS=$OLRPASS
+ 
 echo !!!Maven test suite END’s!!!
 
 # Run SoapUI test suite from Jenkin with Host as parameter
 
 echo Running SOAPUI TestSuite on: $HOST
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
-sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
+sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
 sh testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -r -a -f/Users/mindtap/SOAPUI/ccs-soapui-tests/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
 
