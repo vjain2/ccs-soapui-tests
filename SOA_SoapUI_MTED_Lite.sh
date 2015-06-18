@@ -14,9 +14,9 @@ HOST=${1-$defrost}
 echo Running SOAPUI TestSuite on Endpoint *** : $HOST
 cd /opt/ReadyAPI-1.2.2/bin/ 
 #sh /opt/ReadyAPI-1.2.2/bin/testrunner.sh -e$HOST -s "Label_CourseID_Code_Validations" /opt/code/ccs-soapui-tests/EDMS_Lite_Validation-soapui-project.xml
-sh testrunner.sh -e$HOST -s "Create & Copy from Master" /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-sh testrunner.sh -e$HOST -s "Actions" /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-sh testrunner.sh -e$HOST -s "Associations bet Objectives-Assessment items" /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+sh testrunner.sh -e$HOST -s "Create & Copy from Master" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+sh testrunner.sh -e$HOST -s "Actions" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+sh testrunner.sh -e$HOST -s "Associations bet Objectives-Assessment items" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 
 
 # Run SoapUI test suite from Jenkin with Host as parameter
