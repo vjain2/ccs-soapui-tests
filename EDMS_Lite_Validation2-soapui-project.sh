@@ -1,31 +1,17 @@
-# AWS Specific commands
-sudo cd /opt/code/ccs-soapui-tests/
-echo * * * * * * list of files * * * * * * * * *
-pwd
-echo * * * * * * git command start * * * * * * * * * 
-
-sudo git stash
-sudo git pull
-
-echo * * * * * * SOAPUI tests starting  * * * * * * 
-
+# Run Maven test suite from Jenkin to capture Dynamic CGI from newly created Course
+cd /Users/mindtap/SOAPUI/ccs-soapui-tests
+git pull
+# Run SoapUI test suite from Jenkin
 defhost=localhost
-HOST=${1-$defrost}
-echo Running SOAPUI TestSuite on Endpoint *** : $HOST
-cd /opt/ReadyAPI-1.2.2/bin/ 
-#sh /opt/ReadyAPI-1.2.2/bin/testrunner.sh -e$HOST -s "Term_Assets" /opt/code/ccs-soapui-tests/EDMS_Lite_Validation-soapui-project.xml
-sh testrunner.sh -e$HOST -s "Create & Copy from Master" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-sh testrunner.sh -e$HOST -s "Actions" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-sh testrunner.sh -e$HOST -s "Associations bet Objectives-Assessment items" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+
+HOST=${1-$defhost}
+#TestSuite=${$TS-$testsuite}
+#PROJECT=${$PR-$project}
+
+echo Running SOAPUI on: $HOST #TestSuite Name as $TestSuite and PROJECT Name as $PROJECT
+cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
+
+sh testrunner.sh -s"Term_Assets" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 
 
-# Run SoapUI test suite from Jenkin with Host as parameter
-#defhost=localhost
-#HOST=${1-$defhost}
-#echo Running SOAPUI TestSuite on: $HOST
-#cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
-#cd /Applications/SoapUI-5.1.3.app/Contents/java/app/bin
-#sh testrunner.sh -e$HOST -s "Create & Copy from Master" -r -a -f/Users/mindtap/source/SOAPUI/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
-#sh testrunner.sh -e$HOST -s "Actions" -r -a -f/Users/mindtap/source/SOAPUI/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
-#sh testrunner.sh -e$HOST -s "Associations bet Objectives-Assessment items" -r -a -f/Users/mindtap/source/SOAPUI/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
 
