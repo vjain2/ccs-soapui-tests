@@ -12,4 +12,5 @@ HOST=${1-$defhost}
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
 
 sh testrunner.sh -s"Label_CourseID_Code_Validations" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/EDMS_Lite_Validation-soapui-project.xml
+sh testrunner.sh -s"Term_Assets" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/EDMS_Lite_Validation-soapui-project.xml
 
