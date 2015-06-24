@@ -8,10 +8,7 @@ HOST=${1-$defhost}
 #TestSuite=${$TS-$testsuite}
 #PROJECT=${$PR-$project}
 
-echo Running SOAPUI on: $HOST #TestSuite Name as $TestSuite and PROJECT Name as $PROJECT
+#echo Running SOAPUI on: $HOST #TestSuite Name as $TestSuite and PROJECT Name as $PROJECT
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
 
-sh testrunner.sh -s"Term_Assets" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-
-
-
+sh testrunner.sh -s"Term_Assets" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/EDMS_Lite_Validation-soapui-project.xml
