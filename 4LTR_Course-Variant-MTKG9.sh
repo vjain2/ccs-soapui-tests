@@ -14,5 +14,5 @@ defhost=localhost
 HOST=${1-$defrost}
 echo Running SOAPUI TestSuite on Endpoint *** : $HOST
  
-sh /opt/ReadyAPI-1.2.2/bin/testrunner.sh -e$HOST -s "SOA_4LTR_MTKG9_Course_Variant_ProjectTestSuite" /opt/code/ccs-soapui-tests/4LTR_Course-Variant-MTKG9-soapui-project.xml
+sh /opt/ReadyAPI-1.2.2/bin/testrunner.sh -e$HOST -s "SOA_4LTR_MTKG9_Course_Variant_ProjectTestSuite" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course-Variant-MTKG9-soapui-project.xml
 
