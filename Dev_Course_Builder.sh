@@ -1,4 +1,3 @@
-git Pull
 # Run Maven test suite from Jenkin to capture Dynamic CGI from newly created Course
 cd /Users/mindtap/SOAPUI/ccs-soapui-tests
 git pull
