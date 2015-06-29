@@ -366,7 +366,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 def b = 0
 def size = jsonSlurper.sequence.size()
 
-log.info(jsonSlurper.sequence.size() + " Global size value of count: " + b + " " + jsonSlurper.sequence)
+log.info(jsonSlurper.sequence.size() + " Global size value of count: " + b)// + " " + jsonSlurper.sequence)
 
 // Class to loop through JSON sequences
 def seq(def read_c, def b) {
