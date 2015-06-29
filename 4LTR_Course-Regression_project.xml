@@ -432,14 +432,14 @@ def checkNull(def Array){
      		for(y=0; y<arr_l; y++){
      			
      			// If First item in inner array - remove '[' & should not enter this case if array has Blank case eg. { [ABCD],[] }
-     			if(y==0&arr_l>2){
+     			if(y==0&arr_l>1){
      				arr[y] = arr[y].substring(1)
      				log.info("1st token "+ arr[y])
      				checkNull(arr[y])
      			}
      			
      			// If Last item in inner array - remove ']' & should not enter this case if array has Blank case eg. { [ABCD],[] }
-     			else if(y==arr_l-1&arr_l>2){
+     			else if(y==arr_l-1&arr_l>1){
      				l_sz = arr[y].size()
      				arr[y] = arr[y].substring(0,l_sz-1)
      				log.info("last token "+ arr[y])
