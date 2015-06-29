@@ -290,7 +290,7 @@ log.info("**************************************************************Script E
 
 	//if (i>1){
 
-		for (j=1; j&lt;k-1; j++){
+		for (j=0; j&lt;k-1; j++){
 			log.info("Running Activity Level2 tests")
 			log.info("***** Running Activity Level-2 test &amp;  count is: "+j + " ***" )
 		
@@ -386,7 +386,13 @@ def checkNull(def Array){
 // Main programm Looping through JSON Response and printing ID's
   
   for(b=0; b<size; b++){    
-    log.info(" *** Call sequence func START. " + b + " json size: "+ jsonSlurper + "***") 
+
+    if(b==size-1){
+    	    log.info(" *** Call sequence func START. " + b + " json size: "+ jsonSlurper + "***") 
+    }else{
+    	    log.info(" *** Call sequence func START. " + b + "***") 
+    }
+
 
 	def read_e = jsonSlurper.sequence.id
    	if(read_e[0]==null){
