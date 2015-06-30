@@ -34,8 +34,12 @@
 def NumOfXLSRows
   
 def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+def Prop = testRunner.testCase.testSuite.project.getPropertyValue("someOtherProperty") 
  
+
 log.info ("Path : " + XLPath)
+log.info ("Property : " + Prop)
+
 
 Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
 
