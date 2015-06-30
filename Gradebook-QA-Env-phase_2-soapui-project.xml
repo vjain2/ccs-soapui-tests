@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="Gradebook_QA_Env_Phase_2" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="Gradebook _QA_ Env"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files (x86)\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/Users/mindtap/SOAPUI/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gradebook-api-qa.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint></con:endpoints><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:all="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades">all:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings/><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/userce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/studentCategoryAndAssignmentGrades">stud:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings/><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/user/ce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/assignment/soa:qa:activity:JWXLVY572288340/studentAttemptGrades">stud:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings/><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request>{"students":["864e0750-d71b-469a-b285-5c6c4c938656", "0e73609e-5782-477b-812d-134624ebbf1c"]}</con:request><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1//</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite name="Gradebook_QA_Env"><con:description>TestSuite generated for REST Service [http://gradebook-api-qa.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook- allStudentCategoryAndAssignmentGrades" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="allStudentCategoryAndAssignmentGrades | Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,2).getContents() 
+
+c_info = objSheet.getCell(3,2).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="allStudentCategoryAndAssignmentGrades"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="allStudentCategoryAndAssignmentGrades" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_courseAverages"><con:configuration><token>finalGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>c_info</con:name><con:value>allStudentCategoryAndAssignmentGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook- allStudentCategoryGrades" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="allStudentCategoryGrades | Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,3).getContents() 
+
+c_info = objSheet.getCell(3,3).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="allStudentCategoryGrades"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="allStudentCategoryGrades" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_courseAverages"><con:configuration><token>finalGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="APi_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>c_info</con:name><con:value>allStudentCategoryGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook- course structure" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="structure | Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,4).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="structure"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="structure" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_users"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignments"><con:configuration><token>activityUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_categories"><con:configuration><token>categoryUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>c_info</con:name><con:value>structure</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook- Specific Student score information" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user${#TestCase#user_id}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="SpecificStudentScoreInformation"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+user_id = objSheet.getCell(4,2).getContents() 
+c_info = objSheet.getCell(3,5).getContents() 	
+
+	
+
+      log.info("Course Cgi for: " + course_cgi)
+      log.info("Course user Information: " + user_id)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("user_id", user_id)	
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook-SpecificStudentScoreInformation"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/${#TestCase#c_info}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook-SpecificStudentScoreInformation" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/userce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/studentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_userId"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignmentGrades"><con:configuration><token>assignmentGrades</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_categoryGrades"><con:configuration><token>categoryGrades</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>finalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>user_id</con:name><con:value>ce515d21c4c24193:1a3b98bf:14c550af290:-9fjk</con:value></con:property><con:property><con:name>c_info</con:name><con:value>studentCategoryAndAssignmentGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook - assignments information" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="Assignmnet"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,6).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook - Assignmnets"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook - Assignmnets" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/assignments</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignments"><con:configuration><token>assignments</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_activityUri"><con:configuration><token>activityUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_categories"><con:configuration><token>categories</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>c_info</con:name><con:value>assignments</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook - Specific_StudentScore_Specific_Assignmnet" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="Specific_StudentScore_Specific_Assignmnet"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+user_id = objSheet.getCell(4,2).getContents() 
+assignment_id = objSheet.getCell(5,2).getContents()
+c_info = objSheet.getCell(3,7).getContents() 	
+
+	
+
+      log.info("Course Cgi for: " + course_cgi)
+      log.info("Course user Information: " + user_id)
+      log.info("Course assignment Information: " + assignment_id)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("user_id", user_id)	
+	testRunner.testCase.setPropertyValue("assignment_id", assignment_id)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook - Specific_StudentScore_Specific_Assignmnet"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook - Specific_StudentScore_Specific_Assignmnet" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/user/ce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/assignment/soa:qa:activity:JWXLVY572288340/studentAttemptGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignmentUri"><con:configuration><token>assignmentUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_taken"><con:configuration><token>taken</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>finalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_weightedFinalGrade"><con:configuration><token>weightedFinalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>user_id</con:name><con:value>ce515d21c4c24193:1a3b98bf:14c550af290:-9fjk</con:value></con:property><con:property><con:name>c_info</con:name><con:value>studentAttemptGrades</con:value></con:property><con:property><con:name>assignment_id</con:name><con:value>soa:qa:activity:JWXLVY572288340</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook - Course Average" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="Course Average"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,8).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook - Course Average"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook - Course Average" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_generationDate"><con:configuration><token>generationDate</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_initialGradeAverage"><con:configuration><token>initialGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGradeAverage"><con:configuration><token>finalGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_taken"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_weightedFinalGradeAverage"><con:configuration><token>weightedFinalGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203</con:value></con:property><con:property><con:name>c_info</con:name><con:value>courseGradeAverages</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-studentsAssignmentGrades" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="studentsAssignmentGrades"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,6).getContents() 
+
+c_info = objSheet.getCell(3,9).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="InstructorView- studentsAssignmentGrades"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="InstructorView- studentsAssignmentGrades" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request>{"students":["864e0750-d71b-469a-b285-5c6c4c938656", "0e73609e-5782-477b-812d-134624ebbf1c"]}</con:request><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1//</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:qa:course:LTCOURSE000000000001.1429887108445</con:value></con:property><con:property><con:name>c_info</con:name><con:value>studentsAssignmentGrades</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/Users/mindtap/SOAPUI/ccs-soapui-tests/Data/SoapUI_Gradebook_QAEnv_Phase_2</con:value></con:property><con:property><con:name>URL</con:name><con:value>gradebook-api-qa.cengage.info</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
