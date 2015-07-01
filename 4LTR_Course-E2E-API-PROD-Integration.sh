@@ -16,7 +16,7 @@ defolrpass=Techizen_123
 OLRPASS=${6-$defolrpass}
 defxls=/Users/mindtap/SOAPUI/Data/SoapUI_e2e_4LTR_PROD.xls
 XLS=${7-$defxls}
-#-Denv.XLS=$XLS
+#-Denv.XLS=$XLS -PXLPath=$XLS
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /Users/mindtap/Documents/workspace/cgi
