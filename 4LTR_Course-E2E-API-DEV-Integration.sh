@@ -14,7 +14,7 @@ defolruser=vinay.thakur@contractor.cengage.com
 OLRUSER=${5-$defolruser}
 defolrpass=Techizen_123
 OLRPASS=${6-$defolrpass}
-defxls=/Users/mindtap/SOAPUI/ccs-soapui-tests/Data/SoapUI_INT_e2e_4LTR_MTKG9_Variant.xls
+defxls=/Users/mindtap/SOAPUI/Data/SoapUI_INT_e2e_4LTR_MTKG9_Variant.xls
 XLS=${7-$defxls}
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
@@ -33,5 +33,5 @@ echo !!!Maven test suite END’s!!!
 
 echo Running SOAPUI TestSuite on: $HOST
 cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
-sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
-sh testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
+sh testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -PXLPath=$XLS -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
+sh testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -PXLPath=$XLS -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/4LTR_Course-E2E_project.xml
