@@ -29,7 +29,7 @@
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="Endpoint" value=""/>
   <con:entry key="Select Report Type" value=""/>
-</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gradebook-api-qa.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint></con:endpoints><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:all="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades">all:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404 500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/userce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/studentCategoryAndAssignmentGrades">stud:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=UTF-8</con:mediaType><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>502</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SSOwsSoapBinding" type="wsdl" bindingName="{http://ws.thomsonlearning.com:80/ssows}SSOwsSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://s-ws.cengage.com/ssows/SSOws?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://s-ws.cengage.com/ssows/SSOws?WSDL"><con:part><con:url>http://s-ws.cengage.com/ssows/SSOws?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="SSOws" targetNamespace="http://ws.thomsonlearning.com:80/ssows" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.thomsonlearning.com:80/ssows" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gradebook-api-qa.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint></con:endpoints><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:all="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades">all:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404 500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/userce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/studentCategoryAndAssignmentGrades">stud:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=UTF-8</con:mediaType><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>502</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SSOwsSoapBinding" type="wsdl" bindingName="{http://ws.thomsonlearning.com:80/ssows}SSOwsSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://s-ws.cengage.com/ssows/SSOws?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://s-ws.cengage.com/ssows/SSOws?WSDL"><con:part><con:url>https://s-ws.cengage.com/ssows/SSOws?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="SSOws" targetNamespace="http://ws.thomsonlearning.com:80/ssows" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.thomsonlearning.com:80/ssows" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
   <wsdl:types>
     <xs:schema targetNamespace="java:language_builtins.lang" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:complexType name="ArrayOfString">
@@ -55,13 +55,16 @@
       <xs:element name="newUid" type="xs:string"/>
       <xs:element name="oldGuid" type="xs:string"/>
       <xs:element name="oldUid" type="xs:string"/>
+      <xs:element name="partnerGuid" type="xs:string"/>
       <xs:element name="password" type="xs:string"/>
       <xs:element name="path" type="xs:string"/>
       <xs:element name="person" type="ns2:TLPerson"/>
       <xs:element name="resourceItem" type="xs:string"/>
+      <xs:element name="retrieveMergedUser" type="xs:string"/>
       <xs:element name="returnGroups" type="xs:string"/>
       <xs:element name="returnNestedGroups" nillable="true" type="xs:anyType"/>
       <xs:element name="returnPassword" type="xs:string"/>
+      <xs:element name="ssoGuid" type="xs:string"/>
       <xs:element name="tlCrms8ContactId" type="xs:string"/>
       <xs:element name="token" type="xs:string"/>
       <xs:element name="uid" type="xs:string"/>
@@ -69,9 +72,9 @@
       <xs:element name="username" type="xs:string"/>
       <xs:element name="validatedInstructor" type="xs:string"/>
     </xs:schema>
-    <xs:schema targetNamespace="java:com.tl.ssows" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="java:com.tl.ssows" xmlns:ns2="http://ws.thomsonlearning.com:80/ssows" xmlns:ns1="java:language_builtins.lang">
-      <xs:import namespace="java:language_builtins.lang"/>
+    <xs:schema targetNamespace="java:com.tl.ssows" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="java:com.tl.ssows" xmlns:ns2="java:language_builtins.lang" xmlns:ns1="http://ws.thomsonlearning.com:80/ssows">
       <xs:import namespace="http://ws.thomsonlearning.com:80/ssows"/>
+      <xs:import namespace="java:language_builtins.lang"/>
       <xs:element name="ERightsId" type="xs:string"/>
       <xs:element name="TLAgeRange" type="xs:string"/>
       <xs:element name="TLB2BSiteId" type="xs:string"/>
@@ -92,7 +95,7 @@
       <xs:element name="TLOptInCengage" type="xs:string"/>
       <xs:element name="TLOptInIchapters" type="xs:string"/>
       <xs:element name="TLPWHint" type="xs:string"/>
-      <xs:element name="TLPerson" type="ns2:TLPerson"/>
+      <xs:element name="TLPerson" type="ns1:TLPerson"/>
       <xs:element name="TLPrefLang" type="xs:string"/>
       <xs:element name="TLPubcoId" type="xs:string"/>
       <xs:element name="TLRegion" type="xs:string"/>
@@ -126,9 +129,9 @@
       <xs:element name="employeeNumber" type="xs:string"/>
       <xs:element name="facsimileTelephoneNumber" type="xs:string"/>
       <xs:element name="givenName" type="xs:string"/>
-      <xs:element name="groups" type="ns1:ArrayOfString"/>
+      <xs:element name="groups" type="ns2:ArrayOfString"/>
       <xs:element name="guid" type="xs:string"/>
-      <xs:element name="guids" type="ns1:ArrayOfString"/>
+      <xs:element name="guids" type="ns2:ArrayOfString"/>
       <xs:element name="homePhone" type="xs:string"/>
       <xs:element name="homePostalAddress" type="xs:string"/>
       <xs:element name="host" type="xs:string"/>
@@ -142,9 +145,10 @@
       <xs:element name="orclSecondaryUID" type="xs:string"/>
       <xs:element name="ou" type="xs:string"/>
       <xs:element name="pager" type="xs:string"/>
+      <xs:element name="partnerGuids" type="xs:string"/>
       <xs:element name="pendingInstructor" type="xs:boolean"/>
       <xs:element name="postalCode" type="xs:string"/>
-      <xs:element name="resourceItems" type="ns1:ArrayOfString"/>
+      <xs:element name="resourceItems" type="ns2:ArrayOfString"/>
       <xs:element name="restrictedUser" type="xs:boolean"/>
       <xs:element name="resultCode" type="xs:int"/>
       <xs:element name="resultDescription" type="xs:string"/>
@@ -159,7 +163,7 @@
       <xs:element name="userInfos" type="tns:ArrayOfUserInfo"/>
       <xs:element name="userPassword" type="xs:string"/>
       <xs:element name="userType" type="xs:string"/>
-      <xs:element name="users" type="ns2:ArrayOfTLPerson"/>
+      <xs:element name="users" type="ns1:ArrayOfTLPerson"/>
       <xs:element name="workPhone" type="xs:string"/>
       <xs:complexType name="Groups">
         <xs:sequence>
@@ -171,22 +175,22 @@
           <xs:element form="qualified" name="description" type="xs:string"/>
           <xs:element form="qualified" name="dn" type="xs:string"/>
           <xs:element form="qualified" name="groupRefs" type="tns:ArrayOfGroupRef"/>
-          <xs:element form="qualified" name="groups" type="ns1:ArrayOfString"/>
+          <xs:element form="qualified" name="groups" type="ns2:ArrayOfString"/>
           <xs:element form="qualified" name="host" type="xs:string"/>
           <xs:element form="qualified" name="modifiersName" type="xs:string"/>
           <xs:element ref="tns:modifyTimestamp"/>
           <xs:element form="qualified" name="numSubordinates" type="xs:string"/>
           <xs:element form="qualified" name="owner" type="xs:string"/>
-          <xs:element form="qualified" name="resourceItems" type="ns1:ArrayOfString"/>
+          <xs:element form="qualified" name="resourceItems" type="ns2:ArrayOfString"/>
           <xs:element form="qualified" name="searchBase" type="xs:string"/>
           <xs:element form="qualified" name="seeAlso" type="xs:string"/>
           <xs:element form="qualified" name="TLErightsId" type="xs:string"/>
-          <xs:element form="qualified" name="uniqueGroupMembers" type="ns1:ArrayOfString"/>
+          <xs:element form="qualified" name="uniqueGroupMembers" type="ns2:ArrayOfString"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="ArrayOfGroupRef">
         <xs:sequence>
-          <xs:element form="qualified" maxOccurs="unbounded" name="GroupRef" type="ns2:GroupRef"/>
+          <xs:element form="qualified" maxOccurs="unbounded" name="GroupRef" type="ns1:GroupRef"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="ArrayOfGroups">
@@ -208,14 +212,14 @@
         </xs:sequence>
       </xs:complexType>
     </xs:schema>
-    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.thomsonlearning.com:80/ssows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns3="java:language_builtins.lang" xmlns:ns2="java:com.tl.ssows.parameters" xmlns:ns1="java:com.tl.ssows">
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.thomsonlearning.com:80/ssows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns3="java:com.tl.ssows.parameters" xmlns:ns2="java:language_builtins.lang" xmlns:ns1="java:com.tl.ssows">
       <xs:import namespace="java:com.tl.ssows"/>
-      <xs:import namespace="java:com.tl.ssows.parameters"/>
       <xs:import namespace="java:language_builtins.lang"/>
+      <xs:import namespace="java:com.tl.ssows.parameters"/>
       <xs:complexType name="AddGroupParameters">
         <xs:sequence>
-          <xs:element ref="ns2:group"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:group"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GroupRef">
@@ -326,198 +330,213 @@
           <xs:element minOccurs="0" ref="ns1:userType"/>
           <xs:element minOccurs="0" ref="ns1:cengageCrowdId"/>
           <xs:element minOccurs="0" ref="ns1:source"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="ns1:partnerGuids"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="IsMemberOfParameters">
         <xs:sequence>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="AddResourceItemParameters">
         <xs:sequence>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:resourceItem"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="CrmsParameters">
         <xs:sequence>
-          <xs:element minOccurs="0" ref="ns2:tlCrms8ContactId"/>
-          <xs:element minOccurs="0" ref="ns2:token"/>
+          <xs:element minOccurs="0" ref="ns3:tlCrms8ContactId"/>
+          <xs:element minOccurs="0" ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="DeleteGroupParameters">
         <xs:sequence>
-          <xs:element ref="ns2:dn"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:dn"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="PasswordResetKeyParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="RefreshTokenParameters">
         <xs:sequence>
-          <xs:element ref="ns2:adminToken"/>
-          <xs:element ref="ns2:userToken"/>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element ref="ns3:userToken"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="HasAccessToParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:resourceItem"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetTokenParameters">
         <xs:sequence>
-          <xs:element ref="ns2:password"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:password"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="ModifyUserParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:person"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:person"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="DoesUserExistParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetTokenFromGuidParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MergeUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element ref="ns3:ssoGuid"/>
+          <xs:element ref="ns3:partnerGuid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="DeleteUserParameters">
         <xs:sequence>
-          <xs:element ref="ns2:dn"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:dn"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="IsInstructorParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetGroupParameters">
         <xs:sequence>
-          <xs:element ref="ns2:ERightsId"/>
-          <xs:element ref="ns2:getUniqueGroups"/>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element minOccurs="0" ref="ns2:returnNestedGroups"/>
+          <xs:element ref="ns3:ERightsId"/>
+          <xs:element ref="ns3:getUniqueGroups"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element minOccurs="0" ref="ns3:returnNestedGroups"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetDirectGroupMembershipParameters">
         <xs:sequence>
-          <xs:element minOccurs="0" ref="ns2:adminToken"/>
-          <xs:element minOccurs="0" ref="ns2:username"/>
-          <xs:element minOccurs="0" ref="ns2:guid"/>
-          <xs:element minOccurs="0" ref="ns2:userToken"/>
-          <xs:element minOccurs="0" ref="ns2:groupName"/>
+          <xs:element minOccurs="0" ref="ns3:adminToken"/>
+          <xs:element minOccurs="0" ref="ns3:username"/>
+          <xs:element minOccurs="0" ref="ns3:guid"/>
+          <xs:element minOccurs="0" ref="ns3:userToken"/>
+          <xs:element minOccurs="0" ref="ns3:groupName"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetDirectGroupMembershipResult">
         <xs:sequence>
-          <xs:element minOccurs="0" name="groups" type="ns3:ArrayOfString"/>
+          <xs:element minOccurs="0" name="groups" type="ns2:ArrayOfString"/>
           <xs:element ref="ns1:resultCode"/>
           <xs:element ref="ns1:resultDescription"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="RestrictionParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetGroupsProtectingHostURLParameters">
         <xs:sequence>
-          <xs:element minOccurs="0" ref="ns2:hosts"/>
-          <xs:element ref="ns2:path"/>
+          <xs:element minOccurs="0" ref="ns3:hosts"/>
+          <xs:element ref="ns3:path"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetUsersParameters">
         <xs:sequence>
-          <xs:element ref="ns2:person"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element minOccurs="0" ref="ns2:returnGroups"/>
-          <xs:element minOccurs="0" ref="ns2:returnPassword"/>
-          <xs:element minOccurs="0" ref="ns2:returnNestedGroups"/>
+          <xs:element ref="ns3:person"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element minOccurs="0" ref="ns3:returnGroups"/>
+          <xs:element minOccurs="0" ref="ns3:returnPassword"/>
+          <xs:element minOccurs="0" ref="ns3:returnNestedGroups"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="ModifyGroupParameters">
         <xs:sequence>
-          <xs:element ref="ns2:group"/>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:group"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="ValidatedInstructorParameters">
         <xs:sequence>
-          <xs:element ref="ns2:adminToken"/>
-          <xs:element minOccurs="0" ref="ns2:guid"/>
-          <xs:element minOccurs="0" ref="ns2:username"/>
-          <xs:element ref="ns2:validatedInstructor"/>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element minOccurs="0" ref="ns3:guid"/>
+          <xs:element minOccurs="0" ref="ns3:username"/>
+          <xs:element ref="ns3:validatedInstructor"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="RenameParameters">
         <xs:sequence>
-          <xs:element ref="ns2:newUid"/>
-          <xs:element ref="ns2:oldGuid"/>
-          <xs:element ref="ns2:oldUid"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:newUid"/>
+          <xs:element ref="ns3:oldGuid"/>
+          <xs:element ref="ns3:oldUid"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="AddUserParameters">
         <xs:sequence>
-          <xs:element ref="ns2:person"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:person"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UnmergeUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element ref="ns3:ssoGuid"/>
+          <xs:element ref="ns3:partnerGuid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="RemoveUniqueMemberParameters">
         <xs:sequence>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="IsUrlProtectedParameters">
         <xs:sequence>
-          <xs:element minOccurs="0" ref="ns2:hostNames"/>
-          <xs:element ref="ns2:resourceItem"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element minOccurs="0" ref="ns3:hostNames"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="AddUniqueMemberParameters">
         <xs:sequence>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="RemoveResourceItemParameters">
         <xs:sequence>
-          <xs:element ref="ns2:groupCn"/>
-          <xs:element ref="ns2:resourceItem"/>
-          <xs:element ref="ns2:token"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="GetUserInfoParameters">
@@ -528,12 +547,13 @@
       </xs:complexType>
       <xs:complexType name="GetUserParameters">
         <xs:sequence>
-          <xs:element ref="ns2:guid"/>
-          <xs:element ref="ns2:token"/>
-          <xs:element ref="ns2:uid"/>
-          <xs:element minOccurs="0" ref="ns2:returnGroups"/>
-          <xs:element minOccurs="0" ref="ns2:returnPassword"/>
-          <xs:element minOccurs="0" ref="ns2:returnNestedGroups"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+          <xs:element minOccurs="0" ref="ns3:returnGroups"/>
+          <xs:element minOccurs="0" ref="ns3:returnPassword"/>
+          <xs:element minOccurs="0" ref="ns3:returnNestedGroups"/>
+          <xs:element minOccurs="0" ref="ns3:retrieveMergedUser"/>
         </xs:sequence>
       </xs:complexType>
       <xs:element name="addGroup" nillable="true" type="tns:AddGroupParameters"/>
@@ -562,6 +582,8 @@
       <xs:element name="doesUserExistResponse" nillable="true" type="tns:SSOwsResult"/>
       <xs:element name="getTokenFromGuid" nillable="true" type="tns:GetTokenFromGuidParameters"/>
       <xs:element name="getTokenFromGuidResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="mergeUser" nillable="true" type="tns:MergeUserParameters"/>
+      <xs:element name="mergeUserResponse" nillable="true" type="tns:SSOwsResult"/>
       <xs:element name="getGroupsProtecting" nillable="true" type="xs:string"/>
       <xs:element name="getGroupsProtectingResponse" nillable="true" type="tns:SSOwsResult"/>
       <xs:element name="deleteUser" nillable="true" type="tns:DeleteUserParameters"/>
@@ -589,6 +611,8 @@
       <xs:element name="renameResponse" nillable="true" type="tns:SSOwsResult"/>
       <xs:element name="addUser" nillable="true" type="tns:AddUserParameters"/>
       <xs:element name="addUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="unmergeUser" nillable="true" type="tns:UnmergeUserParameters"/>
+      <xs:element name="unmergeUserResponse" nillable="true" type="tns:SSOwsResult"/>
       <xs:element name="deactivateInstructor" nillable="true" type="tns:CrmsParameters"/>
       <xs:element name="deactivateInstructorResponse" nillable="true" type="tns:SSOwsResult"/>
       <xs:element name="removeUniqueMember" nillable="true" type="tns:RemoveUniqueMemberParameters"/>
@@ -609,6 +633,9 @@
       <xs:element name="getUserResponse" nillable="true" type="tns:SSOwsResult"/>
     </xs:schema>
   </wsdl:types>
+  <wsdl:message name="unmergeUser">
+    <wsdl:part element="tns:unmergeUser" name="unmergeUserParameters"></wsdl:part>
+  </wsdl:message>
   <wsdl:message name="getToken">
     <wsdl:part element="tns:getToken" name="getTokenParameters"></wsdl:part>
   </wsdl:message>
@@ -672,6 +699,9 @@
   <wsdl:message name="removeUniqueMember">
     <wsdl:part element="tns:removeUniqueMember" name="removeUniqueMemberParameters"></wsdl:part>
   </wsdl:message>
+  <wsdl:message name="mergeUserResponse">
+    <wsdl:part element="tns:mergeUserResponse" name="mergeUserResponse"></wsdl:part>
+  </wsdl:message>
   <wsdl:message name="suspendInstructor">
     <wsdl:part element="tns:suspendInstructor" name="crmsParameters"></wsdl:part>
   </wsdl:message>
@@ -706,11 +736,11 @@
   <wsdl:message name="getUserPasswordResetKey">
     <wsdl:part element="tns:getUserPasswordResetKey" name="passwordResetKeyParameters"></wsdl:part>
   </wsdl:message>
-  <wsdl:message name="deleteGroupResponse">
-    <wsdl:part element="tns:deleteGroupResponse" name="deleteGroupResponse"></wsdl:part>
-  </wsdl:message>
   <wsdl:message name="modifyGroupResponse">
     <wsdl:part element="tns:modifyGroupResponse" name="modifyGroupResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupResponse">
+    <wsdl:part element="tns:deleteGroupResponse" name="deleteGroupResponse"></wsdl:part>
   </wsdl:message>
   <wsdl:message name="getUsersResponse">
     <wsdl:part element="tns:getUsersResponse" name="getUsersResponse"></wsdl:part>
@@ -723,6 +753,9 @@
   </wsdl:message>
   <wsdl:message name="hasAccessToResponse">
     <wsdl:part element="tns:hasAccessToResponse" name="hasAccessToResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="mergeUser">
+    <wsdl:part element="tns:mergeUser" name="mergeUserParameters"></wsdl:part>
   </wsdl:message>
   <wsdl:message name="deleteUser">
     <wsdl:part element="tns:deleteUser" name="deleteUserParameters"></wsdl:part>
@@ -741,6 +774,9 @@
   </wsdl:message>
   <wsdl:message name="restrictionAddToUserResponse">
     <wsdl:part element="tns:restrictionAddToUserResponse" name="restrictionAddToUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="unmergeUserResponse">
+    <wsdl:part element="tns:unmergeUserResponse" name="unmergeUserResponse"></wsdl:part>
   </wsdl:message>
   <wsdl:message name="addResourceItem">
     <wsdl:part element="tns:addResourceItem" name="addResourceItemParameters"></wsdl:part>
@@ -876,6 +912,10 @@
       <wsdl:input message="tns:getTokenFromGuid" name="getTokenFromGuid"></wsdl:input>
       <wsdl:output message="tns:getTokenFromGuidResponse" name="getTokenFromGuidResponse"></wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="mergeUser">
+      <wsdl:input message="tns:mergeUser" name="mergeUser"></wsdl:input>
+      <wsdl:output message="tns:mergeUserResponse" name="mergeUserResponse"></wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getGroupsProtecting">
       <wsdl:input message="tns:getGroupsProtecting" name="getGroupsProtecting"></wsdl:input>
       <wsdl:output message="tns:getGroupsProtectingResponse" name="getGroupsProtectingResponse"></wsdl:output>
@@ -931,6 +971,10 @@
     <wsdl:operation name="addUser">
       <wsdl:input message="tns:addUser" name="addUser"></wsdl:input>
       <wsdl:output message="tns:addUserResponse" name="addUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unmergeUser">
+      <wsdl:input message="tns:unmergeUser" name="unmergeUser"></wsdl:input>
+      <wsdl:output message="tns:unmergeUserResponse" name="unmergeUserResponse"></wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="deactivateInstructor">
       <wsdl:input message="tns:deactivateInstructor" name="deactivateInstructor"></wsdl:input>
@@ -1106,6 +1150,15 @@
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="mergeUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="mergeUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="mergeUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="isInstructor">
       <soap:operation soapAction="" style="document"/>
       <wsdl:input name="isInstructor">
@@ -1214,6 +1267,15 @@
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="unmergeUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="unmergeUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="unmergeUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="deactivateInstructor">
       <soap:operation soapAction="" style="document"/>
       <wsdl:input name="deactivateInstructor">
@@ -1298,10 +1360,10 @@
   </wsdl:binding>
   <wsdl:service name="SSOws">
     <wsdl:port binding="tns:SSOwsSoapBinding" name="SSOwsPort">
-      <soap:address location="http://s-ws.cengage.com/ssows/SSOws"/>
+      <soap:address location="https://s-ws.cengage.com/ssows/SSOws"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="addGroup" bindingOperationName="addGroup" type="Request-Response" outputName="addGroupResponse" inputName="addGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="addGroup" bindingOperationName="addGroup" type="Request-Response" outputName="addGroupResponse" inputName="addGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:addGroup>
@@ -1349,7 +1411,7 @@
          <java:token>?</java:token>
       </ssow:addGroup>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addResourceItem" bindingOperationName="addResourceItem" type="Request-Response" outputName="addResourceItemResponse" inputName="addResourceItem" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addResourceItem" bindingOperationName="addResourceItem" type="Request-Response" outputName="addResourceItemResponse" inputName="addResourceItem" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:addResourceItem>
@@ -1358,7 +1420,7 @@
          <java:token>?</java:token>
       </ssow:addResourceItem>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addResourceItem"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addUniqueMember" bindingOperationName="addUniqueMember" type="Request-Response" outputName="addUniqueMemberResponse" inputName="addUniqueMember" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addResourceItem"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addUniqueMember" bindingOperationName="addUniqueMember" type="Request-Response" outputName="addUniqueMemberResponse" inputName="addUniqueMember" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:addUniqueMember>
@@ -1368,7 +1430,7 @@
          <java:uid>?</java:uid>
       </ssow:addUniqueMember>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addUniqueMember"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addUser" bindingOperationName="addUser" type="Request-Response" outputName="addUserResponse" inputName="addUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addUniqueMember"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addUser" bindingOperationName="addUser" type="Request-Response" outputName="addUserResponse" inputName="addUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:addUser>
@@ -1470,7 +1532,7 @@
          <java:token>?</java:token>
       </ssow:addUser>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deactivateInstructor" bindingOperationName="deactivateInstructor" type="Request-Response" outputName="deactivateInstructorResponse" inputName="deactivateInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deactivateInstructor" bindingOperationName="deactivateInstructor" type="Request-Response" outputName="deactivateInstructorResponse" inputName="deactivateInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:deactivateInstructor>
@@ -1480,7 +1542,7 @@
          <java:token>?</java:token>
       </ssow:deactivateInstructor>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deactivateInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deleteGroup" bindingOperationName="deleteGroup" type="Request-Response" outputName="deleteGroupResponse" inputName="deleteGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deactivateInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deleteGroup" bindingOperationName="deleteGroup" type="Request-Response" outputName="deleteGroupResponse" inputName="deleteGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:deleteGroup>
@@ -1488,7 +1550,7 @@
          <java:token>?</java:token>
       </ssow:deleteGroup>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deleteGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deleteUser" bindingOperationName="deleteUser" type="Request-Response" outputName="deleteUserResponse" inputName="deleteUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deleteGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deleteUser" bindingOperationName="deleteUser" type="Request-Response" outputName="deleteUserResponse" inputName="deleteUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:deleteUser>
@@ -1496,7 +1558,7 @@
          <java:token>?</java:token>
       </ssow:deleteUser>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deleteUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="doesUserExist" bindingOperationName="doesUserExist" type="Request-Response" outputName="doesUserExistResponse" inputName="doesUserExist" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deleteUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="doesUserExist" bindingOperationName="doesUserExist" type="Request-Response" outputName="doesUserExistResponse" inputName="doesUserExist" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:doesUserExist>
@@ -1505,7 +1567,7 @@
          <java:uid>?</java:uid>
       </ssow:doesUserExist>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/doesUserExist"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getDirectGroupMembership" bindingOperationName="getDirectGroupMembership" type="Request-Response" outputName="getDirectGroupMembershipResponse" inputName="getDirectGroupMembership" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/doesUserExist"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getDirectGroupMembership" bindingOperationName="getDirectGroupMembership" type="Request-Response" outputName="getDirectGroupMembershipResponse" inputName="getDirectGroupMembership" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getDirectGroupMembership>
@@ -1521,7 +1583,7 @@
          <java:groupName>?</java:groupName>
       </ssow:getDirectGroupMembership>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getDirectGroupMembership"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroup" bindingOperationName="getGroup" type="Request-Response" outputName="getGroupResponse" inputName="getGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getDirectGroupMembership"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroup" bindingOperationName="getGroup" type="Request-Response" outputName="getGroupResponse" inputName="getGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getGroup>
@@ -1533,12 +1595,12 @@
          <java:returnNestedGroups>?</java:returnNestedGroups>
       </ssow:getGroup>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroupsProtecting" bindingOperationName="getGroupsProtecting" type="Request-Response" outputName="getGroupsProtectingResponse" inputName="getGroupsProtecting" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroupsProtecting" bindingOperationName="getGroupsProtecting" type="Request-Response" outputName="getGroupsProtectingResponse" inputName="getGroupsProtecting" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getGroupsProtecting>?</ssow:getGroupsProtecting>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroupsProtecting"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroupsProtectingHostURL" bindingOperationName="getGroupsProtectingHostURL" type="Request-Response" outputName="getGroupsProtectingHostURLResponse" inputName="getGroupsProtectingHostURL" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroupsProtecting"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroupsProtectingHostURL" bindingOperationName="getGroupsProtectingHostURL" type="Request-Response" outputName="getGroupsProtectingHostURLResponse" inputName="getGroupsProtectingHostURL" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getGroupsProtectingHostURL>
@@ -1550,7 +1612,7 @@
          <java:path>?</java:path>
       </ssow:getGroupsProtectingHostURL>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroupsProtectingHostURL"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getToken" bindingOperationName="getToken" type="Request-Response" outputName="getTokenResponse" inputName="getToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroupsProtectingHostURL"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getToken" bindingOperationName="getToken" type="Request-Response" outputName="getTokenResponse" inputName="getToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getToken>
@@ -1558,7 +1620,7 @@
          <java:uid>4LTR-Dev-Inst@cengage.com</java:uid>
       </ssow:getToken>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getToken"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getTokenFromGuid" bindingOperationName="getTokenFromGuid" type="Request-Response" outputName="getTokenFromGuidResponse" inputName="getTokenFromGuid" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getToken"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getTokenFromGuid" bindingOperationName="getTokenFromGuid" type="Request-Response" outputName="getTokenFromGuidResponse" inputName="getTokenFromGuid" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getTokenFromGuid>
@@ -1566,7 +1628,7 @@
          <java:token>?</java:token>
       </ssow:getTokenFromGuid>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getTokenFromGuid"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUser" bindingOperationName="getUser" type="Request-Response" outputName="getUserResponse" inputName="getUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getTokenFromGuid"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUser" bindingOperationName="getUser" type="Request-Response" outputName="getUserResponse" inputName="getUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getUser>
@@ -1581,7 +1643,7 @@
          <java:returnNestedGroups>?</java:returnNestedGroups>
       </ssow:getUser>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUserInfo" bindingOperationName="getUserInfo" type="Request-Response" outputName="getUserInfoResponse" inputName="getUserInfo" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows" xmlns:java1="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUserInfo" bindingOperationName="getUserInfo" type="Request-Response" outputName="getUserInfoResponse" inputName="getUserInfo" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows" xmlns:java1="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getUserInfo>
@@ -1592,7 +1654,7 @@
          </java:guids>
       </ssow:getUserInfo>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUserInfo"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUserPasswordResetKey" bindingOperationName="getUserPasswordResetKey" type="Request-Response" outputName="getUserPasswordResetKeyResponse" inputName="getUserPasswordResetKey" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUserInfo"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUserPasswordResetKey" bindingOperationName="getUserPasswordResetKey" type="Request-Response" outputName="getUserPasswordResetKeyResponse" inputName="getUserPasswordResetKey" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getUserPasswordResetKey>
@@ -1601,7 +1663,7 @@
          <java:uid>?</java:uid>
       </ssow:getUserPasswordResetKey>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUserPasswordResetKey"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUsers" bindingOperationName="getUsers" type="Request-Response" outputName="getUsersResponse" inputName="getUsers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUserPasswordResetKey"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUsers" bindingOperationName="getUsers" type="Request-Response" outputName="getUsersResponse" inputName="getUsers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getUsers>
@@ -1709,10 +1771,10 @@
          <java:returnNestedGroups>?</java:returnNestedGroups>
       </ssow:getUsers>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUsers"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getVersion" bindingOperationName="getVersion" type="Request-Response" outputName="getVersionResponse" inputName="getVersion" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUsers"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getVersion" bindingOperationName="getVersion" type="Request-Response" outputName="getVersionResponse" inputName="getVersion" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
    &lt;soapenv:Header/>
    &lt;soapenv:Body/>
-&lt;/soapenv:Envelope></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getVersion"/></con:call></con:operation><con:operation isOneWay="false" action="" name="hasAccessTo" bindingOperationName="hasAccessTo" type="Request-Response" outputName="hasAccessToResponse" inputName="hasAccessTo" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+&lt;/soapenv:Envelope></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getVersion"/></con:call></con:operation><con:operation isOneWay="false" action="" name="hasAccessTo" bindingOperationName="hasAccessTo" type="Request-Response" outputName="hasAccessToResponse" inputName="hasAccessTo" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:hasAccessTo>
@@ -1721,7 +1783,7 @@
          <java:token>?</java:token>
       </ssow:hasAccessTo>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/hasAccessTo"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isInstructor" bindingOperationName="isInstructor" type="Request-Response" outputName="isInstructorResponse" inputName="isInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/hasAccessTo"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isInstructor" bindingOperationName="isInstructor" type="Request-Response" outputName="isInstructorResponse" inputName="isInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:isInstructor>
@@ -1730,7 +1792,7 @@
          <java:uid>?</java:uid>
       </ssow:isInstructor>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isMemberOf" bindingOperationName="isMemberOf" type="Request-Response" outputName="isMemberOfResponse" inputName="isMemberOf" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isMemberOf" bindingOperationName="isMemberOf" type="Request-Response" outputName="isMemberOfResponse" inputName="isMemberOf" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:isMemberOf>
@@ -1740,7 +1802,7 @@
          <java:uid>?</java:uid>
       </ssow:isMemberOf>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isMemberOf"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isUrlProtected" bindingOperationName="isUrlProtected" type="Request-Response" outputName="isUrlProtectedResponse" inputName="isUrlProtected" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isMemberOf"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isUrlProtected" bindingOperationName="isUrlProtected" type="Request-Response" outputName="isUrlProtectedResponse" inputName="isUrlProtected" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:isUrlProtected>
@@ -1753,7 +1815,7 @@
          <java:token>?</java:token>
       </ssow:isUrlProtected>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isUrlProtected"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modifyGroup" bindingOperationName="modifyGroup" type="Request-Response" outputName="modifyGroupResponse" inputName="modifyGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isUrlProtected"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modifyGroup" bindingOperationName="modifyGroup" type="Request-Response" outputName="modifyGroupResponse" inputName="modifyGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:modifyGroup>
@@ -1802,7 +1864,7 @@
          <java:token>?</java:token>
       </ssow:modifyGroup>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/modifyGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modifyUser" bindingOperationName="modifyUser" type="Request-Response" outputName="modifyUserResponse" inputName="modifyUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/modifyGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modifyUser" bindingOperationName="modifyUser" type="Request-Response" outputName="modifyUserResponse" inputName="modifyUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:modifyUser>
@@ -1906,7 +1968,7 @@
          <java:uid>?</java:uid>
       </ssow:modifyUser>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/modifyUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="reactivateInstructor" bindingOperationName="reactivateInstructor" type="Request-Response" outputName="reactivateInstructorResponse" inputName="reactivateInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/modifyUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="reactivateInstructor" bindingOperationName="reactivateInstructor" type="Request-Response" outputName="reactivateInstructorResponse" inputName="reactivateInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:reactivateInstructor>
@@ -1916,7 +1978,7 @@
          <java:token>?</java:token>
       </ssow:reactivateInstructor>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/reactivateInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="refreshToken" bindingOperationName="refreshToken" type="Request-Response" outputName="refreshTokenResponse" inputName="refreshToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/reactivateInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="refreshToken" bindingOperationName="refreshToken" type="Request-Response" outputName="refreshTokenResponse" inputName="refreshToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:refreshToken>
@@ -1924,7 +1986,7 @@
          <java:userToken>?</java:userToken>
       </ssow:refreshToken>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/refreshToken"/></con:call></con:operation><con:operation isOneWay="false" action="" name="removeResourceItem" bindingOperationName="removeResourceItem" type="Request-Response" outputName="removeResourceItemResponse" inputName="removeResourceItem" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/refreshToken"/></con:call></con:operation><con:operation isOneWay="false" action="" name="removeResourceItem" bindingOperationName="removeResourceItem" type="Request-Response" outputName="removeResourceItemResponse" inputName="removeResourceItem" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:removeResourceItem>
@@ -1933,7 +1995,7 @@
          <java:token>?</java:token>
       </ssow:removeResourceItem>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/removeResourceItem"/></con:call></con:operation><con:operation isOneWay="false" action="" name="removeUniqueMember" bindingOperationName="removeUniqueMember" type="Request-Response" outputName="removeUniqueMemberResponse" inputName="removeUniqueMember" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/removeResourceItem"/></con:call></con:operation><con:operation isOneWay="false" action="" name="removeUniqueMember" bindingOperationName="removeUniqueMember" type="Request-Response" outputName="removeUniqueMemberResponse" inputName="removeUniqueMember" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:removeUniqueMember>
@@ -1943,7 +2005,7 @@
          <java:uid>?</java:uid>
       </ssow:removeUniqueMember>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/removeUniqueMember"/></con:call></con:operation><con:operation isOneWay="false" action="" name="rename" bindingOperationName="rename" type="Request-Response" outputName="renameResponse" inputName="rename" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/removeUniqueMember"/></con:call></con:operation><con:operation isOneWay="false" action="" name="rename" bindingOperationName="rename" type="Request-Response" outputName="renameResponse" inputName="rename" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:rename>
@@ -1953,7 +2015,7 @@
          <java:token>?</java:token>
       </ssow:rename>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/rename"/></con:call></con:operation><con:operation isOneWay="false" action="" name="restrictionAddToUser" bindingOperationName="restrictionAddToUser" type="Request-Response" outputName="restrictionAddToUserResponse" inputName="restrictionAddToUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/rename"/></con:call></con:operation><con:operation isOneWay="false" action="" name="restrictionAddToUser" bindingOperationName="restrictionAddToUser" type="Request-Response" outputName="restrictionAddToUserResponse" inputName="restrictionAddToUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:restrictionAddToUser>
@@ -1961,7 +2023,7 @@
          <java:token>?</java:token>
       </ssow:restrictionAddToUser>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/restrictionAddToUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="restrictionRemoveFromUser" bindingOperationName="restrictionRemoveFromUser" type="Request-Response" outputName="restrictionRemoveFromUserResponse" inputName="restrictionRemoveFromUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/restrictionAddToUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="restrictionRemoveFromUser" bindingOperationName="restrictionRemoveFromUser" type="Request-Response" outputName="restrictionRemoveFromUserResponse" inputName="restrictionRemoveFromUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:restrictionRemoveFromUser>
@@ -1969,7 +2031,7 @@
          <java:token>?</java:token>
       </ssow:restrictionRemoveFromUser>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/restrictionRemoveFromUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="suspendInstructor" bindingOperationName="suspendInstructor" type="Request-Response" outputName="suspendInstructorResponse" inputName="suspendInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/restrictionRemoveFromUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="suspendInstructor" bindingOperationName="suspendInstructor" type="Request-Response" outputName="suspendInstructorResponse" inputName="suspendInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:suspendInstructor>
@@ -1979,12 +2041,12 @@
          <java:token>?</java:token>
       </ssow:suspendInstructor>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/suspendInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="testTimeOut" bindingOperationName="testTimeOut" type="Request-Response" outputName="testTimeOutResponse" inputName="testTimeOut" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/suspendInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="testTimeOut" bindingOperationName="testTimeOut" type="Request-Response" outputName="testTimeOutResponse" inputName="testTimeOut" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:testTimeOut>?</ssow:testTimeOut>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/testTimeOut"/></con:call></con:operation><con:operation isOneWay="false" action="" name="validatedInstructor" bindingOperationName="validatedInstructor" type="Request-Response" outputName="validatedInstructorResponse" inputName="validatedInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/testTimeOut"/></con:call></con:operation><con:operation isOneWay="false" action="" name="validatedInstructor" bindingOperationName="validatedInstructor" type="Request-Response" outputName="validatedInstructorResponse" inputName="validatedInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:validatedInstructor>
@@ -1996,12 +2058,30 @@
          <java:validatedInstructor>?</java:validatedInstructor>
       </ssow:validatedInstructor>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/validatedInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="validateToken" bindingOperationName="validateToken" type="Request-Response" outputName="validateTokenResponse" inputName="validateToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/validatedInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="validateToken" bindingOperationName="validateToken" type="Request-Response" outputName="validateTokenResponse" inputName="validateToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:validateToken>?</ssow:validateToken>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/validateToken"/></con:call></con:operation></con:interface><con:testSuite name="Gradebook_Integration_Env"><con:description>TestSuite generated for REST Service [http://gradebook-api-qa.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getTokenTestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="getToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SSOwsSoapBinding</con:interface><con:operation>getToken</con:operation><con:request name="getToken"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/validateToken"/></con:call></con:operation><con:operation isOneWay="false" action="" name="mergeUser" bindingOperationName="mergeUser" type="Request-Response" outputName="mergeUserResponse" inputName="mergeUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:mergeUser>
+         <java:adminToken>?</java:adminToken>
+         <java:ssoGuid>?</java:ssoGuid>
+         <java:partnerGuid>?</java:partnerGuid>
+      </ssow:mergeUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/mergeUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="unmergeUser" bindingOperationName="unmergeUser" type="Request-Response" outputName="unmergeUserResponse" inputName="unmergeUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:unmergeUser>
+         <java:adminToken>?</java:adminToken>
+         <java:ssoGuid>?</java:ssoGuid>
+         <java:partnerGuid>?</java:partnerGuid>
+      </ssow:unmergeUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/unmergeUser"/></con:call></con:operation></con:interface><con:testSuite name="Gradebook_Integration_Env"><con:description>TestSuite generated for REST Service [http://gradebook-api-qa.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getTokenTestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="getToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SSOwsSoapBinding</con:interface><con:operation>getToken</con:operation><con:request name="getToken"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
    <soapenv:Header/>
    <soapenv:Body>
       <ssow:getToken>
