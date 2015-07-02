@@ -21,6 +21,8 @@ sh testrunner.sh -e$HOST -s "Objectives_Bad Data" -r -a -f/opt/code/Reports /opt
 sh testrunner.sh -e$HOST -s "Label_CourseID_Code_Validations" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 
 
+
+
 # Run SoapUI test suite from Jenkin with Host as parameter
 #defhost=localhost
 #HOST=${1-$defhost}
@@ -30,6 +32,6 @@ sh testrunner.sh -e$HOST -s "Label_CourseID_Code_Validations" -r -a -f/opt/code/
 #sh testrunner.sh -e$HOST -s "Create & Copy from Master" -r -a -f/Users/mindtap/source/SOAPUI/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
 #sh testrunner.sh -e$HOST -s "Actions" -r -a -f/Users/mindtap/source/SOAPUI/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
 #sh testrunner.sh -e$HOST -s "Associations bet Objectives-Assessment items" -r -a -f/Users/mindtap/source/SOAPUI/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
-#sh testrunner.sh -e$HOST -s "Objectives_Bad Data" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-#sh testrunner.sh -e$HOST -s "Label_CourseID_Code_Validations" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+#sh testrunner.sh -e$HOST -s "Objectives_Bad Data" -r -a -f/opt/code/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
+#sh testrunner.sh -e$HOST -s "Label_CourseID_Code_Validations" -r -a -f/opt/code/Reports /Users/mindtap/source/SOAPUI/SOA-MTED-Lite-soapui-project.xml
 
