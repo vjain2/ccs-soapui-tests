@@ -14,6 +14,7 @@ HOST=${1-$defrost}
 echo Running SOAPUI TestSuite on Endpoint *** : $HOST
 cd /opt/ReadyAPI-1.2.2/bin/ 
 sh testrunner.sh -e$HOST -s "Actions" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+sh testrunner.sh -e$HOST -s "OAT" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 
 
 
