@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="SOAPUI_QA_EDMSL2_GB" resourceRoot="" soapui-version="5.0.0" id="c25eb44a-2383-46f6-9e58-af7575557672" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="Label_CourseID_Code_Validations"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/Users/mindtap/SOAPUI/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.9.51:4000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.9.51:4000</con:endpoint></con:endpoints><con:resource name="TermTypes" path="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes"><con:settings/><con:parameters><con:parameter><con:name>version</con:name><con:style>QUERY</con:style></con:parameter><con:parameter><con:name>discipline</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="Discipline_TermTypes" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api//discipline//termTypes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.9.51:4000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.9.51:4000</con:endpoint></con:endpoints><con:resource name="Get_Terms_Assets" path="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms"><con:settings/><con:parameters/><con:method name="Term_Assets" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite name="EDMS_GB_Term_Assets"><con:description>TestSuite generated for REST Service [http://10.172.9.51:4000]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_CHEMISTRY_DISCIPLINE_TAXONOMY_assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term1"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,2).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CHEMISTRY_DISCIPLINE_TAXONOMY"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CHEMISTRY_DISCIPLINE_TAXONOMY" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>CHEMISTRY_DISCIPLINE_TAXONOMY</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains"><con:configuration/></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="&quot;id&quot;"><con:configuration><token>atlas</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;assets&quot;"><con:configuration><token>"YSQGXH608885727"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains"><con:configuration/></con:assertion><con:assertion type="Simple Contains"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>CHEMISTRY_DISCIPLINE_TAXONOMY</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_STATUTES_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term2"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,3).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="STATUTES"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="STATUTES" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="Simple Contains" name="Contains_statutes"><con:configuration><token>STATUTES</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="&quot;id&quot;"><con:configuration><token>atlas</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;assets&quot;"><con:configuration><token>[]</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>STATUTES</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_BLOOMS_COGNITIVE_TAXONOMY_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term3"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,4).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="BLOOMS_COGNITIVE_TAXONOMY"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="BLOOMS_COGNITIVE_TAXONOMY" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>BLOOMS_COGNITIVE_TAXONOMY</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>BLOOMS_COGNITIVE_TAXONOMY</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_MCAT_CONCEPTS_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term4"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,5).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="MCAT_CONCEPTS"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="MCAT_CONCEPTS" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>MCAT_CONCEPTS</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;assets&quot;"><con:configuration><token>"WMRCYQ947666237"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="&quot;id&quot;"><con:configuration><token>atlas</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>MCAT_CONCEPTS</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_CENGAGE_LEARNING_OBJECTIVE_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term5"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,6).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CENGAGE_LEARNING_OBJECTIVE"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CENGAGE_LEARNING_OBJECTIVE" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>CENGAGE_LEARNING_OBJECTIVE</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;assets&quot;"><con:configuration><token>"MVSBTD383720988"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="&quot;id&quot;"><con:configuration><token>atlas</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>CENGAGE_LEARNING_OBJECTIVE</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_CENGAGE_COURSE_OUTCOMES_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term6"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,7).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CENGAGE_COURSE_OUTCOMES"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CENGAGE_COURSE_OUTCOMES" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>CENGAGE_COURSE_OUTCOMES</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="&quot;id&quot;"><con:configuration><token>atlas</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;assets&quot;"><con:configuration><token>"YSQGXH608885727"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>CENGAGE_COURSE_OUTCOMES</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_MTX_CONCEPTS_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Get_Terms_Assets] located at [/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy_Term7"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath2")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(1,2).getContents()       
+discipline = objSheet.getCell(2,2).getContents()  
+termtype = objSheet.getCell(3,8).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="MTX_CONCEPTS"><con:settings/><con:config service="http://10.172.9.51:4000" resourcePath="/api/${#TestCase#version}/${#TestCase#discipline}/chem/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CENGAGE_COURSE_OUTCOMES" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api///chem/termTypes//terms</con:originalUri><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>MTX_CONCEPTS</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="&quot;id&quot;"><con:configuration><token>atlas</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;assets&quot;"><con:configuration><token>[]</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>disciplines</con:value></con:property><con:property><con:name>termtype</con:name><con:value>MTX_CONCEPTS</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_TermsTypes" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy_TermTypes"><con:settings/><con:config><script>import jxl.*
+
+def NumOfXLSRows    
+
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+
+log.info ("Path : " + XLPath)  
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()    
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows) 
+
+version = objSheet.getCell(8,2).getContents()   	   
+discipline = objSheet.getCell(9,2).getContents()  
+
+
+log.info("version_Value: " + version)
+log.info("discipline_Value: " + discipline)
+
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+       
+
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="TermsTypes"><con:settings/><con:config service="http://10.172.9.51:4000" methodName="Discipline_TermTypes" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TermsTypes" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.9.51:4000</con:endpoint><con:request/><con:originalUri>http://10.172.9.51/api/v1/disciplines/chem/termTypes</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>action</con:name><con:value>EDIT</con:value></con:property><con:property><con:name>code</con:name><con:value>test code2</con:value></con:property><con:property><con:name>id</con:name><con:value>INSTRUCTORCREATED1</con:value></con:property><con:property><con:name>label</con:name><con:value>test code2</con:value></con:property><con:property><con:name>type</con:name><con:value>learning_outcome</con:value></con:property><con:property><con:name>u_id</con:name><con:value>d30ce0548f4f378b:-7b09d17a:147646f6e44:-5629</con:value></con:property><con:property><con:name>courseId</con:name><con:value>MTPNPNVPN6F5</con:value></con:property><con:property><con:name>userId</con:name><con:value>d30ce0548f4f378b:-7b09d17a:147646f6e44:-5629</con:value></con:property><con:property><con:name>XLPath2</con:name><con:value>/Users/mindtap/SOAPUI/ccs-soapui-tests/Data/Term_Assets1.xls</con:value></con:property><con:property><con:name>label1</con:name><con:value>null</con:value></con:property><con:property><con:name>course1</con:name><con:value>null</con:value></con:property><con:property><con:name>code1</con:name><con:value>null</con:value></con:property><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>termtype1</con:name><con:value>CHEMISTRY_DISCIPLINE_TAXONOMY  </con:value></con:property><con:property><con:name>termtype2</con:name><con:value>STATUTES  </con:value></con:property><con:property><con:name>termtype3</con:name><con:value>BLOOMS_COGNITIVE_TAXONOMY  </con:value></con:property><con:property><con:name>termtype4</con:name><con:value>MCAT_CONCEPTS  </con:value></con:property><con:property><con:name>termtype5</con:name><con:value>CENGAGE_LEARNING_OBJECTIVE  </con:value></con:property><con:property><con:name>termtype6</con:name><con:value>CENGAGE_COURSE_OUTCOMES  </con:value></con:property><con:property><con:name>XLPath1</con:name><con:value>/Users/mindtap/SOAPUI/ccs-soapui-tests/Data/EDMS_Lite_Validation1.xls</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
