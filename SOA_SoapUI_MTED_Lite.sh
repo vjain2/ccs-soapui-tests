@@ -19,6 +19,9 @@ sh testrunner.sh -e$HOST -s "Associations bet Objectives-Assessment items" -r -a
 sh testrunner.sh -e$HOST -s "Objectives_Bad Data" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 sh testrunner.sh -e$HOST -s "Label_CourseID_Code_Validations" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 sh testrunner.sh -e$HOST -s "OAT" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+sh testrunner.sh -e$HOST -s "Learning_Outcome_Array" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
+
+
 
 
 
