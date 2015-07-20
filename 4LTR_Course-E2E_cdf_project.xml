@@ -188,7 +188,7 @@ def prj = (workspace==null) ? ProjectFactoryRegistry.getProjectFactory(WsdlProje
 
 	log.info ("project name "+ prj)
 	
-	def tSuite = prj.testSuites['4LTR E2E API Integration ProjectTestSuite']
+	def tSuite = prj.testSuites['4LTR CCS API Integration ProjectTestSuite']
 	
 	def tCase =  tSuite.testCases['4LTR Activity Level1']
 	
