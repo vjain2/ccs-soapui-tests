@@ -8,4 +8,4 @@ git pull
 
 echo Running SOAPUI TestSuite on: $HOST
 
-sh /opt/SoapUI-5.2.0/bin/testrunner.sh -s"Services" -r /opt/code/ccs-soapui-tests/PROD-Services-Check-soapui-project.xml
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -s"Services" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/PROD-Services-Check-soapui-project.xml
