@@ -1,8 +1,8 @@
 # Run Maven test suite from Jenkin to capture Dynamic CGI from newly created Course
 #cd /Users/mindtap/SOAPUI/ccs-soapui-tests
-sudo cd /opt/code/ccs-soapui-tests/
-sudo git stash
-sudo git pull
+cd /opt/code/ccs-soapui-tests/
+#git stash
+git pull
 
 # Run SoapUI test suite from Jenkin with Host as parameter
 
