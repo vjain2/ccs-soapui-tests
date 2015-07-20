@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="SOAPUI_QA_EDMSL_GB_Prod" resourceRoot="" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="EDMS_GB_Term_Assets_Prod"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/opt/code/Reports/"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edms.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://edms.cengage.info</con:endpoint></con:endpoints><con:resource name="TermTypes" path="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes"><con:settings/><con:parameters/><con:method name="Discipline_TermTypes" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api//disciplines//termTypes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edms.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://edms.cengage.info</con:endpoint></con:endpoints><con:resource name="Terms" path="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms"><con:settings/><con:parameters/><con:method name="Term_Assets" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite name="EDMS_GB_Term_Assets_Prod"><con:description>TestSuite generated for REST Service [https://edms.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_TermsTypes" searchProperties="true"><con:description>TestCase generated for REST Resource [TermTypes] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+
+def NumOfXLSRows    
+
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+
+log.info ("Path : " + XLPath)  
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()    
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows) 
+
+version = objSheet.getCell(0,1).getContents()   	   
+discipline = objSheet.getCell(1,1).getContents()  
+
+
+log.info("version_Value: " + version)
+log.info("discipline_Value: " + discipline)
+
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+       
+
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="TermsTypes"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes" methodName="Discipline_TermTypes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api//disciplines//termTypes</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_CHEMISTRY_DISCIPLINE_TAXONOMY_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,1).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CHEMISTRY_DISCIPLINE_TAXONOMY"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="id"><con:configuration><token>(?s).*id=atlas*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;type&quot;"><con:configuration><token>"CHEMISTRY_DISCIPLINE_TAXONOMY"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>CHEMISTRY_DISCIPLINE_TAXONOMY</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_STATUTES_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,2).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="STATUTES"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CHEMISTRY_DISCIPLINE_TAXONOMY" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;type&quot;"><con:configuration><token>"STATUTES"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>STATUTES</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_BLOOMS_COGNITIVE_TAXONOMY_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,3).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="BLOOMS_COGNITIVE_TAXONOMY"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="STATUTES" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>BLOOMS_COGNITIVE_TAXONOMY</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_MCAT_CONCEPTS_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,4).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="MCAT_CONCEPTS"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="BLOOMS_COGNITIVE_TAXONOMY" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;type&quot;"><con:configuration><token>"MCAT_CONCEPTS"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>MCAT_CONCEPTS</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_CENGAGE_LEARNING_OBJECTIVE_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,5).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CENGAGE_LEARNING_OBJECTIVE"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="MCAT_CONCEPTS" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;type&quot;"><con:configuration><token>"CENGAGE_LEARNING_OBJECTIVE"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>CENGAGE_LEARNING_OBJECTIVE</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_CENGAGE_COURSE_OUTCOMES_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,6).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CENGAGE_COURSE_OUTCOMES"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CENGAGE_LEARNING_OBJECTIVE" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;type&quot;"><con:configuration><token>"CENGAGE_COURSE_OUTCOMES"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>CENGAGE_COURSE_OUTCOMES</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_MTX_CONCEPTS_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Terms] located at [/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*
+def NumOfXLSRows   
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1")
+log.info ("Path : " + XLPath) 
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))   
+Sheet objSheet = objWB.getSheet(0)   
+NumOfXLSRows = objSheet.getRows()   
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()       
+discipline = objSheet.getCell(1,1).getContents()  
+termtype = objSheet.getCell(2,7).getContents() 
+log.info("version_Value: " + version)
+log.info("discipline: " + discipline)
+log.info("termtype: " + termtype)
+
+//testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+//testRunner.testCase.testSuite.project.setPropertyValue("discipline", discipline)
+//testRunner.testCase.testSuite.project.setPropertyValue("termtype", termtype)
+testRunner.testCase.setPropertyValue("version", version)
+testRunner.testCase.setPropertyValue("discipline", discipline)
+testRunner.testCase.setPropertyValue("termtype", termtype) 
+ 
+objWB.close()
+</script></con:config></con:testStep><con:testStep type="restrequest" name="MTX_CONCEPTS"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#TestCase#version}/disciplines/${#TestCase#discipline}/termTypes/${#TestCase#termtype}/terms" methodName="Term_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CENGAGE_COURSE_OUTCOMES" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api///chem/termTypes//terms</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;type&quot;"><con:configuration><token>"MTX_CONCEPTS"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="&quot;userId&quot;"><con:configuration><token>"0"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>discipline</con:name><con:value>chem</con:value></con:property><con:property><con:name>termtype</con:name><con:value>MTX_CONCEPTS</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>XLPath1</con:name><con:value>/opt/code/ccs-soapui-tests/Data/GB_Prod.xls</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
