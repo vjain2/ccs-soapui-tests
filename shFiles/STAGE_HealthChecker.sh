@@ -9,4 +9,4 @@ echo Running SOAPUI TestSuite on: $HOST
 
 #sh testrunner.sh -s"Services" -r -a -f/Users/mindtap/SOAPUI/Reports /Users/mindtap/SOAPUI/ccs-soapui-tests/STAGE-Services-Check-soapui-project.xml
 
-sh /opt/SoapUI-5.2.0/bin/testrunner.sh -s"Services" -r -a /opt/code/ccs-soapui-tests/STAGE-Services-Check-soapui-project.xml
+sh /opt/SoapUI-5.2.0/bin/testrunner.sh -s"Services" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/STAGE-Services-Check-soapui-project.xml
