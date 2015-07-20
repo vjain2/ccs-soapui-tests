@@ -184,7 +184,7 @@ log.info("Script Starts*********************************************************
 
 
 //def prj = (workspace==null) ? ProjectFactoryRegistry.getProjectFactory(WsdlProjectFactory.WSDL_TYPE).createNew("/Users/mindtap/source/SOAPUI/4LTR_Course-E2E_project.xml") : workspace.getProjectByName("4LTR E2E API Integration Project")
-def prj = (workspace==null) ? ProjectFactoryRegistry.getProjectFactory(WsdlProjectFactory.WSDL_TYPE).createNew("/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course-E2E_cdf_project.xml") : workspace.getProjectByName("4LTR CCS API Integration Project")
+def prj = (workspace==null) ? ProjectFactoryRegistry.getProjectFactory(WsdlProjectFactory.WSDL_TYPE).createNew("/opt/code/ccs-soapui-tests/4LTR_Course-E2E_cdf_project.xml") : workspace.getProjectByName("4LTR CCS API Integration Project")
 
 	log.info ("project name "+ prj)
 	
