@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="4LTR PSYCH4 Course Variant Project" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" id="7786539f-5eca-4a8d-bce0-a0791f9d8470" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="SOA 4LTR PSYCH4 Course Variant ProjectTestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="/Applications/SoapUI-5.0.0.app/Contents/java/app/bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/Users/mindtap/SOAPUI/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value="http://course-services.stage.cengage.info"/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://course-services.int.cengage.info" type="rest" id="48fedeb3-3fe0-4512-b999-bfa7207ed1a3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:endpoint>https://course-services.int.cengage.info</con:endpoint></con:endpoints><con:resource name="DECR00XWG2W0SJPSE949" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}" id="d74c77b4-35fd-41b6-ae3b-2aedd6609828"><con:settings/><con:parameters/><con:method name="DECR00XWG2W0SJPSE949" method="GET" id="c1f5fbb4-4c83-4a65-b07d-15d318bcf292"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>504</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dec="https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949">dec:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/xml</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>504</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:dec="https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949">dec:Fault</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="1b34299d-7457-4296-8a98-179209a70d23"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://course-services.int.cengage.info</con:endpoint><con:request/><con:originalUri>https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://course-services.int.cengage.info" type="rest" id="21c76ebe-e373-4064-a97d-25dde87457d0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:endpoint>https://course-services.int.cengage.info</con:endpoint></con:endpoints><con:resource name="Providers" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" id="3f10b533-e754-4e81-838a-e5172b805b1a"><con:settings/><con:parameters/><con:method name="Providers" method="GET" id="640c4148-2371-4c87-8536-c876af236f80"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:prov="https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949/providers">prov:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:prov="https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949/providers">prov:Fault</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="c8b4b003-1eb8-43bd-917a-783d9f86a17d"><con:settings/><con:endpoint>https://course-services.int.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.253.230:8181" type="rest" id="dc3c70fa-4c8d-4121-b84e-e1bba30c23e1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint></con:endpoints><con:resource name="MZZZM80K8F2A2CHC9418" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/navigations/${#TestCase#nav_id}" id="0af88fd0-78b2-426f-8438-798dcdd7342a"><con:settings/><con:parameters/><con:method name="MZZZM80K8F2A2CHC9418" method="GET" id="8d719d8f-ce51-44f9-97e5-bfa736fa3ec6"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://10.172.253.230/">ns:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/xml</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:request name="Request 1" mediaType="application/json" id="e7b89c11-c52b-4078-a7df-05f0077c3cbb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses//navigations/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.253.230:8181" type="rest" id="4383e0bb-9b63-4b59-a4b9-a39efd4b2006" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint></con:endpoints><con:resource name="VSYHOX7075296" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/activities/${#TestCase#act_l1}" id="81986f03-9d0f-438b-be8b-e2b2768c7186"><con:settings/><con:parameters/><con:method name="VSYHOX7075296" method="GET" id="36ead00a-d088-413f-aa2d-d07bcffaf06a"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" mediaType="application/json" id="7906ff3d-d5da-4257-9608-e46820bcf91d"><con:settings/><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://course-services.stage.cengage.info" type="rest" id="98b11549-75f3-4ea1-ab45-7976d9ee12eb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Learningobjective" path="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/" id="5d85b43c-7f78-406e-a23c-ce76432031ac"><con:settings/><con:parameters/><con:method name="Learningobjective" method="GET" id="cb94142c-a1b0-4d68-9ad1-5248c57fadf5"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="722f77af-243c-4cbc-b345-e0d401014ba6"><con:settings/><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.253.230:8181" type="rest" id="08479aa0-d4a6-4a51-8cbe-9541e2abde21" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Narratives" path="/services/${#Project#version}/narrative/narratives/${#TestCase#narr_id}" id="98867fdf-d3a0-45e2-b965-7ae552ae7125"><con:settings/><con:parameters/><con:method name="Narratives" method="GET" id="9ef9d47e-4a57-4fe0-bec0-4340f9fb66b3"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:omij="http://10.172.253.230/services/v1/narrative/narratives/OMIJIV932485351">omij:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="9b7ac308-de81-4cab-8c71-8827f9e6397e"><con:settings/><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://course-services.stage.cengage.info" type="rest" id="1986b68f-f15a-4753-bbc6-f7cf613aa2cc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Narratives" path="/services/${#Project#version}/narrative/narratives/" id="28988026-f7a2-4de3-b833-d14b716b5aeb"><con:settings/><con:parameters><con:parameter><con:name>ids</con:name><con:value>OMIJIV932485351,CCWGYDN814340854,invalid</con:value><con:style>QUERY</con:style><con:default>OMIJIV932485351,CCWGYDN814340854,invalid</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Narratives" method="GET" id="b6010468-0933-4ef5-b8fb-300c467a1b39"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="c8efe58d-b816-45f1-bf6e-bc627563cbd0"><con:settings/><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ids" value="${#TestCase#narr_id}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ids</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://course-services.stage.cengage.info" type="rest" id="316f19db-7079-4e70-a1c1-ea941f0b30bf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Concepts" path="/services/v1/metadata/course/VKNWXTVMEHZLN5EHD313/chapter/VSYHOX707529696/cgi/YUUFMF715234711/concepts/" id="ef2c72d4-5edc-4689-b9bf-a0e3a4faf424"><con:settings/><con:parameters/><con:method name="Concepts" method="GET" id="03e3a1ef-6f78-4b2c-8dcf-a4050616a363"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Concepts" mediaType="application/json" id="23d69356-d6d9-46c3-a716-d1d8c4bee8dd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.253.230:8181" type="rest" id="873b1160-7020-4fa6-99f4-44784fafaf2c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Roster" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" id="46596553-3a3e-43f0-b47f-6a5f0e9eb8b1"><con:settings/><con:parameters/><con:method name="Roster" method="GET" id="bf263511-c876-427a-a12f-f3c7f084fa74"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:ros="http://course-services.stage.cengage.info/services/v1/courses/AHCHJ6HJTT287HQK6295/roster">ros:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="4b4eb2cb-0d5f-4eb0-8875-bea20969567f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://course-services.stage.cengage.info/services/v1/courses/AHCHJ6HJTT287HQK6295/roster</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://course-services.stage.cengage.info" type="rest" id="0df5726d-35ce-4a98-9e1d-f1ac576d19a5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Roster" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" id="96757a82-518a-4e90-9b4d-15c76e60139e"><con:settings/><con:parameters/><con:method name="Roster" method="GET" id="73a3c412-e58e-4bac-ac3b-e6927821cb39"><con:settings/><con:parameters/><con:request name="Request 1" mediaType="application/json" id="cacccfe6-0200-49b8-9579-7e8e67e730cf"><con:settings/><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://course-services.stage.cengage.info" type="rest" id="89e4f376-34cb-48c8-a963-5583c6f00966" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://course-services.stage.cengage.info</con:endpoint></con:endpoints><con:resource name="Roster" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" id="416ece8d-beec-412a-93f6-823d9eeffa6c"><con:settings/><con:parameters><con:parameter><con:name>role</con:name><con:value>STUDENT</con:value><con:style>QUERY</con:style><con:default>STUDENT</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Roster_Role" method="GET" id="f53c5c18-e3c1-48ff-ba54-71e5efccf3b8"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Roster_Role" mediaType="application/json" id="340ee587-74c7-41d0-be33-ae4c8cb60196"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="role" value="${#TestCase#c_role}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>role</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite name="SOA 4LTR PSYCH4 Course Variant ProjectTestSuite" id="e0b377c7-051a-4d6a-8a79-2f62fd6373cf"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR - Course Self Information" searchProperties="true" id="ee7fe263-c81d-4b88-8981-ba463ce3771b"><con:settings/><con:testStep type="groovy" name="4LTR Course Self Groovy" id="a85408cd-2b69-42f7-ae76-bb36599691ab"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,2).getContents() 
+
+//c_info = objSheet.getCell(3,3).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi) 	  	
+
+testRunner.testCase.setPropertyValue("c_cgi", c_cgi) 	 
+
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Course Self" id="a90c1a92-7a3e-44bd-945b-6a4a96f13bf6"><con:settings/><con:config service="https://course-services.int.cengage.info" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}" methodName="DECR00XWG2W0SJPSE949" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Course Self" mediaType="application/json" id="ecf0ad33-209c-45c9-a75e-7b00e9f9c73c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949</con:originalUri><con:assertion type="Simple Contains" name="Valdiate - metadata" id="9500ac5b-1267-4501-8c25-bc89c810f0c4"><con:configuration><token>metadata</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Validate - Learning Path" id="57d6c0f4-9494-41f8-98ed-2d673393a9f4"><con:configuration><token>learning-path</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Valdiate - Providers" id="39a54b2b-3be5-4626-ba9b-014e63487c59"><con:configuration><token>providers</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Validate - SLA 1000" id="bc3dd6bf-b5b3-4177-aae8-cfcf7c8baf21"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes 200" id="64e29d13-6764-492c-978d-edf435f37980"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" name="Invalid HTTP Status Codes 400" id="b8175dfb-5f5b-48fc-bd47-ce2e1355512e"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Providers" searchProperties="true" id="fc4a092a-0b20-4eac-b257-7c05e073f0c4"><con:settings/><con:testStep type="groovy" name="4LTR Providers Groovy" id="971f9f46-c500-47cc-b4ce-57aa04c828c8"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,3).getContents() 
+
+c_info = objSheet.getCell(3,3).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Providers" id="c4d35fdf-905e-434a-bcc7-66aea375770c"><con:settings/><con:config service="https://course-services.int.cengage.info" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" methodName="Providers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Providers" mediaType="application/json" id="580876e4-aab4-4f1c-96bd-89903209b1b9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949/providers</con:originalUri><con:assertion type="Simple Contains" name="Contains" id="56c5bff7-451a-4745-9266-a542fd31137e"><con:configuration><token>providerName</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Provider Version" id="4c6fdd0b-94fb-43a1-b098-49b75cbff1fc"><con:configuration><token>providerVersion</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="referenceid" id="f8eb7e92-9170-4598-9262-5bde0cbda2ee"><con:configuration><token>referenceid</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="88dea30c-5847-4317-9803-38a8b2855b6c"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" name="Invalid HTTP Status Codes" id="bfd634eb-4169-4d04-82da-7edd840587b6"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="9c11dd1d-27da-43a5-a99d-a017b8ccbb3e"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property><con:property><con:name>c_info</con:name><con:value>providers</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Providers Metadata" searchProperties="true" id="89bdb047-ebde-48f7-bdc8-14fae89dd658"><con:settings/><con:testStep type="groovy" name="4LTR Metadata Groovy" id="60d91490-dcee-4956-88f4-6f6870cb2be7"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,4).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Metadata" id="992f76db-f2d2-4095-90d2-dbe5a5aabbbc"><con:settings/><con:config service="https://course-services.int.cengage.info" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" methodName="Providers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Metadata" mediaType="application/json" id="b53db5c9-50af-49fc-931b-ba45b7217121"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>https://course-services.int.cengage.info/services/v1/courses/DECR00XWG2W0SJPSE949/providers</con:originalUri><con:assertion type="Simple Contains" name="Author - Valid" id="4891e1b4-993f-4156-9cdd-9f8b0e916b4d"><con:configuration><token>author</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="copyrightyear  - Valid" id="eaef8eea-82e8-497d-8aed-c050560ffc28"><con:configuration><token>copyrightYear</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="ea0dd44f-2acf-4018-8375-d44172649df3"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" name="Invalid HTTP Status Codes" id="1c7a0523-55f9-48e2-8966-2620c211c886"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="ee53db73-ba92-4395-ac57-c7e60312e326"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="CoreText" id="1718f4a1-9166-4034-88f0-1562a84843df"><con:configuration><token>coreText</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="SSO - Valid" id="eaf0f5ee-587b-493b-b64e-b214d3e81fae"><con:configuration><token>SSO</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="displayName" id="8b56cb6a-4a8b-4594-9767-c2bc6b5115dc"><con:configuration><token>displayName</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property><con:property><con:name>c_info</con:name><con:value>metadata</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Navigation Learning Path" searchProperties="true" id="b4fed1da-fe0d-4e51-9284-0fb6f2610406"><con:settings/><con:testStep type="groovy" name="Navigation LP Groovy" id="15cf929f-3ce3-441b-8810-92f54a38618c"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,4).getContents() 
+
+nav_id = objSheet.getCell(2,7).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("LearningPath Nav_id : " + nav_id)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("nav_id", nav_id)	
+
+//testRunner.runTestStepByName("Navigation LearningPath")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Navigation LearningPath" id="88f15ee6-9fc9-4aba-b347-32a02b1c906c"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/navigations/${#TestCase#nav_id}" methodName="MZZZM80K8F2A2CHC9418" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Navigation LearningPath" mediaType="application/json" id="ea84f6fe-2668-46bc-90d4-7265e73c71c0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="55424f1e-5e92-4211-b676-6a37ab95ebec"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_parentId" id="c4db0c57-4d50-465c-9441-8a009819121b"><con:configuration><token>parentId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_suppressed" id="cf94c7d8-3a6e-43c4-b88e-612ba6da4b35"><con:configuration><token>suppressed</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_ordinal" id="6ebd7af5-f10c-4165-a821-a7cd0057abfc"><con:configuration><token>ordinal</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_nodeType" id="1670cdf3-5ab4-4849-a527-2ea1bba88a1e"><con:configuration><token>nodeType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="122fa738-4306-417d-95da-3a393fa26f68"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property><con:property><con:name>nav_id</con:name><con:value>RRVQLWLVS35KH53PU104</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Activity Level1" searchProperties="true" id="067b963f-a2f0-4fd7-9dbd-3ae8d0c358e8"><con:settings/><con:testStep type="groovy" name="4LTR Activity Level1 Groovy" id="d8cab88f-73a4-4656-b204-6a5097207d51"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,4).getContents() 
+
+act_l1 = objSheet.getCell(2,13).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Activity Level1 : " + act_l1)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("act_l1", act_l1)	
+
+//testRunner.runTestStepByName("Navigation Assessment")  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Activity Level1" id="ef8dd1d0-8992-417d-8e7e-03734541f0ed"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/activities/${#TestCase#act_l1}" methodName="VSYHOX7075296" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Activity Level1" mediaType="application/json" id="e7886312-f630-4782-88a7-652eb9f0371c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses//activities/</con:originalUri><con:assertion type="Simple Contains" name="Contains_previewItems" id="0261b498-1a10-4d7f-be20-fd6315b28470"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_level" id="20e649de-080c-4ae1-86f0-3aad3ac5bef2"><con:configuration><token>activity</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_componentDefinition" id="0e44a08d-63f3-43b6-a7ac-9af844a80746"><con:configuration><token>componentDefinition</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_componentType" id="1bcf40ed-961e-4515-9057-787810ff23f2"><con:configuration><token>componentType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="eb6a6d20-7637-4591-86cb-a0f00c4295bd"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="a7c1ba45-c4b9-4a86-a643-64fd41a26d08"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property><con:property><con:name>act_l1</con:name><con:value>ZKMH9GR5UFHVSCA66305</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Syllabus" searchProperties="true" id="b17221ea-4396-48bf-9997-a8ad2ab145d3"><con:description/><con:settings/><con:testStep type="groovy" name="4LTR Syllabus Groovy" id="a8ccbad9-8f7c-46a1-9252-b30dac6ccd29"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,34).getContents() 
+
+c_info = objSheet.getCell(3,35).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Syllabus" id="23ab7b60-861b-48f2-8f59-788c1d25b1ad"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" methodName="Roster" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Syllabus" mediaType="application/json" id="63353115-5ae4-4087-86ac-d50650871e26"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses/AHCHJ6HJTT287HQK6295/roster</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="5fc1a990-78df-4fd6-bf2b-8d2aee95b41b"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains" id="24926db2-1f08-4cbc-8ff8-08b833a51e42"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_courseGroup" id="a616bd79-1d57-4ac2-ae2a-684f70a4ef39"><con:configuration><token>courseGroup</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="2985df75-ce83-40a3-b2a7-5081b752ed89"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_schemaVersion" id="e1f99bfa-a75c-40a8-bbbc-4b6c64dafe15"><con:configuration><token>schemaVersion</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>JKUMWT3U5T1ZFM860039</con:value></con:property><con:property><con:name>c_info</con:name><con:value>syllabus</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Roster" searchProperties="true" id="65fd13c3-f1a3-4747-860a-cd02c471b93f"><con:description/><con:settings/><con:testStep type="groovy" name="4LTR Roster Groovy" id="3bee5d32-4c46-48d8-96ff-cffbfc31cb35"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,34).getContents() 
+
+c_info = objSheet.getCell(3,34).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Roster" id="75ea15c3-2618-437a-ae31-5dbbc68365d8"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" methodName="Roster" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Roster" mediaType="application/json" id="8ff3eb80-2e55-4ae8-89a8-52979ba9383e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses/AHCHJ6HJTT287HQK6295/roster</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="33507c44-cc0f-42e8-beab-04da44afbee2"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains" id="2afde75e-4747-49fd-ace9-5013182c8569"><con:configuration><token>guid</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_FirstName" id="6ca6e154-17f5-4dbd-a6c7-a2942b208f34"><con:configuration><token>firstName</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_lastName" id="6c5aad8d-1b56-41c6-9189-ca508058db62"><con:configuration><token>lastName</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="ebb12b23-78a9-4abf-b4b7-5bbff22331ff"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_userType" id="86db82b3-c82c-46af-9444-ee8d1fe885a7"><con:configuration><token>userType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>JKUMWT3U5T1ZFM860039</con:value></con:property><con:property><con:name>c_info</con:name><con:value>roster</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR All Student in Course" searchProperties="true" id="68393adc-f05c-47d4-b170-cca7d89503ae"><con:settings/><con:testStep type="groovy" name="4LTR Student Roster Groovy" id="7f0cccc6-1967-4633-b277-80bd5fe74830"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,34).getContents() 
+
+c_info = objSheet.getCell(3,34).getContents() 	
+
+c_role = objSheet.getCell(4,34).getContents() 
+
+
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Course specific Information: " + c_info)
+     log.info("Course specific Information: " + c_role)
+      
+      
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+testRunner.testCase.setPropertyValue("c_role", c_role)
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Roster Student Information" id="5c52f115-acb8-444b-9803-486482ffffca"><con:settings/><con:config service="http://course-services.stage.cengage.info" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" methodName="Roster_Role" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Roster Student Information" mediaType="application/json" id="706fd3a2-6e20-439c-af96-3a673ede0727"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://course-services.stage.cengage.info/services/v1/courses/VKNWXTVMEHZLN5EHD313/roster</con:originalUri><con:assertion type="Simple Contains" name="Contains_student" id="9d286c80-9ba7-4fb6-847a-4b47818988a4"><con:configuration><token>STUDENT</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="Not Contains" id="e389b8b1-70f9-4eea-9e52-ec08db815762"><con:configuration><token>INSTRUCTOR</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="76e60ded-9732-457f-b796-aca86f8b24bb"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="f49afaa2-050b-4c15-8276-962f70094ce7"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="guid" id="44576eee-1eb3-46b8-b76c-2a4f3e9e3126"><con:configuration><token>guid</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_email" id="b2f15c9b-59c2-4de6-bdb3-90a5471874fd"><con:configuration><token>email</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="role" value="${#TestCase#c_role}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>role</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>JKUMWT3U5T1ZFM860039</con:value></con:property><con:property><con:name>c_info</con:name><con:value>roster</con:value></con:property><con:property><con:name>c_role</con:name><con:value>STUDENT</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR All Instructor in Course" searchProperties="true" id="5346710c-b934-463b-8eb0-81f4c59643f9"><con:settings/><con:testStep type="groovy" name="4LTR Instructor Roster Groovy" id="2747c0a2-9f13-40fe-b329-8bced371b5d9"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,34).getContents() 
+
+c_info = objSheet.getCell(3,34).getContents() 	
+
+c_role = objSheet.getCell(4,35).getContents() 
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Course specific Information: " + c_info)
+log.info("Course specific Information: " + c_role)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+	testRunner.testCase.setPropertyValue("c_role", c_role)
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Roster Instructor Information" id="94630c59-f4b0-4b72-9058-7594ca4b9c7c"><con:settings/><con:config service="http://course-services.stage.cengage.info" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/${#TestCase#c_info}" methodName="Roster_Role" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Roster Instructor Information" mediaType="application/json" id="38c470c8-f01b-4486-8f73-9a9379f33174"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://course-services.stage.cengage.info/services/v1/courses/VKNWXTVMEHZLN5EHD313/roster</con:originalUri><con:assertion type="Simple Contains" name="Contains_instructor" id="951ac3a4-ecfe-443a-8ab1-4a57d912ca32"><con:configuration><token>INSTRUCTOR</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="Not Contains_student" id="8609920c-db6c-4244-967e-73bb1611cb79"><con:configuration><token>STUDENT</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="fcac81be-1c80-48ff-bc1d-1a3defebea9f"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="43bddc28-4d06-4266-a7e7-25f0c2dcd2b5"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="guid" id="49e1c369-7246-4d30-8048-692fb8ef5399"><con:configuration><token>guid</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="role" value="${#TestCase#c_role}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>role</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>JKUMWT3U5T1ZFM860039</con:value></con:property><con:property><con:name>c_info</con:name><con:value>roster</con:value></con:property><con:property><con:name>c_role</con:name><con:value>INSTRUCTOR</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Navigation Assessments" searchProperties="true" disabled="true" id="954a068a-aeef-4404-a325-31abc0f856af"><con:settings/><con:testStep type="groovy" name="Navigation Assessment Groovy" id="77726fc0-2748-4afa-97c1-bd8336a0fe03"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,4).getContents() 
+
+nav_id = objSheet.getCell(2,8).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("LearningPath Nav_id : " + nav_id)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("nav_id", nav_id)	
+
+//testRunner.runTestStepByName("Navigation Assessment")  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Navigation Assessment" id="5192818c-a0b5-4c4b-970b-6601d3bbc519"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/navigations/${#TestCase#nav_id}" methodName="MZZZM80K8F2A2CHC9418" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Navigation Assessment" mediaType="application/json" id="eb0472ca-a821-4164-879e-f5414aa71dfc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="2b5a1b83-043f-4d53-8be9-7c87e29cd76e"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_parentId" id="978e1acb-de7b-47aa-88a6-24c758f8d790"><con:configuration><token>parentId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_suppressed" id="6843dadc-8f78-44b8-89b2-4e421917edb5"><con:configuration><token>suppressed</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assessment" id="3c486b42-d98d-4ea2-b592-d01e3c07c30b"><con:configuration><token>assessment</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_nodeType" id="e428c630-49e9-4549-9463-bf8658fe62cf"><con:configuration><token>nodeType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="aa95f50f-afa5-4c49-8a3c-5e9ccc14641c"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property><con:property><con:name>nav_id</con:name><con:value>WZWUGF2PVZBGPATQ8732</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4LTR Activity Level2" searchProperties="true" disabled="true" id="c7a755d0-d3b9-4bba-a32f-49ec13a584e7"><con:settings/><con:testStep type="groovy" name="4LTR Activity Level2 Groovy" id="c8c7193d-4790-466c-b87a-9e5500af17f3"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+c_cgi = objSheet.getCell(2,4).getContents() 
+
+act_l1 = objSheet.getCell(2,15).getContents() 	
+
+log.info("Course Cgi for: " + c_cgi)
+	log.info("Activity Level1 : " + act_l1)
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("act_l1", act_l1)	
+
+//testRunner.runTestStepByName("Navigation Assessment")  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="4LTR Activity Level2" id="53088318-5607-4437-87cd-94cc4df4ed11"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/activities/${#TestCase#act_l1}" methodName="VSYHOX7075296" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="4LTR Activity Level2" mediaType="application/json" id="066ecd43-f77c-492e-91e0-db6b36bd4672"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses//activities/</con:originalUri><con:assertion type="Simple Contains" name="Contains_id" id="dea4889b-e500-4874-90d7-703e7638dba7"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_title" id="9cf3e039-219b-405b-b068-da428dcdb247"><con:configuration><token>title</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_componentDefinition" id="27df5f84-9eea-41be-b286-7b012b391f87"><con:configuration><token>componentDefinition</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_componentType" id="06c3c91d-a659-4f4d-ace1-cb2feef82f51"><con:configuration><token>componentType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="2663ae8c-2304-46ae-9b07-380fc04093c5"><con:configuration><SLA>1500</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="8f48450d-8d6a-4df1-b08b-ff17e26f53c5"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>VKNWXTVMEHZLN5EHD313</con:value></con:property><con:property><con:name>act_l1</con:name><con:value>AUCG42MNG445XMRPK140</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Learning Objective" searchProperties="true" disabled="true" id="5807c979-9274-4a1e-9d62-b4f4addeee9a"><con:settings/><con:testStep type="groovy" name="LearningObj. Groovy" id="71d7a32a-65d3-4d6b-91b1-1245efadc40f"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(2,12).getContents() 	
+type_id = objSheet.getCell(2,29).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)		 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Chapter Learning Objectives" id="93059503-c38a-44b4-9732-d542f70078b7"><con:settings/><con:config service="http://course-services.stage.cengage.info" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/" methodName="Learningobjective" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Chapter Learning Objectives" mediaType="application/json" id="33a3f38a-72d4-47bc-9871-c60776a7387c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://course-services.stage.cengage.info/services/v1/metadata/course/VKNWXTVMEHZLN5EHD313/chapter/VSYHOX707529696/learningobjective/</con:originalUri><con:assertion type="Response SLA Assertion" name="Response SLA" id="45f816d6-f320-41c7-89b0-cdb9d1908f49"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="b27758fd-7ba1-4f62-8d02-91a9f7dabfaf"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_id" id="40ccbbaf-2c65-4bc5-9525-1574eeb10782"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type" id="c63605c5-65f6-4def-bf28-f3f87e7936a6"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_nodeType" id="4f5db700-0ac1-4c38-8426-e0b324f0d744"><con:configuration><token>nodeType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_description" id="85053cd9-81d6-4d62-b87e-7c8dfa681d24"><con:configuration><token>description</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>KCWT2DJC036WW4DHD577</con:value></con:property><con:property><con:name>cdft_cgi</con:name><con:value>MJCZWPDJQMFGKVX8R464</con:value></con:property><con:property><con:name>type_id</con:name><con:value>learningobjective</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Concepts" searchProperties="true" disabled="true" id="ae921816-d3e1-42e1-aad0-a01bcf7bd761"><con:settings/><con:testStep type="groovy" name="Concepts Groovy" id="8f0bf8f2-bc9d-464c-9f94-9e28ee8db7a0"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(3,30).getContents() 	
+c_cgi1 = objSheet.getCell(4,30).getContents()
+type_id = objSheet.getCell(2,30).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Sub-Chapter Cgi: " + c_cgi1)	
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi1", c_cgi1)			 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Chapter - Concepts" id="ff3562e6-cb84-4184-922b-490b84a742bc"><con:settings/><con:config service="http://course-services.stage.cengage.info" resourcePath="/services/v1/metadata/course/VKNWXTVMEHZLN5EHD313/chapter/VSYHOX707529696/cgi/YUUFMF715234711/concepts/" methodName="Concepts" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Chapter - Concepts" mediaType="application/json" id="8ebef59c-44d6-46a7-a32e-d3301635e238"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://course-services.stage.cengage.info/services/v1/metadata/course/VKNWXTVMEHZLN5EHD313/chapter/VSYHOX707529696/cgi/YUUFMF715234711/concepts/</con:originalUri><con:assertion type="Simple Contains" name="Contains_id" id="d73ce82a-864c-437b-9f02-d9fc23de2732"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type" id="5732fee1-af26-4d60-bdfd-26de10e1914d"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_nodeType" id="a811506e-8121-4135-be80-167e2f42eb2a"><con:configuration><token>nodeType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_description" id="10783125-fc20-4749-97b2-13c1f0a3fc42"><con:configuration><token>description</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="740834a7-34be-4ae3-a389-c47eb7956612"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="f0208b99-e696-4e71-9ee3-f489b686419b"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>cdft_cgi</con:name><con:value>VKNWXTVMEHZLN5EHD313</con:value></con:property><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>c_cgi1</con:name><con:value>YUUFMF715234711</con:value></con:property><con:property><con:name>type_id</con:name><con:value>concepts</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single Narrative ID Retrival" searchProperties="true" disabled="true" id="8456d07c-c7e3-49f6-b693-c110916ffce2"><con:settings/><con:testStep type="groovy" name="Narrative Groovy" id="8b02db2c-3c16-4d31-a255-5e4a4550d9c3"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+	
+narr_id = objSheet.getCell(2,18).getContents() 	
+
+log.info("Narrative ID: " + narr_id)
+			 
+	testRunner.testCase.setPropertyValue("narr_id", narr_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Retrive Single Narratives ID" id="c0fae7b8-4503-4d93-97aa-0ebddbaf0127"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/narrative/narratives/${#TestCase#narr_id}" methodName="Narratives" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Retrive Single Narratives ID" mediaType="application/json" id="31e48d88-a936-4cfc-a7cf-432057c12246"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/narrative/narratives/OMIJIV932485351</con:originalUri><con:assertion type="Simple Contains" name="Contains_id" id="a829c3a9-d367-4eab-bb88-3d106c6773bc"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_transformType" id="1b2835b9-9390-4329-8fd6-8551c7b0b98d"><con:configuration><token>transformType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains" id="4744c9d3-e19b-40ef-8a96-0e486b495783"><con:configuration><token>content</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="d83c014c-85ba-4495-b9ea-4cf840501450"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="c4ce2d0d-5707-42a1-99f2-9004f4a26e54"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>narr_id</con:name><con:value>OMIJIV932485351</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Multiple Narrative ID's retrival" searchProperties="true" disabled="true" id="510846ab-3b72-44d8-991a-8b802b82568f"><con:settings/><con:testStep type="groovy" name="Multiple Narrative Groovy" id="ceaee3d5-912b-4a24-9610-285d485e50be"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+	
+narr_id = objSheet.getCell(2,19).getContents() 	
+
+log.info("Narrative ID: " + narr_id)
+			 
+	testRunner.testCase.setPropertyValue("narr_id", narr_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Multiple Narratives ID's" id="b937c4b4-a032-46a4-91fa-45331a5eb934"><con:settings/><con:config service="http://course-services.stage.cengage.info" resourcePath="/services/${#Project#version}/narrative/narratives/" methodName="Narratives" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Multiple Narratives ID's" mediaType="application/json" id="e7756f31-b56d-4b69-9780-34f5caaa0988"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://course-services.stage.cengage.info</con:endpoint><con:request/><con:originalUri>http://course-services.stage.cengage.info/services/v1/narrative/narratives/</con:originalUri><con:assertion type="Simple Contains" name="Contains_id" id="be6f09de-2dc8-4c62-85be-1e78feb8834d"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_transformType" id="c8a627e9-5869-4870-afb3-d4e182d013e6"><con:configuration><token>transformType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains" id="0b425a7f-15e3-464d-a703-5eef29db0c73"><con:configuration><token>content</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="deacbf35-b027-480e-a6e6-7428a7d7240f"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" id="7c6704e3-3a7b-46ac-aefd-e16586852222"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ids" value="${#TestCase#narr_id}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ids</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>narr_id</con:name><con:value>OMIJIV932485351,CWGYDN814340854,invalid</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/Users/mindtap/source/SOAPUI/Data/SoapUI_INT_4LTR_PSYCH4_Variant.xls</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
