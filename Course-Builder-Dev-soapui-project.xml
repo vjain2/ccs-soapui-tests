@@ -24,7 +24,7 @@
   <con:entry key="TestCase" value="Activity_Creation/Deletion/Updation"/>
   <con:entry key="Print Report" value="false"/>
   <con:entry key="Username" value=""/>
-  <con:entry key="Root Folder" value="/opt/code/ccs-soapui-tests/Reports"/>
+  <con:entry key="Root Folder" value="/opt/code/Reports"/>
   <con:entry key="Save After" value="false"/>
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="Endpoint" value=""/>
