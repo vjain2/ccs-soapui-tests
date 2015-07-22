@@ -14,7 +14,7 @@ defolruser=vinay.thakur@contractor.cengage.com
 OLRUSER=${5-$defolruser}
 defolrpass=Techizen_123
 OLRPASS=${6-$defolrpass}
-defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_DEV_CCS.xls
+defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_INT_CCS.xls
 XLS=${7-$defxls}
 #-Denv.XLS=$XLS
 
