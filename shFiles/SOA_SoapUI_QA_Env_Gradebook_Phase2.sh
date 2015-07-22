@@ -1,5 +1,5 @@
-cd /opt/code/ccs-soapui-tests/
-git pull
+#cd /opt/code/ccs-soapui-tests/
+#git pull
 
 defhost=localhost
 HOST=${1-$defhost}
