@@ -24,7 +24,7 @@
   <con:entry key="TestCase" value="&lt;all>"/>
   <con:entry key="Print Report" value="false"/>
   <con:entry key="Username" value=""/>
-  <con:entry key="Root Folder" value="/Users/mindtap/source/SOAPUI/Data/Reports"/>
+  <con:entry key="Root Folder" value="/opt/code/Reports"/>
   <con:entry key="Save After" value="false"/>
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="Endpoint" value=""/>
@@ -2318,4 +2318,4 @@ log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText
          <ns4:uid>4LTR-Dev-Inst@cengage.com</ns4:uid>
       </ns5:getTokenResponse>
    </soap:Body>
-</soap:Envelope>]]></con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/Users/mindtap/SOAPUI/ccs-soapui-tests/Data/SoapUI_Gradebook_int_Phase_2.xls</con:value></con:property><con:property><con:name>Token</con:name><con:value>A142B3FEC7807342D2D99F76F7510AD013C0782D642BF26F32681ACDE7049AE7175234E8B6F1487E756EBA0F372854D831EDAE345F78C07F7C2A466D6E0B475696FBB5C500F750BD</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soap:Envelope>]]></con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/opt/code/ccs-soapui-tests/Data/SoapUI_Gradebook_int_Phase_2.xls</con:value></con:property><con:property><con:name>Token</con:name><con:value>A142B3FEC7807342D2D99F76F7510AD013C0782D642BF26F32681ACDE7049AE7175234E8B6F1487E756EBA0F372854D831EDAE345F78C07F7C2A466D6E0B475696FBB5C500F750BD</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
