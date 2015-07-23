@@ -5,5 +5,5 @@ XLS1=${7-$defxls1}
 
 
 echo Running SOAPUI TestSuite on: $HOST
-sh testrunner.sh -e$HOST -s "EDMS_GB_Term_Assets_PreProd" -PXLPath=$XLS1 -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOAPUI_QA_EDMSL2_GB_PreProd-soapui-project.xml
+sh testrunner.sh -e$HOST -s"EDMS_GB_Term_Assets" -PXLPath=$XLS1 -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOAPUI_QA_EDMSL2_GB_PreProd-soapui-project.xml
 
