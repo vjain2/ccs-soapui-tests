@@ -24,7 +24,7 @@
   <con:entry key="TestCase" value="&lt;all>"/>
   <con:entry key="Print Report" value="false"/>
   <con:entry key="Username" value=""/>
-  <con:entry key="Root Folder" value="/Users/mindtap/SOAPUI/Reports"/>
+  <con:entry key="Root Folder" value="/opt/code/Reports"/>
   <con:entry key="Save After" value="false"/>
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="Endpoint" value=""/>
@@ -251,4 +251,4 @@ log.info("**************************Count get decrease by one after deleting,Now
 
 log.info("**************************Activity Deleted Sucessfully **********************************************************")
 
-log.info("*******************************************************************************************************************")</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Course_Cgi</con:name><con:value>XTWW6NX65UKU2JZG0031</con:value></con:property><con:property><con:name>navigationId</con:name><con:value>PWBQME4Z8UELZ7G7W841</con:value></con:property><con:property><con:name>activity_id</con:name><con:value>YFRDB5EQEF0CQ30HU844</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/Users/mindtap/SOAPUI/ccs-soapui-tests/Data/SOAP_UI_Course_Builder.xls</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+log.info("*******************************************************************************************************************")</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Course_Cgi</con:name><con:value>XTWW6NX65UKU2JZG0031</con:value></con:property><con:property><con:name>navigationId</con:name><con:value>PWBQME4Z8UELZ7G7W841</con:value></con:property><con:property><con:name>activity_id</con:name><con:value>YFRDB5EQEF0CQ30HU844</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/opt/code/ccs-soapui-tests/Data/SOAP_UI_Course_Builder.xls</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
