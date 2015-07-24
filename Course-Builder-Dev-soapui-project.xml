@@ -24,7 +24,7 @@
   <con:entry key="TestCase" value="Activity_Creation/Deletion/Updation"/>
   <con:entry key="Print Report" value="false"/>
   <con:entry key="Username" value=""/>
-  <con:entry key="Root Folder" value="C:\Users\vikrant.rana\SOA_Data"/>
+  <con:entry key="Root Folder" value="/opt/code/Reports"/>
   <con:entry key="Save After" value="false"/>
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="Endpoint" value=""/>
@@ -237,7 +237,7 @@ log.info("***********************************************Initilize the Project P
 }</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="e0175a6c-b4a8-418e-9312-9fb7c0e1512e" name="Response SLA"><con:configuration><SLA>50000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="1c86a3ae-edf2-49fc-85a7-d350d3760752" name="Valid HTTP Status Codes"><con:configuration><codes>200
 </codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Reading_NewlyCreated_VarientCGI" id="5761a73f-1101-4e74-b9cc-1a4fb379f835"><con:settings/><con:config><script>def test = context.testCase.getTestStepAt(1).getProperty("Response").getValue()
 testRunner.testCase.testSuite.project.setPropertyValue( "New_Varient", test)
-log.info("**********************************************************Newly Created Varient CGI : $test**********************************************************")</script></con:config></con:testStep><con:testStep type="groovy" name="Set_ProjectProperties_For_Varient_Updation" id="d558ffe8-9767-4da8-9201-d335657a7070"><con:settings/><con:config><script>
+log.info("**********************************************************Newly Created Varient CGI : $test**********************************************************")</script></con:config></con:testStep><con:testStep type="groovy" name="Set_ProjectProperties_For_Varient_Updation" id="d558ffe8-9767-4da8-9201-d335657a7070" disabled="true"><con:settings/><con:config><script>
 def New_Varient1 = context.testCase.getTestStepAt(1).getProperty("Response").getValue()
 log.info("*************************************************New Varient has been Created, Varient CGI: $New_Varient1*************************************************")
 testRunner.testCase.testSuite.project.setPropertyValue("New_Varient",New_Varient1)
@@ -301,7 +301,7 @@ log.info("********************************************************Initilization 
 
 	  
 objWB.close()
-</script></con:config></con:testStep><con:testStep type="restrequest" name="Update_NewlyCreated_Varient_Metadata" id="e4aac231-981f-4bd5-bd39-44457b0fb356"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="DECR00XWG2W0SJPSE949" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update_NewlyCreated_Varient_Metadata" id="0cb9a804-e24b-419e-83e2-f8e866cd0ca7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Update_NewlyCreated_Varient_Metadata" id="e4aac231-981f-4bd5-bd39-44457b0fb356" disabled="true"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="DECR00XWG2W0SJPSE949" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update_NewlyCreated_Varient_Metadata" id="0cb9a804-e24b-419e-83e2-f8e866cd0ca7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
   "editCourseMetadata":
   {
     "deployEnvironment":"${#Project#deployEnvironment}",
@@ -320,7 +320,7 @@ objWB.close()
     }
   }
 }
-</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="dc22224b-73c8-48d2-8448-1120701dcfc7" name="Response SLA" disabled="true"><con:configuration><SLA>8000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="9137df98-d680-4878-b280-49b7e7cd1a1d" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5c189bc7-61d0-42ad-8a0c-e5d61e49cd14" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Activity_Creation/Deletion/Updation" searchProperties="true"><con:settings/><con:testStep type="delay" name="Wait" id="a2a7cbae-f7bb-46e6-b2df-3f87caac0763"><con:settings/><con:config><delay>120000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Newly_Varient_Details" id="0c56f1cd-c247-499b-8d5a-ab49c73e0523"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="AFSJU97SMT3ZQQ805747" resourcePath="/services/${#Project#Version}/courses/${#Project#New_Varient}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Newly_Varient_Details" id="f6510a10-5a56-466f-9168-06ba7dad1f84" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#EndPoint1}</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses/XEXFQ22S3G1026RDA238</con:originalUri><con:assertion type="Response SLA Assertion" id="da4a4f81-ead3-4802-82a0-31adb1cb756f" name="Response SLA"><con:configuration><SLA>5000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" id="f3a9761d-d7c7-4326-91d4-d31d35ad39e1" name="Contains"><con:configuration><token>navigations</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7b22b604-9c11-4cf0-93f5-67f6a8c98b77" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Get_Navigation_ID" id="a926b134-9c15-4d53-97c5-97a86cfc8690"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="dc22224b-73c8-48d2-8448-1120701dcfc7" name="Response SLA" disabled="true"><con:configuration><SLA>8000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="9137df98-d680-4878-b280-49b7e7cd1a1d" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5c189bc7-61d0-42ad-8a0c-e5d61e49cd14" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Activity_Creation/Deletion/Updation" searchProperties="true"><con:settings/><con:testStep type="delay" name="Wait" id="a2a7cbae-f7bb-46e6-b2df-3f87caac0763"><con:settings/><con:config><delay>60000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Newly_Varient_Details" id="0c56f1cd-c247-499b-8d5a-ab49c73e0523"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="AFSJU97SMT3ZQQ805747" resourcePath="/services/${#Project#Version}/courses/${#Project#New_Varient}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Newly_Varient_Details" id="f6510a10-5a56-466f-9168-06ba7dad1f84" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#EndPoint1}</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/courses/XEXFQ22S3G1026RDA238</con:originalUri><con:assertion type="Response SLA Assertion" id="da4a4f81-ead3-4802-82a0-31adb1cb756f" name="Response SLA"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" id="f3a9761d-d7c7-4326-91d4-d31d35ad39e1" name="Contains"><con:configuration><token>navigations</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7b22b604-9c11-4cf0-93f5-67f6a8c98b77" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Get_Navigation_ID" id="a926b134-9c15-4d53-97c5-97a86cfc8690"><con:settings/><con:config><script>import groovy.json.JsonSlurper
 def slurper = new JsonSlurper()
 def response = context.expand('${Newly_Varient_Details#Response}')
 def jsonRes = slurper.parseText(response)
@@ -436,22 +436,21 @@ objWB.close()
     }
 }
 </con:request><con:originalUri>http://coursebuilder.dev.cengage.info/</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c680d4be-76b5-47e1-a478-5d240b653554" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
-log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="63884ce3-91b7-4623-89ba-bb36944f01e2" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="39fd810d-e80c-44a0-8284-51dd3de8fa51" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>$#Project#New_Varient</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Count_Total_Activites" id="f7bcc94c-1d3d-4baa-a967-18f4673a27a9"><con:settings/><con:config><script>def count = 0
-
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="63884ce3-91b7-4623-89ba-bb36944f01e2" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="39fd810d-e80c-44a0-8284-51dd3de8fa51" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>$#Project#New_Varient</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="60000" id="fe841f46-8b96-4f4e-8b90-5370b4fbef9c"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:testStep type="groovy" name="Count_Total_Activites" id="f7bcc94c-1d3d-4baa-a967-18f4673a27a9"><con:settings/><con:config><script>def count = 0
+def secondcount= 0
+def activity_id
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+  testRunner.runTestStepByName("Course_Navigation")
 def holder = groovyUtils.getXmlHolder("Course_Navigation#ResponseAsXml")
-
-
 
 for( id in holder['//*:id'] )
 {
-     count = count +1
-	
+ count = count +1
+ 
 }
 //log.info("*************************************Total Exiting Activiites Count : $count******************************************")
 def Total_Count = count.toString()
-testRunner.testCase.setPropertyValue("Activity_Count", Total_Count)
-</script></con:config></con:testStep><con:testStep type="groovy" name="Verify_Created_Activity1_Fetchid" id="b702ed64-011a-43c6-aaef-c06638310825"><con:settings/><con:config><script>Integer secondcount=0
+testRunner.testCase.setPropertyValue("Activity_Count", Total_Count)</script></con:config></con:testStep><con:testStep type="groovy" name="Verify_Created_Activity1_Fetchid" id="b702ed64-011a-43c6-aaef-c06638310825" disabled="true"><con:settings/><con:config><script>Integer secondcount=0
 def activity_id
 sleep(new Random().nextInt(10) * 1000)
 def prevValue = testRunner.testCase.getPropertyValue("Activity_Count").toInteger()
@@ -482,10 +481,27 @@ for( id in holder['//*:id'] )
 	activity_id = "$id"
 	}
 	
-log.info("********************************************Newly Added Activity_ID: $activity_id********************************************")
+//log.info("********************************************Newly Added Activity_ID: $activity_id********************************************")
 testRunner.testCase.setPropertyValue("Activity1", activity_id)
 
-</script></con:config></con:testStep><con:testStep type="groovy" name="Initialize_Json_Parameter_For_ActivityCreation 1" id="ebf1aa75-451c-4034-a89c-345de9ae01ee"><con:settings/><con:config><script>long epoch = System.currentTimeMillis()/1000;
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="8f4a34cf-c984-466a-9a0f-32fb4ead3662"><con:settings/><con:config><script>Integer secondcount=0
+def activity_id3
+def activity_id4
+def activity_id5
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def holder = groovyUtils.getXmlHolder("Course_Navigation#ResponseAsXml")
+newValue = testRunner.testCase.getPropertyValue("Activity_Count").toInteger()
+for( id in holder['//*:id'] )
+{
+	secondcount= secondcount+1
+	if(secondcount== newValue-1)
+	activity_id = "$id"
+	}
+	
+
+testRunner.testCase.setPropertyValue("Activity1", activity_id)
+log.info("***************Activity Added Successfully : $activity_id*******************")</script></con:config></con:testStep><con:testStep type="groovy" name="Initialize_Json_Parameter_For_ActivityCreation2" id="ebf1aa75-451c-4034-a89c-345de9ae01ee"><con:settings/><con:config><script>long epoch = System.currentTimeMillis()/1000;
 String adfid = "CasAdFid_" + epoch;
 String title = "Activity_Added_Automation_" + epoch;
 String discription = "Description_" + epoch;
@@ -583,7 +599,7 @@ objWB.close()
         }
     }
 }
-</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/XEXFQ22S3G1026RDA238</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>$#Project#New_Varient</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Verify_Created_Activity2_Fetchid" id="162df272-d5b0-466c-b9c9-18eb55c440f2"><con:settings/><con:config><script>Integer secondcount=0
+</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/XEXFQ22S3G1026RDA238</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ac8a5d55-c091-4c9d-993d-596afce4684a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f654f931-bf66-4a8e-9a31-26b613862998" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>$#Project#New_Varient</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Verify_Created_Activity2_Fetchid" id="162df272-d5b0-466c-b9c9-18eb55c440f2"><con:settings/><con:config><script>Integer secondcount=0
 def activity_id
 sleep(new Random().nextInt(10) * 1000)
 def prevValue = testRunner.testCase.getPropertyValue("Activity_Count").toInteger()
@@ -616,7 +632,7 @@ log.info("********************************************Newly Added Activity_ID: $
 testRunner.testCase.setPropertyValue("Activity2", activity_id)
 testRunner.testCase.setPropertyValue("Activity_Count",Updatedcount)
 
-</script></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity2" id="1e5bb34f-f470-4bb4-87a3-4b631c7b519e" disabled="true"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity2" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity2" id="1e5bb34f-f470-4bb4-87a3-4b631c7b519e"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity2" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
                 "removeActivityFromCourse" : {                  
                   "deployEnvironment" : "${#Project#deployEnvironment}",
                   "location" : {
@@ -626,7 +642,7 @@ testRunner.testCase.setPropertyValue("Activity_Count",Updatedcount)
                 }
 }
 </con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="74c79340-ce55-4165-a9c5-4465c117d04c" name="Response SLA"><con:configuration><SLA>20000</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="1d69d1ea-cefd-48a4-901d-1674ba17394f" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
-log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="300f0b41-ffa9-4ba8-987c-030369293523" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Verify_Deleted_Activity2" id="f4a16dcc-9e41-4aeb-af2e-2a6c20e9168e"><con:settings/><con:config><script>Integer secondcount=0
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="300f0b41-ffa9-4ba8-987c-030369293523" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Verify_Deleted_Activity2" id="f4a16dcc-9e41-4aeb-af2e-2a6c20e9168e" disabled="true"><con:settings/><con:config><script>Integer secondcount=0
 def activity_id
 sleep(new Random().nextInt(10) * 1000)
 def prevValue = testRunner.testCase.getPropertyValue("Activity_Count").toInteger()
@@ -644,9 +660,9 @@ testRunner.runTestStepByName("Course_Navigation")
  
 }
 //testRunner.testCase.setPropertyValue("Activity_Count",newValue).toInteger()
-def Updatedcount = testRunner.testCase.getPropertyValue("Activity_Count")
+//def Updatedcount = testRunner.testCase.getPropertyValue("Activity_Count")
 //def Deleted_Activity2 = testRunner.testCase.getPropertyValue("Deleted_Activity2").toString()
-log.info("********************************************Activity  Deleted, Activity count decrease by 1: $Updatedcount********************************************")
+//log.info("********************************************Activity  Deleted, Activity count decrease by 1: $Updatedcount********************************************")
 
 
 
@@ -677,15 +693,16 @@ testRunner.runTestStepByName("Course_Navigation")
  
 }
 
-def Updatedcount = testRunner.testCase.getPropertyValue("Activity_Count")
-log.info("********************************************New Activity Count: $Updatedcount********************************************")
+//def Updatedcount = testRunner.testCase.getPropertyValue("Activity_Count")
+//log.info("********************************************New Activity Count: $Updatedcount********************************************")
 
 
-</script></con:config></con:testStep><con:testStep type="groovy" name="Fetch_Activityid3_SetProperties" id="bfdfae8c-074f-455f-a94c-7640621dbdad"><con:settings/><con:config><script>Integer secondcount=0
+</script></con:config></con:testStep><con:testStep type="groovy" name="Fetch_Activityid5_SetProperties" id="bfdfae8c-074f-455f-a94c-7640621dbdad"><con:settings/><con:config><script>Integer secondcount=0
 def activity_id3
 def activity_id4
 def activity_id5
 
+ testRunner.runTestStepByName("Course_Navigation")
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
 def holder = groovyUtils.getXmlHolder("Course_Navigation#ResponseAsXml")
 newValue = testRunner.testCase.getPropertyValue("Activity_Count").toInteger()
@@ -697,10 +714,11 @@ for( id in holder['//*:id'] )
 	}
 	
 
-testRunner.testCase.setPropertyValue("Activity3", activity_id)
-log.info("***************Actvity3: $activity_id*******************")
+testRunner.testCase.setPropertyValue("Activity5", activity_id)
+log.info("***************Actvity5: $activity_id*******************")
 
-</script></con:config></con:testStep><con:testStep type="groovy" name="Fetch_Activityid4_SetProperties" id="b40744a7-49b0-4c6d-8ab6-f190d70fca9e"><con:settings/><con:config><script>Integer secondcount=0
+</script></con:config></con:testStep><con:testStep type="groovy" name="Fetch_Activityid4_SetProperties" id="b40744a7-49b0-4c6d-8ab6-f190d70fca9e"><con:settings/><con:config><script> testRunner.runTestStepByName("Course_Navigation")
+Integer secondcount=0
 def activity_id3
 def activity_id4
 def activity_id5
@@ -719,7 +737,8 @@ for( id in holder['//*:id'] )
 testRunner.testCase.setPropertyValue("Activity4", activity_id)
 log.info("***************Actvity3: $activity_id*******************")
 
-</script></con:config></con:testStep><con:testStep type="groovy" name="Fetch_Activityid5_SetProperties" id="53c97c6b-b641-4ea5-bf93-374558d802f1"><con:settings/><con:config><script>Integer secondcount=0
+</script></con:config></con:testStep><con:testStep type="groovy" name="Fetch_Activityid3_SetProperties" id="53c97c6b-b641-4ea5-bf93-374558d802f1"><con:settings/><con:config><script> testRunner.runTestStepByName("Course_Navigation")
+Integer secondcount=0
 def activity_id3
 def activity_id4
 def activity_id5
@@ -735,10 +754,10 @@ for( id in holder['//*:id'] )
 	}
 	
 
-testRunner.testCase.setPropertyValue("Activity5", activity_id)
+testRunner.testCase.setPropertyValue("Activity3", activity_id)
 log.info("***************Actvity3: $activity_id*******************")
-
-</script></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity1" id="17c4e4f4-4117-45be-8103-1ecd89c8348d" disabled="true"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity1" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+ 
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity1" id="17c4e4f4-4117-45be-8103-1ecd89c8348d"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity1" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
                 "removeActivityFromCourse" : {                  
                   "deployEnvironment" : "${#Project#deployEnvironment}",
                   "location" : {
@@ -747,7 +766,17 @@ log.info("***************Actvity3: $activity_id*******************")
                   }
                 }
 }
-</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="20a7dd00-f316-44f2-a10f-1421f2c2a04c" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="967cf2dc-9865-48d3-b1a0-c71a37ef0a04" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Set_Parameter_Activity4_updation" id="bcef5bcb-2aed-4935-9293-de0313a095f2"><con:settings/><con:config><script>long epoch = System.currentTimeMillis()/1000;
+</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="20a7dd00-f316-44f2-a10f-1421f2c2a04c" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="967cf2dc-9865-48d3-b1a0-c71a37ef0a04" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity3" id="78ea0a7e-3d4f-49bf-b593-6c022b84fa8c"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity3" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+                "removeActivityFromCourse" : {                  
+                  "deployEnvironment" : "${#Project#deployEnvironment}",
+                  "location" : {
+                    "navigationId" :  "${#TestCase#Navigation_id}",
+                    "activityId" : "${#TestCase#Activity3}"
+                  }
+                }
+}
+</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="39c4c334-eba8-43a2-9d7f-5b75d8a2770e" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="91147551-f163-4753-8f01-3408c8ff1858" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Set_Parameter_Activity4_updation" id="bcef5bcb-2aed-4935-9293-de0313a095f2"><con:settings/><con:config><script>long epoch = System.currentTimeMillis()/1000;
 String adfid = "CasAdFid_" + epoch;
 String title = "Activity_Added_Automation_" + epoch;
 String discription = "Description_" + epoch;
@@ -815,18 +844,7 @@ testRunner.testCase.setPropertyValue("startDate", startDate)
 log.info("********************************************Initilization Done********************************************")
 	  
 objWB.close()
-
-</script></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity3" id="78ea0a7e-3d4f-49bf-b593-6c022b84fa8c" disabled="true"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity3" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
-                "removeActivityFromCourse" : {                  
-                  "deployEnvironment" : "${#Project#deployEnvironment}",
-                  "location" : {
-                    "navigationId" :  "${#TestCase#Navigation_id}",
-                    "activityId" : "${#TestCase#Activity3}"
-                  }
-                }
-}
-</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="39c4c334-eba8-43a2-9d7f-5b75d8a2770e" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="91147551-f163-4753-8f01-3408c8ff1858" name="Valid HTTP Status Codes"><con:configuration><codes>200
-</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Update_Activity_Activity4" id="52baf4fc-57f7-4902-82b7-cb985784fda6"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update_Activity_Activity4" id="0d02b630-86b3-4593-9e4f-e3fcbd1c7d30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+ </script></con:config></con:testStep><con:testStep type="restrequest" name="Update_Activity_Activity4" id="52baf4fc-57f7-4902-82b7-cb985784fda6"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update_Activity_Activity4" id="0d02b630-86b3-4593-9e4f-e3fcbd1c7d30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
     "editActivityInCourse" : {                  
 	  "deployEnvironment" : "${#Project#deployEnvironment}",
 	  "location" : {
@@ -845,12 +863,80 @@ objWB.close()
 	  }
 	}
 }</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/PJZVD0RFBS6CKJ5EE984</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="0c362958-3256-4f1b-af94-b451a05873d5" name="Valid HTTP Status Codes"><con:configuration><codes>200
-</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="48bc6cd7-6b60-406a-b7d2-2bc97044e99d" name="Response SLA"><con:configuration><SLA>20000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Set_Parameter_Activity5_updation" id="6338c3ee-5f7a-40d3-8815-43d0ef6000cf"><con:settings/><con:config><script/></con:config></con:testStep><con:testStep type="restrequest" name="Update_Activity_Activity5" id="e8bf234c-8d42-4df3-aee7-062e84de9b8e"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update_Activity_Activity5" id="0d02b630-86b3-4593-9e4f-e3fcbd1c7d30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="48bc6cd7-6b60-406a-b7d2-2bc97044e99d" name="Response SLA"><con:configuration><SLA>20000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Set_Parameter_Activity5_updation" id="6338c3ee-5f7a-40d3-8815-43d0ef6000cf"><con:settings/><con:config><script>long epoch = System.currentTimeMillis()/1000;
+String adfid = "CasAdFid_" + epoch;
+String title = "Activity_Added_Automation_" + epoch;
+String discription = "Description_" + epoch;
+
+testRunner.testCase.setPropertyValue( "casAdfId" , adfid)
+testRunner.testCase.setPropertyValue( "title" , title)
+testRunner.testCase.setPropertyValue( "description" , discription)
+
+
+log.info("**************************************************************************************************************")
+
+log.info"**************************initializing Activity -  Title Description casAdfId**************************"
+log.info"Caseadfid = $adfid"
+log.info"title = $title"
+log.info"description = $discription"
+
+
+
+import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+
+dueDate = objSheet.getCell(1,7).getContents() 
+gradable = objSheet.getCell(2,7).getContents() 
+isTimed = objSheet.getCell(3,7).getContents() 
+manuallyGraded = objSheet.getCell(4,7).getContents() 
+maxScore = objSheet.getCell(5,7).getContents() 
+maxTakes = objSheet.getCell(6,7).getContents() 
+startDate= objSheet.getCell(7,7).getContents() 
+type = objSheet.getCell(8,7).getContents()
+log.info("********************************************Initilize the Json Parmater By setting the Values in Project Properties********************************************")
+	
+log.info("dueDate: " +dueDate)
+log.info("gradable: " +gradable)
+log.info("isTimed: " +isTimed)
+log.info("manuallyGraded: " +manuallyGraded)
+log.info("maxScore: " +maxScore)
+log.info("maxTakes: " +maxTakes)
+log.info("startDate: " +startDate)
+log.info("type: " +type)
+
+
+testRunner.testCase.setPropertyValue("dueDate", dueDate)
+testRunner.testCase.setPropertyValue("gradable", gradable)
+testRunner.testCase.setPropertyValue("isTimed", isTimed)
+testRunner.testCase.setPropertyValue("manuallyGraded",manuallyGraded)
+testRunner.testCase.setPropertyValue("maxScore", maxScore)
+testRunner.testCase.setPropertyValue("maxTakes", maxTakes)
+testRunner.testCase.setPropertyValue("startDateI", startDate)
+testRunner.testCase.setPropertyValue("type", type)
+testRunner.testCase.setPropertyValue("startDate", startDate)
+log.info("********************************************Initilization Done********************************************")
+	  
+objWB.close()
+ </script></con:config></con:testStep><con:testStep type="restrequest" name="Update_Activity_Activity5" id="e8bf234c-8d42-4df3-aee7-062e84de9b8e"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update_Activity_Activity5" id="0d02b630-86b3-4593-9e4f-e3fcbd1c7d30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
     "editActivityInCourse" : {                  
 	  "deployEnvironment" : "${#Project#deployEnvironment}",
 	  "location" : {
 	    "navigationId" : "${#TestCase#Navigation_id}",
-	    "activityId" : "${#TestCase#Activity4}"
+	    "activityId" : "${#TestCase#Activity5}"
 	  },
 	  "options" : {
 	    "description" : "${#TestCase#description}",
@@ -863,7 +949,7 @@ objWB.close()
 	    "suppressed" : true
 	  }
 	}
-}</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/PJZVD0RFBS6CKJ5EE984</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="45a54068-e1af-40c4-9018-3060865ceb14" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d05c311a-0693-411a-8d4a-f17cf18ec456" name="Response SLA"><con:configuration><SLA>20000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity4" id="8352bc99-7700-414c-bbe9-a1309745b603" disabled="true"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity4" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint1}</con:endpoint><con:request>{
+}</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/PJZVD0RFBS6CKJ5EE984</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="45a54068-e1af-40c4-9018-3060865ceb14" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d05c311a-0693-411a-8d4a-f17cf18ec456" name="Response SLA"><con:configuration><SLA>20000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete_Activity_Activity4" id="423cd221-1959-4c43-bd7b-93be4af3dc7c"><con:settings/><con:config service="http://coursebuilder.dev.cengage.info" resourcePath="/services/coursebuilder/macro/course/${#Project#New_Varient}" methodName="VHTY21FDKMX7Q30L3004" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete_Activity_Activity4" id="9a11360c-c620-4622-b4cd-54276dfa0416" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
                 "removeActivityFromCourse" : {                  
                   "deployEnvironment" : "${#Project#deployEnvironment}",
                   "location" : {
@@ -872,4 +958,5 @@ objWB.close()
                   }
                 }
 }
-</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="60ceecf4-f5e3-4fba-aaf5-8f3a1333a429" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="df48f0c3-69e2-4dec-913e-7f4be99a9774" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>Navigation_id</con:name><con:value>TAPJKNTEFP1UBYNN8266</con:value></con:property><con:property><con:name>casAdfId</con:name><con:value>CasAdFid_1437655393</con:value></con:property><con:property><con:name>title</con:name><con:value>Activity_Added_Automation_1437655393</con:value></con:property><con:property><con:name>description</con:name><con:value>Description_1437655393</con:value></con:property><con:property><con:name>dueDate</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>gradable</con:name><con:value>true</con:value></con:property><con:property><con:name>isTimed</con:name><con:value>false</con:value></con:property><con:property><con:name>manuallyGraded</con:name><con:value>false</con:value></con:property><con:property><con:name>maxScore</con:name><con:value>100</con:value></con:property><con:property><con:name>maxTakes</con:name><con:value>4</con:value></con:property><con:property><con:name>startDate</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>type</con:name><con:value>assessment</con:value></con:property><con:property><con:name>startDateI</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>Activity1</con:name><con:value>ZJVEDP1Z4G1C5VYK3566</con:value></con:property><con:property><con:name>Activity2</con:name><con:value>VJWXYT6HJG8Q6LEB9857</con:value></con:property><con:property><con:name>Activity3</con:name><con:value>AXEDU4LR1YNS5UUGG539</con:value></con:property><con:property><con:name>Activity4</con:name><con:value>QYBGXMNDBBPPPDCJM128</con:value></con:property><con:property><con:name>Activity5</con:name><con:value>GDYEAEX5NSA8J5S6T757</con:value></con:property><con:property><con:name>Activity_Count</con:name><con:value>7</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>CGI</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>New_Varient</con:name><con:value>WQLCZQU56J113ZV1G819</con:value></con:property><con:property><con:name>deployEnvironment</con:name><con:value>dev</con:value></con:property><con:property><con:name>institutionName</con:name><con:value>Ish Instructor</con:value></con:property><con:property><con:name>institutionId</con:name><con:value>5cdc7afabbc6f418:30867170:13d8e896024:-7f9f</con:value></con:property><con:property><con:name>courseName</con:name><con:value>SOATEST_marketing10</con:value></con:property><con:property><con:name>startDate</con:name><con:value>1430240805712</con:value></con:property><con:property><con:name>endDate</con:name><con:value>1435511205712</con:value></con:property><con:property><con:name>section</con:name><con:value>section 1</con:value></con:property><con:property><con:name>instructorId</con:name><con:value>64731a042d3d4492:785204d9:14bc21ed92e:-6a49</con:value></con:property><con:property><con:name>instructorName</con:name><con:value>Vikrant Instructor</con:value></con:property><con:property><con:name>courseTime</con:name><con:value>w-f 9-5</con:value></con:property><con:property><con:name>timeZone</con:name><con:value>American/New York City</con:value></con:property><con:property><con:name>timeZoneCode</con:name><con:value>EDT</con:value></con:property><con:property><con:name>courseSource</con:name><con:value>brain1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>C:\Users\vikrant.rana\Desktop\CBS_Today\Dev_Course_Builder.xls</con:value></con:property><con:property><con:name>dueDate</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>gradable</con:name><con:value>true</con:value></con:property><con:property><con:name>isTimed</con:name><con:value>CENGAGE SALES 2009 - Mason</con:value></con:property><con:property><con:name>manuallyGraded</con:name><con:value>false</con:value></con:property><con:property><con:name>maxScore</con:name><con:value>100</con:value></con:property><con:property><con:name>startDateI</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>type</con:name><con:value>assessment</con:value></con:property><con:property><con:name>activity_id</con:name><con:value>YNHGX6280TQ9RNTN2019</con:value></con:property><con:property><con:name>Newlyadded_Activity1</con:name><con:value>YNHGX6280TQ9RNTN2019</con:value></con:property><con:property><con:name>Version</con:name><con:value>v1</con:value></con:property><con:property><con:name>EndPoint1</con:name><con:value>http://10.172.253.230:8181</con:value></con:property><con:property><con:name>EndPoint2</con:name><con:value>http://coursebuilder.dev.cengage.info</con:value></con:property><con:property><con:name>Course_key</con:name><con:value>SOATEST_1437654978</con:value></con:property><con:property><con:name>Activity1</con:name><con:value>ESRHHDVRXZ7T2BPHB323</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</con:request><con:originalUri>http://coursebuilder.dev.cengage.info/services/coursebuilder/macro/course/</con:originalUri><con:assertion type="Response SLA Assertion" id="39c4c334-eba8-43a2-9d7f-5b75d8a2770e" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="91147551-f163-4753-8f01-3408c8ff1858" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>#TestCase#Navigation_id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>Navigation_id</con:name><con:value>AHSSR2KCKMFT793G1175</con:value></con:property><con:property><con:name>casAdfId</con:name><con:value>CasAdFid_1437725958</con:value></con:property><con:property><con:name>title</con:name><con:value>Activity_Added_Automation_1437725958</con:value></con:property><con:property><con:name>description</con:name><con:value>Description_1437725958</con:value></con:property><con:property><con:name>dueDate</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>gradable</con:name><con:value>true</con:value></con:property><con:property><con:name>isTimed</con:name><con:value>false</con:value></con:property><con:property><con:name>manuallyGraded</con:name><con:value>false</con:value></con:property><con:property><con:name>maxScore</con:name><con:value>100</con:value></con:property><con:property><con:name>maxTakes</con:name><con:value>4</con:value></con:property><con:property><con:name>startDate</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>type</con:name><con:value>assessment</con:value></con:property><con:property><con:name>startDateI</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>Activity1</con:name><con:value>NTUT5PD4VQ5K7V4MZ925</con:value></con:property><con:property><con:name>Activity2</con:name><con:value>AKVM3EWAREJAMEUBE137</con:value></con:property><con:property><con:name>Activity3</con:name><con:value>XCGPMKCJ8FPT0DRV2107</con:value></con:property><con:property><con:name>Activity4</con:name><con:value>DVNN4REABMPXXWG1T132</con:value></con:property><con:property><con:name>Activity5</con:name><con:value>UTWVPD3QSA3CQ1XX6267</con:value></con:property><con:property><con:name>Activity_Count</con:name><con:value>5</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>CGI</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>New_Varient</con:name><con:value>VQEXU0WCKHWRU0RFR576</con:value></con:property><con:property><con:name>deployEnvironment</con:name><con:value>dev</con:value></con:property><con:property><con:name>institutionName</con:name><con:value>CENGAGE SALES 2009 - Mason</con:value></con:property><con:property><con:name>institutionId</con:name><con:value>64731a042d3d4492:785204d9:14bc21ed92e:-6a50</con:value></con:property><con:property><con:name>courseName</con:name><con:value>SOATEST_MKTG9</con:value></con:property><con:property><con:name>startDate</con:name><con:value>1434046280</con:value></con:property><con:property><con:name>endDate</con:name><con:value>1444046280</con:value></con:property><con:property><con:name>section</con:name><con:value>someSection</con:value></con:property><con:property><con:name>instructorId</con:name><con:value>5cdc7afabbc6f418:30867170:13d8e896024:-7f9f</con:value></con:property><con:property><con:name>instructorName</con:name><con:value>Vikrant Instructor</con:value></con:property><con:property><con:name>courseTime</con:name><con:value>w-f 8:00 am</con:value></con:property><con:property><con:name>timeZone</con:name><con:value>America/Detroit</con:value></con:property><con:property><con:name>timeZoneCode</con:name><con:value>EDT</con:value></con:property><con:property><con:name>courseSource</con:name><con:value>brain</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/opt/code/ccs-soapui-tests/Data/CBS_Today\Dev_Course_Builder.xls</con:value></con:property><con:property><con:name>dueDate</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>gradable</con:name><con:value>true</con:value></con:property><con:property><con:name>isTimed</con:name><con:value>CENGAGE SALES 2009 - Mason</con:value></con:property><con:property><con:name>manuallyGraded</con:name><con:value>false</con:value></con:property><con:property><con:name>maxScore</con:name><con:value>100</con:value></con:property><con:property><con:name>startDateI</con:name><con:value>1433476800000</con:value></con:property><con:property><con:name>type</con:name><con:value>assessment</con:value></con:property><con:property><con:name>activity_id</con:name><con:value>YNHGX6280TQ9RNTN2019</con:value></con:property><con:property><con:name>Newlyadded_Activity1</con:name><con:value>YNHGX6280TQ9RNTN2019</con:value></con:property><con:property><con:name>Version</con:name><con:value>v1</con:value></con:property><con:property><con:name>EndPoint1</con:name><con:value>http://10.172.253.230:8181</con:value></con:property><con:property><con:name>EndPoint2</con:name><con:value>http://coursebuilder.dev.cengage.info</con:value></con:property><con:property><con:name>Course_key</con:name><con:value>SOATEST_1437725234</con:value></con:property><con:property><con:name>Activity1</con:name><con:value>ESRHHDVRXZ7T2BPHB323</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
