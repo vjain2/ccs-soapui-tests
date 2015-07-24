@@ -13,7 +13,7 @@ XLS3=${9-$defxls3}
 
 echo Running SOAPUI TestSuite on: $HOST
 sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Create & Copy from Master" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
-sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Actions" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course-E2E_cdf_project.xml
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Actions" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Associations bet Objectives-Assessment items" -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Objectives_Bad Data" -PXLPath=$XLS2 -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
 sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Label_CourseID_Code_Validations" -PXLPath=$XLS1 -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/SOA-MTED-Lite-soapui-project.xml
