@@ -7,8 +7,8 @@ XLS=${7-$defxls}
 
 echo Running SOAPUI TestSuite on: $HOST
 
-#sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Gradebook_Token_Generator" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/Gradebook_Integration_Env_Phase2_new-soapui-project.xml
-sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"Gradebook_Integration_Env" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/Gradebook_Integration_Env_Phase2_new-soapui-project.xml
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -s"Gradebook_Token_Generator" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/Gradebook_Integration_Env_Phase2_new-soapui-project.xml
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -s"Gradebook_Integration_Env" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/Gradebook_Integration_Env_Phase2_new-soapui-project.xml
 
 
 
