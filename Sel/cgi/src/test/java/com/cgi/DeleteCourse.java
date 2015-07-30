@@ -81,16 +81,15 @@ public class DeleteCourse {
 				if(count<4){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[4]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);	
-				}elseif(count<8){
+				}else if(count<8){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}elseif(count<12){
+				}else if(count<12){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[6]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else{
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}
 				}
 				driver.setJavascriptEnabled(true);
 				//Alert all = driver.switchTo().alert();
