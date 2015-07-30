@@ -3,10 +3,12 @@
 echo Running Maven Delete Utility…
 
 cd /opt/code/ccs-soapui-tests/Sel/cgi
+pwd
+whoami
 echo $JAVA_HOME
 echo $PATH
-#export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre
-#export PATH=$PATH:/opt/apache-maven-3.3.3/bin:$JAVA_HOME/bin
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre
+export PATH=$PATH:/opt/apache-maven-3.3.3/bin:$JAVA_HOME/bin
 
 mvn -version
 
