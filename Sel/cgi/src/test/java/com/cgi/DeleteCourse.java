@@ -76,10 +76,22 @@ public class DeleteCourse {
 				driver.findElement(By.linkText("Manage Courses")).click();
 				Thread.sleep(1000);
 				
-				for (int count=2; count<10; count++){
-				Thread.sleep(15000);	
+				for (int count=2; count<=16; count++){
+				Thread.sleep(15000);
+				if(count<4){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[4]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);	
+				}elseif(count<8){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
+				}elseif(count<12){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[6]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else{
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}
+				
 				driver.setJavascriptEnabled(true);
 				//Alert all = driver.switchTo().alert();
 				//System.out.println(count + ". "+all.getText());
