@@ -24,6 +24,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.support.ui.Select;
+
+//import cucumber.api.java.en.Then;
 
 /**
  * Unit test for simple App.
@@ -35,7 +38,9 @@ public class FirstTest
 	String olruser = System.getProperty("olruser");
 	String olrpass = System.getProperty("olrpass");
 	String xls = System.getProperty("xls");
-	
+	String product = System.getProperty("product");
+	String cburl1 = System.getProperty("cburl");
+	String olrurl1 = System.getProperty("olrurl");
 	
 	//System.out.println("user: " + user + " password: " + password);
 	
@@ -45,12 +50,11 @@ public class FirstTest
 
 	//System.out.println("user: " + user + " password: " + password);
 	
-	//Firefox Driver
+	//Call Firefox Driver
 	//WebDriver driver = new FirefoxDriver();
 	
-	// Declaring and initialising the HtmlUnitWebDriver
+	//Declaring and initializing the HtmlUnitWebDriver
 	HtmlUnitDriver driver = new HtmlUnitDriver();
-	
 	
 	
 	@Test
@@ -59,7 +63,7 @@ public class FirstTest
 		System.out.println("user: " + user + " olruser: " + olruser);
 		
 	// 1. Login to CB and capture CourseKey to feed OLR (it will call method #B.)
-		String CourseKey = cbLoginMethod(user,pass );
+		String CourseKey = cbLoginMethod(user,pass);
 		//String CourseKey = cbLoginMethod("vinay.thakur@contractor.cengage.com", "password");
 		//String CourseKey = "4LPPRHVPNZV7";
 		System.out.println("CourseKey: " + CourseKey);
@@ -121,7 +125,7 @@ public class FirstTest
 				String cname = "4LTR_Course_" + curDateTime;
 				//String cname = "PSYCH4_4LTR_" + curDateTime;
 				
-				String cburl1 = System.getProperty("cburl");
+				//String cburl1 = System.getProperty("cburl");
 				System.out.println("*****Value of CB url: " + cburl1);
 				driver.get(cburl1);
 				//driver.get("https://kt-login.cengage.com/cb/login.htm");
@@ -131,7 +135,17 @@ public class FirstTest
 				driver.findElement(By.id("password")).sendKeys(pass);
 				driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
 				driver.setJavascriptEnabled(true);
-				Thread.sleep(2000);
+				Thread.sleep(4000);
+				
+				//Select the product from Dropdown
+				
+				System.out.println("*****Name of Product: " + product);
+				Select dropdown = new Select(driver.findElement(By.name("productISBN")));
+				dropdown.selectByVisibleText(product);
+				System.out.println("*****Name of Product: " + product);	   
+				// new Select(driver.findElement(By.id("productISBN"))).selectByVisibleText("Rathus, PSYCH4 (with Online Printed Access Card), 4th Edition");
+				Thread.sleep(1000);
+
 				driver.findElement(By.linkText("Create Course")).click();
 				Thread.sleep(2000);
 				//driver.findElement(By.id("createNewCourse")).click();
@@ -173,7 +187,7 @@ public class FirstTest
  	// C. Method for Login to OLR portal
  		public String olrLoginMethod(String user, String pass, String CourseKey) throws InterruptedException{
  		
- 			String olrurl1 = System.getProperty("olrurl");
+ 			//String olrurl1 = System.getProperty("olrurl");
  			System.out.println("*****Value of OLR url: " + olrurl1);
  			driver.get(olrurl1);
  			
@@ -233,7 +247,7 @@ public class FirstTest
  	 			driver.switchTo().frame("bottom");
  	 			Thread.sleep(1000);
  	 			driver.switchTo().frame("Main");
- 	 			Thread.sleep(10000);
+ 	 			Thread.sleep(5000);
  	 			driver.findElement(By.name("courseKey")).clear();
  	 			Thread.sleep(1000);
  	 			driver.findElement(By.name("courseKey")).sendKeys(CourseKey);

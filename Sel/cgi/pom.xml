@@ -55,7 +55,8 @@
 						<pass>${env.PASS}</pass>
 						<olruser>${env.OLRUSER}</olruser>
 						<olrpass>${env.OLRPASS}</olrpass>
-						<xls>${env.XLS}</xls>	
+						<xls>${env.XLS}</xls>
+						<product>${env.PRODUCT}</product>	
 		    </systemPropertyVariables>
                 </configuration>
             </plugin>
