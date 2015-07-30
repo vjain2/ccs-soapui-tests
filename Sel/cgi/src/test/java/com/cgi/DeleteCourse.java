@@ -77,7 +77,7 @@ public class DeleteCourse {
 				Thread.sleep(1000);
 				
 				for (int count=2; count<=16; count++){
-				Thread.sleep(15000);
+				Thread.sleep(9000);
 				if(count<4){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[4]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);	
