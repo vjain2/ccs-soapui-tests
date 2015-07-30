@@ -91,7 +91,7 @@ public class DeleteCourse {
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}
-				
+				}
 				driver.setJavascriptEnabled(true);
 				//Alert all = driver.switchTo().alert();
 				//System.out.println(count + ". "+all.getText());
