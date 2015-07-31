@@ -21,7 +21,7 @@ public class DeleteCourse {
 	String user = System.getProperty("user");
 	String pass = System.getProperty("pass");
 	String cburl1 = System.getProperty("cburl");
-	String title = "Instructor SSO - Instructor Resource Center"
+	String title = "Instructor SSO - Instructor Resource Center";
 	
 	//String user = "vinay.thakur@contractor.cengage.com";
 	//String pass = "Techizen_123";
