@@ -15,9 +15,9 @@ echo $PATH
 defhost=https://d-login.cengage.com/cb/login.htm
 HOST=${1-$defhost}
 defuser=soapui_mktg9@ng.com
-USER=${3-$defuser}
+USER=${2-$defuser}
 defpass=Techizen_123
-PASS=${2-$defpass}
+PASS=${3-$defpass}
 
 echo **** Maven Delete Starts *****
 
