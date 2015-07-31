@@ -5,9 +5,12 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import jxl.read.biff.BiffException;
+import jxl.write.WriteException;
+import jxl.write.biff.RowsExceededException;
+
 import org.junit.Test;
 import org.openqa.selenium.Alert;
-//import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -28,10 +31,9 @@ public class DeleteCourse {
 	
 	// Declaring and initialising the HtmlUnitWebDriver
 	HtmlUnitDriver driver = new HtmlUnitDriver();
-	//driver.setJavascriptEnabled(true);
 	
 	@Test
-	public void DriverTest() throws InterruptedException, IOException{
+	public void DriverTest() throws InterruptedException, RowsExceededException, BiffException, WriteException, IOException{
       
 		System.out.println("user: " + user + " password: " + pass);
 		
@@ -68,6 +70,7 @@ public class DeleteCourse {
 				driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
 				//Assert.assertTrue(driver.getTitle().contains(title));
 				System.out.println("**** Login Successful ****");
+				driver.setJavascriptEnabled(true);
 				Thread.sleep(2000);
 				
 				// Manage Course
@@ -75,14 +78,13 @@ public class DeleteCourse {
 				//Thread.sleep(2000);
 				driver.findElement(By.linkText("Manage Courses")).click();
 				Thread.sleep(1000);
-				driver.setJavascriptEnabled(true);
 				System.out.println("**** Manage Courses Page ****");
 				
-				for (int count=2; count<=16; count++){
+				for (int count=2; count<=7; count++){
 				Thread.sleep(9000);
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				
+				driver.setJavascriptEnabled(true);
 				/*
 				if(count<4){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[4]/td[8]/a/i")).click();
@@ -98,7 +100,7 @@ public class DeleteCourse {
 				System.out.println("*****Running Loop: " + count);
 				}
 				*/
-				driver.setJavascriptEnabled(true);
+				//driver.setJavascriptEnabled(true);
 				//Alert all = driver.switchTo().alert();
 				//System.out.println(count + ". "+all.getText());
 				//Thread.sleep(2000);
