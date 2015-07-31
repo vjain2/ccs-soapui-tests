@@ -72,10 +72,10 @@ public class DeleteCourse {
 				
 				// Manage Course
 				
-				//driver.setJavascriptEnabled(true);
-				Thread.sleep(5000);
+				//Thread.sleep(2000);
 				driver.findElement(By.linkText("Manage Courses")).click();
 				Thread.sleep(1000);
+				driver.setJavascriptEnabled(true);
 				System.out.println("**** Manage Courses Page ****");
 				for (int count=2; count<=16; count++){
 				Thread.sleep(9000);
