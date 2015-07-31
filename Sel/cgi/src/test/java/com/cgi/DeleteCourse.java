@@ -68,11 +68,13 @@ public class DeleteCourse {
 				driver.findElement(By.id("password")).sendKeys(pass);
 				driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
 				driver.setJavascriptEnabled(true);
+				Assert.assertTrue(driver.getTitle().contains(title));
 				Thread.sleep(2000);
 				
 				// Manage Course
 				
 				Thread.sleep(2000);
+				driver.setJavascriptEnabled(true);
 				driver.findElement(By.linkText("Manage Courses")).click();
 				Thread.sleep(1000);
 				
