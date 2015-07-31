@@ -12,7 +12,7 @@ defolruser=vinay.thakur@contractor.cengage.com
 OLRUSER=${5-$defolruser}
 defolrpass=Techizen_321
 OLRPASS=${6-$defolrpass}
-defxls=/Users/mindtap/SOAPUI/Data/SoapUI_e2e_4LTR_PROD.xls
+defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_e2e_4LTR_PROD.xls
 XLS=${7-$defxls}
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
