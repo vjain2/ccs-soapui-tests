@@ -31,7 +31,7 @@ public class DeleteCourse {
 	//driver.setJavascriptEnabled(true);
 	
 	@Test
-	public void DriverTest() throws InterruptedException, RowsExceededException, BiffException, WriteException, IOException{
+	public void DriverTest() throws InterruptedException, IOException{
       
 		System.out.println("user: " + user + " password: " + pass);
 		
