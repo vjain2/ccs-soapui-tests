@@ -12,6 +12,17 @@ ls -al
 echo $JAVA_HOME
 echo $PATH
 
+defhost=https://d-login.cengage.com/cb/login.htm
+HOST=${1-$defhost}
+defuser=soapui_mktg9@ng.com
+USER=${3-$defuser}
+defpass=Techizen_123
+PASS=${2-$defpass}
+
+echo **** Maven Delete Starts *****
+
 mvn -version
 
-mvn clean test -Dtest=DeleteCourse -Denv.CBURL=https://d-login.cengage.com/cb/login.htm -Denv.OLRURL=http://d-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=soapui_psych4@ng.com -Denv.PASS=Techizen_123 -Denv.OLRUSER=vinay.thakur@contractor.cengage.com -Denv.OLRPASS=Techizen_123
+mvn clean test -Dtest=DeleteCourse -Denv.CBURL=$HOST -Denv.USER=$USER -Denv.PASS=$PASS
+
+echo **** Maven Delete Ends *****
