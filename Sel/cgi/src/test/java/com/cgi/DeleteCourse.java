@@ -80,7 +80,7 @@ public class DeleteCourse {
 				Thread.sleep(1000);
 				System.out.println("**** Manage Courses Page ****");
 				
-				for (int count=2; count<=14; count++){
+				for (int count=2; count<=20; count++){
 				Thread.sleep(9000);
 				//driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				//System.out.println("*****Running Loop: " + count);
@@ -95,8 +95,11 @@ public class DeleteCourse {
 				}else if(count<12){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[6]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
+				}else if(count<16){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[8]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
 				}else{
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[10]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}
 				
