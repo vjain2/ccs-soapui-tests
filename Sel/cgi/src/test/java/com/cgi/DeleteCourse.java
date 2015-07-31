@@ -5,10 +5,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import jxl.read.biff.BiffException;
-import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
-
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 //import org.junit.Assert;
@@ -32,7 +28,7 @@ public class DeleteCourse {
 	
 	// Declaring and initialising the HtmlUnitWebDriver
 	HtmlUnitDriver driver = new HtmlUnitDriver();
-	driver.setJavascriptEnabled(true);
+	//driver.setJavascriptEnabled(true);
 	
 	@Test
 	public void DriverTest() throws InterruptedException, RowsExceededException, BiffException, WriteException, IOException{
