@@ -26,7 +26,7 @@ ls -al
 echo $JAVA_HOME
 echo $PATH
 mvn -version
-mvn clean test -Denv.CBURL=https://kt-login.cengage.com/cb/login.htm -Denv.OLRURL=http://kt-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS -Denv.OLRUSER=$OLRUSER -Denv.OLRPASS=$OLRPASS -Denv.XLS=$XLS
+mvn clean test -Denv.CBURL=https://kt-login.cengage.com/cb/login.htm -Denv.OLRURL=http://kt-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS -Denv.OLRUSER=$OLRUSER -Denv.OLRPASS=$OLRPASS -Denv.XLS=$XLS -Denv.PRODUCT='Lamb/Hair/McDaniel, MKTG (with MKTG Online 1 term (6 months) Printed Access Card), 9th Edition'
 echo !!!Maven test suite END’s!!!
 
 # Run SoapUI test suite from Jenkin with Host as parameter
