@@ -72,8 +72,8 @@ public class DeleteCourse {
 				
 				// Manage Course
 				
-				driver.setJavascriptEnabled(true);
-				Thread.sleep(2000);
+				//driver.setJavascriptEnabled(true);
+				Thread.sleep(5000);
 				driver.findElement(By.linkText("Manage Courses")).click();
 				Thread.sleep(1000);
 				System.out.println("**** Manage Courses Page ****");
