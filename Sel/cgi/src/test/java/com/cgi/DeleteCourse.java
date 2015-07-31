@@ -32,6 +32,7 @@ public class DeleteCourse {
 	
 	// Declaring and initialising the HtmlUnitWebDriver
 	HtmlUnitDriver driver = new HtmlUnitDriver();
+	driver.setJavascriptEnabled(true);
 	
 	@Test
 	public void DriverTest() throws InterruptedException, RowsExceededException, BiffException, WriteException, IOException{
@@ -69,15 +70,14 @@ public class DeleteCourse {
 				driver.findElement(By.id("password")).clear();
 				driver.findElement(By.id("password")).sendKeys(pass);
 				driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
-				//driver.setJavascriptEnabled(true);
 				//Assert.assertTrue(driver.getTitle().contains(title));
 				System.out.println("**** Login Successful ****");
 				Thread.sleep(2000);
 				
 				// Manage Course
 				
-				Thread.sleep(2000);
 				driver.setJavascriptEnabled(true);
+				Thread.sleep(2000);
 				driver.findElement(By.linkText("Manage Courses")).click();
 				Thread.sleep(1000);
 				System.out.println("**** Manage Courses Page ****");
