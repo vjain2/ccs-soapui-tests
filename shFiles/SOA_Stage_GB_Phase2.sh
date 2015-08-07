@@ -1,6 +1,6 @@
 defhost=localhost
 HOST=${1-$defhost}
-defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_Gradebook_int_Phase_2.xls
+defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_Gradebook_Stage_Phase_2.xls
 XLS=${7-$defxls}
 
 # Run SoapUI test suite from Jenkin with Host as parameter
