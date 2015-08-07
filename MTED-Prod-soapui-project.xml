@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="MTED_Prod" resourceRoot="" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/opt/code/Reports/"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edms.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://edms.cengage.info</con:endpoint></con:endpoints><con:resource name="Objectives" path="/api/${#Project#version}/courses/${#Project#course}/objectives"><con:settings/><con:parameters><con:parameter><con:name>discipline_id</con:name><con:value>educ</con:value><con:style>QUERY</con:style><con:default>educ</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>with_assets</con:name><con:value>false</con:value><con:style>QUERY</con:style><con:default>false</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Objectives" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses//objectives</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>discipline_id</con:entry><con:entry>with_assets</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edms.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://edms.cengage.info</con:endpoint></con:endpoints><con:resource name="Objectives" path="/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives"><con:settings/><con:parameters/><con:method name="Objectives_Bad_Course_Assets" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses/TIGER/assets//objectives</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite name="Objective"><con:description>TestSuite generated for REST Service [https://edms.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Objectives_Assets_False" searchProperties="true"><con:description>TestCase generated for REST Resource [Objectives] located at [/api/${#Project#version}/courses/${#Project#course}/objectives]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script1"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()    
+course = objSheet.getCell(1,1).getContents() 
+
+
+
+ 
+ 
+log.info("version_Value: " + version)
+log.info("course_Value: " + course)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+testRunner.testCase.testSuite.project.setPropertyValue("course", course)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Request 1"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#Project#version}/courses/${#Project#course}/objectives" methodName="Objectives" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses//objectives</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>discipline_id</con:entry><con:entry>with_assets</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Objectives_Assets_True" searchProperties="true"><con:description>TestCase generated for REST Resource [Objectives] located at [/api/${#Project#version}/courses/${#Project#course}/objectives]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script2"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()    
+course = objSheet.getCell(1,1).getContents() 
+
+
+
+ 
+ 
+log.info("version_Value: " + version)
+log.info("course_Value: " + course)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+testRunner.testCase.testSuite.project.setPropertyValue("course", course)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Request 1"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#Project#version}/courses/${#Project#course}/objectives" methodName="Objectives" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses//objectives</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="with_assets" value="true" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>discipline_id</con:entry><con:entry>with_assets</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="Objective_Bad_Course_Assets"><con:description>TestSuite generated for REST Service [https://edms.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Objectives_BadCourse_BadAssets" searchProperties="true"><con:description>TestCase generated for REST Resource [Objectives] located at [/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script1"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()    
+course = objSheet.getCell(1,2).getContents()
+asset = objSheet.getCell(2,1).getContents() 
+
+
+
+ 
+ 
+log.info("version_Value: " + version)
+log.info("course_Value: " + course)
+log.info("asset_Value: " + asset)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+testRunner.testCase.testSuite.project.setPropertyValue("course", course)
+testRunner.testCase.testSuite.project.setPropertyValue("asset", asset)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Request 1"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives" methodName="Objectives_Bad_Course_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses/TIGER/assets//objectives</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Objectives_BadCourse" searchProperties="true"><con:description>TestCase generated for REST Resource [Objectives] located at [/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script2"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()    
+course = objSheet.getCell(1,2).getContents()
+asset = objSheet.getCell(2,2).getContents() 
+
+
+
+ 
+ 
+log.info("version_Value: " + version)
+log.info("course_Value: " + course)
+log.info("asset_Value: " + asset)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+testRunner.testCase.testSuite.project.setPropertyValue("course", course)
+testRunner.testCase.testSuite.project.setPropertyValue("asset", asset)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Request 1"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives" methodName="Objectives_Bad_Course_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses/TIGER/assets//objectives</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Objectives_BadAssets" searchProperties="true"><con:description>TestCase generated for REST Resource [Objectives] located at [/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script2"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+version = objSheet.getCell(0,1).getContents()    
+course = objSheet.getCell(1,1).getContents()
+asset = objSheet.getCell(2,1).getContents() 
+
+
+
+ 
+ 
+log.info("version_Value: " + version)
+log.info("course_Value: " + course)
+log.info("asset_Value: " + asset)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("version", version)
+testRunner.testCase.testSuite.project.setPropertyValue("course", course)
+testRunner.testCase.testSuite.project.setPropertyValue("asset", asset)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Request 1"><con:settings/><con:config service="https://edms.cengage.info" resourcePath="/api/${#Project#version}/courses/${#Project#course}/assets/${#Project#asset}/objectives" methodName="Objectives_Bad_Course_Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edms.cengage.info</con:endpoint><con:request/><con:originalUri>https://edms.cengage.info/api/v1/courses/TIGER/assets//objectives</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>XLPath</con:name><con:value>/opt/code/ccs-soapui-tests/Data/MTED_Prod.xls</con:value></con:property><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>course</con:name><con:value>TIGER</con:value></con:property><con:property><con:name>asset</con:name><con:value>BADASSET</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
