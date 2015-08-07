@@ -1,0 +1,2387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="Gradebook_Stage_Env_Phase2_new" resourceRoot="${projectDir}" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="Gradebook_Token_Generator"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files (x86)\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/opt/code/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://gradebook-api-qa.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint></con:endpoints><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:all="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades">all:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404 500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint> ${#Project#EndPoint2}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/userce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/studentCategoryAndAssignmentGrades">stud:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>gradebook-api-qaint.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=UTF-8</con:mediaType><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>502</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint> ${#Project#EndPoint2}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="${#Project#EndPoint2}" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters><con:parameter><con:name/><con:value/><con:style>PLAIN</con:style><con:default/></con:parameter></con:parameters><con:method name="Method 1" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>403</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="https://gradebook-api-qaint.cengage.info/gradebookapi/ajax/gradebook/v1/soa:int:course:MVZH0SJUZXAQA7QGU429/studentsAssignmentGrades">stud:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint> ${#Project#EndPoint2}</con:endpoint><con:request>{"students":["${#TestCase#Student1}", "${#TestCase#Student2}"]}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}"><con:settings/><con:parameters/><con:method name="Method 1" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint> ${#Project#EndPoint2}</con:endpoint><con:request>{"students":["${#TestCase#Student1}", "${#TestCase#Student2}"]}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/gradebookapi/ajax/gradebook-modification/${#Project#version}/${#TestCase#course_cgi1}/assignment/${#TestCase#Assignmentid}"><con:settings/><con:parameters/><con:method name="Method 1" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:soa="http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook-modification/v1/soa:int:course:MVZH0SJUZXAQA7QGU429/assignment/soa:int:activity:ZRTPW45BGYXHM8ES5440">soa:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://gradebook-api-qa.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SSOwsSoapBinding" type="wsdl" bindingName="{http://ws.thomsonlearning.com:80/ssows}SSOwsSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://s-ws.cengage.com/ssows/SSOws?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://s-ws.cengage.com/ssows/SSOws?WSDL"><con:part><con:url>https://s-ws.cengage.com/ssows/SSOws?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="SSOws" targetNamespace="http://ws.thomsonlearning.com:80/ssows" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.thomsonlearning.com:80/ssows" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema targetNamespace="java:language_builtins.lang" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfString">
+        <xs:sequence>
+          <xs:element form="qualified" maxOccurs="unbounded" name="string" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="java:com.tl.ssows.parameters" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns3="java:language_builtins.lang" xmlns:ns2="http://ws.thomsonlearning.com:80/ssows" xmlns:ns1="java:com.tl.ssows">
+      <xs:import namespace="java:com.tl.ssows"/>
+      <xs:import namespace="http://ws.thomsonlearning.com:80/ssows"/>
+      <xs:import namespace="java:language_builtins.lang"/>
+      <xs:element name="ERightsId" type="xs:string"/>
+      <xs:element name="adminToken" type="xs:string"/>
+      <xs:element name="dn" type="xs:string"/>
+      <xs:element name="getUniqueGroups" type="xs:boolean"/>
+      <xs:element name="group" type="ns1:Groups"/>
+      <xs:element name="groupCn" type="xs:string"/>
+      <xs:element name="groupName" type="xs:string"/>
+      <xs:element name="guid" type="xs:string"/>
+      <xs:element name="hostNames" type="ns3:ArrayOfString"/>
+      <xs:element name="hosts" type="ns3:ArrayOfString"/>
+      <xs:element name="newUid" type="xs:string"/>
+      <xs:element name="oldGuid" type="xs:string"/>
+      <xs:element name="oldUid" type="xs:string"/>
+      <xs:element name="partnerGuid" type="xs:string"/>
+      <xs:element name="password" type="xs:string"/>
+      <xs:element name="path" type="xs:string"/>
+      <xs:element name="person" type="ns2:TLPerson"/>
+      <xs:element name="resourceItem" type="xs:string"/>
+      <xs:element name="retrieveMergedUser" type="xs:string"/>
+      <xs:element name="returnGroups" type="xs:string"/>
+      <xs:element name="returnNestedGroups" nillable="true" type="xs:anyType"/>
+      <xs:element name="returnPassword" type="xs:string"/>
+      <xs:element name="ssoGuid" type="xs:string"/>
+      <xs:element name="tlCrms8ContactId" type="xs:string"/>
+      <xs:element name="token" type="xs:string"/>
+      <xs:element name="uid" type="xs:string"/>
+      <xs:element name="userToken" type="xs:string"/>
+      <xs:element name="username" type="xs:string"/>
+      <xs:element name="validatedInstructor" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="java:com.tl.ssows" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="java:com.tl.ssows" xmlns:ns2="java:language_builtins.lang" xmlns:ns1="http://ws.thomsonlearning.com:80/ssows">
+      <xs:import namespace="http://ws.thomsonlearning.com:80/ssows"/>
+      <xs:import namespace="java:language_builtins.lang"/>
+      <xs:element name="ERightsId" type="xs:string"/>
+      <xs:element name="TLAgeRange" type="xs:string"/>
+      <xs:element name="TLB2BSiteId" type="xs:string"/>
+      <xs:element name="TLCheckPointA" type="xs:string"/>
+      <xs:element name="TLCheckPointQ" type="xs:string"/>
+      <xs:element name="TLCity" type="xs:string"/>
+      <xs:element name="TLCrms8AccountId" type="xs:string"/>
+      <xs:element name="TLCrms8ContactId" type="xs:string"/>
+      <xs:element name="TLCrmsContactId" type="xs:string"/>
+      <xs:element name="TLCrmsValidatedInstructor" type="xs:boolean"/>
+      <xs:element name="TLErightsId" type="xs:string"/>
+      <xs:element name="TLEveningPhone" type="xs:string"/>
+      <xs:element name="TLGender" type="xs:string"/>
+      <xs:element name="TLInstitutionId" type="xs:string"/>
+      <xs:element name="TLInstitutionName" type="xs:string"/>
+      <xs:element name="TLJDEBillTo" type="xs:string"/>
+      <xs:element name="TLJDEShipTo" type="xs:string"/>
+      <xs:element name="TLOptInCengage" type="xs:string"/>
+      <xs:element name="TLOptInIchapters" type="xs:string"/>
+      <xs:element name="TLPWHint" type="xs:string"/>
+      <xs:element name="TLPerson" type="ns1:TLPerson"/>
+      <xs:element name="TLPrefLang" type="xs:string"/>
+      <xs:element name="TLPubcoId" type="xs:string"/>
+      <xs:element name="TLRegion" type="xs:string"/>
+      <xs:element name="TLSchoolAffiliation" type="xs:string"/>
+      <xs:element name="TLSealedMediaUser" type="xs:string"/>
+      <xs:element name="TLSerialNumbers" type="xs:string"/>
+      <xs:element name="TLShipToC" type="xs:string"/>
+      <xs:element name="TLShipToCity" type="xs:string"/>
+      <xs:element name="TLShipToL" type="xs:string"/>
+      <xs:element name="TLShipToPostalAddress" type="xs:string"/>
+      <xs:element name="TLShipToPostalCode" type="xs:string"/>
+      <xs:element name="TLShipToSt" type="xs:string"/>
+      <xs:element name="TLTCCreationDate" type="xs:string"/>
+      <xs:element name="TLTCExpireDate" type="xs:string"/>
+      <xs:element name="TLTCIdCode" type="xs:string"/>
+      <xs:element name="TLTCOriginalZone" type="xs:string"/>
+      <xs:element name="TLTCServices" type="xs:string"/>
+      <xs:element name="TLTCStatus" type="xs:string"/>
+      <xs:element name="TLThomsonNowInstitutionId" type="xs:string"/>
+      <xs:element name="TLUserType" type="xs:string"/>
+      <xs:element name="apliaTcAccepted" type="xs:string"/>
+      <xs:element name="branchDesignator" type="xs:int"/>
+      <xs:element name="c" type="xs:string"/>
+      <xs:element name="cengageCrowdId" type="xs:string"/>
+      <xs:element name="cn" type="xs:string"/>
+      <xs:element name="createTimestamp" type="xs:dateTime"/>
+      <xs:element name="creatorsName" type="xs:string"/>
+      <xs:element name="departmentNumber" type="xs:string"/>
+      <xs:element name="dn" type="xs:string"/>
+      <xs:element name="emailValidated" type="xs:string"/>
+      <xs:element name="employeeNumber" type="xs:string"/>
+      <xs:element name="facsimileTelephoneNumber" type="xs:string"/>
+      <xs:element name="givenName" type="xs:string"/>
+      <xs:element name="groups" type="ns2:ArrayOfString"/>
+      <xs:element name="guid" type="xs:string"/>
+      <xs:element name="guids" type="ns2:ArrayOfString"/>
+      <xs:element name="homePhone" type="xs:string"/>
+      <xs:element name="homePostalAddress" type="xs:string"/>
+      <xs:element name="host" type="xs:string"/>
+      <xs:element name="instructor" type="xs:boolean"/>
+      <xs:element name="l" type="xs:string"/>
+      <xs:element name="mail" type="xs:string"/>
+      <xs:element name="middleInitial" type="xs:string"/>
+      <xs:element name="mobile" type="xs:string"/>
+      <xs:element name="modifiersName" type="xs:string"/>
+      <xs:element name="modifyTimestamp" type="xs:dateTime"/>
+      <xs:element name="orclSecondaryUID" type="xs:string"/>
+      <xs:element name="ou" type="xs:string"/>
+      <xs:element name="pager" type="xs:string"/>
+      <xs:element name="partnerGuids" type="xs:string"/>
+      <xs:element name="pendingInstructor" type="xs:boolean"/>
+      <xs:element name="postalCode" type="xs:string"/>
+      <xs:element name="resourceItems" type="ns2:ArrayOfString"/>
+      <xs:element name="restrictedUser" type="xs:boolean"/>
+      <xs:element name="resultCode" type="xs:int"/>
+      <xs:element name="resultDescription" type="xs:string"/>
+      <xs:element name="searchBase" type="xs:string"/>
+      <xs:element name="sn" type="xs:string"/>
+      <xs:element name="source" type="xs:string"/>
+      <xs:element name="st" type="xs:string"/>
+      <xs:element name="street" type="xs:string"/>
+      <xs:element name="timeZone" type="xs:string"/>
+      <xs:element name="token" type="xs:string"/>
+      <xs:element name="uid" type="xs:string"/>
+      <xs:element name="userInfos" type="tns:ArrayOfUserInfo"/>
+      <xs:element name="userPassword" type="xs:string"/>
+      <xs:element name="userType" type="xs:string"/>
+      <xs:element name="users" type="ns1:ArrayOfTLPerson"/>
+      <xs:element name="workPhone" type="xs:string"/>
+      <xs:complexType name="Groups">
+        <xs:sequence>
+          <xs:element form="qualified" name="businessCategory" type="xs:string"/>
+          <xs:element form="qualified" name="businessUnit" type="xs:string"/>
+          <xs:element form="qualified" name="cn" type="xs:string"/>
+          <xs:element ref="tns:createTimestamp"/>
+          <xs:element form="qualified" name="creatorsName" type="xs:string"/>
+          <xs:element form="qualified" name="description" type="xs:string"/>
+          <xs:element form="qualified" name="dn" type="xs:string"/>
+          <xs:element form="qualified" name="groupRefs" type="tns:ArrayOfGroupRef"/>
+          <xs:element form="qualified" name="groups" type="ns2:ArrayOfString"/>
+          <xs:element form="qualified" name="host" type="xs:string"/>
+          <xs:element form="qualified" name="modifiersName" type="xs:string"/>
+          <xs:element ref="tns:modifyTimestamp"/>
+          <xs:element form="qualified" name="numSubordinates" type="xs:string"/>
+          <xs:element form="qualified" name="owner" type="xs:string"/>
+          <xs:element form="qualified" name="resourceItems" type="ns2:ArrayOfString"/>
+          <xs:element form="qualified" name="searchBase" type="xs:string"/>
+          <xs:element form="qualified" name="seeAlso" type="xs:string"/>
+          <xs:element form="qualified" name="TLErightsId" type="xs:string"/>
+          <xs:element form="qualified" name="uniqueGroupMembers" type="ns2:ArrayOfString"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfGroupRef">
+        <xs:sequence>
+          <xs:element form="qualified" maxOccurs="unbounded" name="GroupRef" type="ns1:GroupRef"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfGroups">
+        <xs:sequence>
+          <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="Groups" type="tns:Groups"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfUserInfo">
+        <xs:sequence>
+          <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="userInfo" type="tns:UserInfo"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UserInfo">
+        <xs:sequence>
+          <xs:element form="qualified" minOccurs="0" name="guid" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="firstName" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="lastName" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="email" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.thomsonlearning.com:80/ssows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns3="java:com.tl.ssows.parameters" xmlns:ns2="java:language_builtins.lang" xmlns:ns1="java:com.tl.ssows">
+      <xs:import namespace="java:com.tl.ssows"/>
+      <xs:import namespace="java:language_builtins.lang"/>
+      <xs:import namespace="java:com.tl.ssows.parameters"/>
+      <xs:complexType name="AddGroupParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:group"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GroupRef">
+        <xs:sequence>
+          <xs:element ref="ns1:cn"/>
+          <xs:element ref="ns1:ERightsId"/>
+          <xs:element ref="ns1:host"/>
+          <xs:element ref="ns1:resourceItems"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SSOwsResult">
+        <xs:sequence>
+          <xs:element ref="ns1:branchDesignator"/>
+          <xs:element minOccurs="0" name="groups" type="ns1:ArrayOfGroups"/>
+          <xs:element minOccurs="0" ref="ns1:guid"/>
+          <xs:element ref="ns1:resultCode"/>
+          <xs:element ref="ns1:resultDescription"/>
+          <xs:element ref="ns1:token"/>
+          <xs:element ref="ns1:uid"/>
+          <xs:element minOccurs="0" ref="ns1:users"/>
+          <xs:element minOccurs="0" ref="ns1:userType"/>
+          <xs:element minOccurs="0" ref="ns1:userInfos"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfTLPerson">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="ns1:TLPerson"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TLPerson">
+        <xs:sequence>
+          <xs:element ref="ns1:c"/>
+          <xs:element ref="ns1:cn"/>
+          <xs:element ref="ns1:createTimestamp"/>
+          <xs:element ref="ns1:creatorsName"/>
+          <xs:element ref="ns1:departmentNumber"/>
+          <xs:element ref="ns1:dn"/>
+          <xs:element ref="ns1:employeeNumber"/>
+          <xs:element ref="ns1:facsimileTelephoneNumber"/>
+          <xs:element ref="ns1:givenName"/>
+          <xs:element ref="ns1:groups"/>
+          <xs:element minOccurs="0" ref="ns1:guid"/>
+          <xs:element ref="ns1:homePhone"/>
+          <xs:element ref="ns1:homePostalAddress"/>
+          <xs:element ref="ns1:instructor"/>
+          <xs:element ref="ns1:l"/>
+          <xs:element ref="ns1:mail"/>
+          <xs:element ref="ns1:middleInitial"/>
+          <xs:element ref="ns1:mobile"/>
+          <xs:element ref="ns1:modifiersName"/>
+          <xs:element ref="ns1:modifyTimestamp"/>
+          <xs:element ref="ns1:orclSecondaryUID"/>
+          <xs:element ref="ns1:ou"/>
+          <xs:element ref="ns1:pager"/>
+          <xs:element ref="ns1:postalCode"/>
+          <xs:element ref="ns1:resourceItems"/>
+          <xs:element ref="ns1:restrictedUser"/>
+          <xs:element ref="ns1:searchBase"/>
+          <xs:element ref="ns1:sn"/>
+          <xs:element ref="ns1:st"/>
+          <xs:element ref="ns1:street"/>
+          <xs:element ref="ns1:TLAgeRange"/>
+          <xs:element ref="ns1:TLB2BSiteId"/>
+          <xs:element ref="ns1:TLCheckPointA"/>
+          <xs:element ref="ns1:TLCheckPointQ"/>
+          <xs:element ref="ns1:TLCity"/>
+          <xs:element ref="ns1:TLCrms8AccountId"/>
+          <xs:element ref="ns1:TLCrms8ContactId"/>
+          <xs:element ref="ns1:TLCrmsContactId"/>
+          <xs:element ref="ns1:TLCrmsValidatedInstructor"/>
+          <xs:element ref="ns1:TLErightsId"/>
+          <xs:element ref="ns1:TLEveningPhone"/>
+          <xs:element ref="ns1:TLGender"/>
+          <xs:element ref="ns1:TLInstitutionId"/>
+          <xs:element ref="ns1:TLJDEBillTo"/>
+          <xs:element ref="ns1:TLJDEShipTo"/>
+          <xs:element ref="ns1:TLPWHint"/>
+          <xs:element ref="ns1:TLPrefLang"/>
+          <xs:element ref="ns1:TLPubcoId"/>
+          <xs:element ref="ns1:TLRegion"/>
+          <xs:element ref="ns1:TLSchoolAffiliation"/>
+          <xs:element ref="ns1:TLSealedMediaUser"/>
+          <xs:element ref="ns1:TLSerialNumbers"/>
+          <xs:element ref="ns1:TLShipToC"/>
+          <xs:element ref="ns1:TLShipToCity"/>
+          <xs:element ref="ns1:TLShipToL"/>
+          <xs:element ref="ns1:TLShipToPostalAddress"/>
+          <xs:element ref="ns1:TLShipToPostalCode"/>
+          <xs:element ref="ns1:TLShipToSt"/>
+          <xs:element ref="ns1:TLTCCreationDate"/>
+          <xs:element ref="ns1:TLTCExpireDate"/>
+          <xs:element ref="ns1:TLTCIdCode"/>
+          <xs:element ref="ns1:TLTCOriginalZone"/>
+          <xs:element ref="ns1:TLTCServices"/>
+          <xs:element ref="ns1:TLTCStatus"/>
+          <xs:element ref="ns1:TLThomsonNowInstitutionId"/>
+          <xs:element ref="ns1:TLUserType"/>
+          <xs:element ref="ns1:uid"/>
+          <xs:element ref="ns1:userPassword"/>
+          <xs:element ref="ns1:workPhone"/>
+          <xs:element ref="ns1:TLOptInCengage"/>
+          <xs:element ref="ns1:TLOptInIchapters"/>
+          <xs:element minOccurs="0" ref="ns1:emailValidated"/>
+          <xs:element minOccurs="0" ref="ns1:timeZone"/>
+          <xs:element minOccurs="0" ref="ns1:apliaTcAccepted"/>
+          <xs:element minOccurs="0" ref="ns1:TLInstitutionName"/>
+          <xs:element ref="ns1:pendingInstructor"/>
+          <xs:element minOccurs="0" ref="ns1:userType"/>
+          <xs:element minOccurs="0" ref="ns1:cengageCrowdId"/>
+          <xs:element minOccurs="0" ref="ns1:source"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="ns1:partnerGuids"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="IsMemberOfParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AddResourceItemParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CrmsParameters">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns3:tlCrms8ContactId"/>
+          <xs:element minOccurs="0" ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DeleteGroupParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:dn"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PasswordResetKeyParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RefreshTokenParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element ref="ns3:userToken"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HasAccessToParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetTokenParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:password"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ModifyUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:person"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DoesUserExistParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetTokenFromGuidParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MergeUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element ref="ns3:ssoGuid"/>
+          <xs:element ref="ns3:partnerGuid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DeleteUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:dn"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="IsInstructorParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetGroupParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:ERightsId"/>
+          <xs:element ref="ns3:getUniqueGroups"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element minOccurs="0" ref="ns3:returnNestedGroups"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetDirectGroupMembershipParameters">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns3:adminToken"/>
+          <xs:element minOccurs="0" ref="ns3:username"/>
+          <xs:element minOccurs="0" ref="ns3:guid"/>
+          <xs:element minOccurs="0" ref="ns3:userToken"/>
+          <xs:element minOccurs="0" ref="ns3:groupName"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetDirectGroupMembershipResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="groups" type="ns2:ArrayOfString"/>
+          <xs:element ref="ns1:resultCode"/>
+          <xs:element ref="ns1:resultDescription"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RestrictionParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetGroupsProtectingHostURLParameters">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns3:hosts"/>
+          <xs:element ref="ns3:path"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetUsersParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:person"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element minOccurs="0" ref="ns3:returnGroups"/>
+          <xs:element minOccurs="0" ref="ns3:returnPassword"/>
+          <xs:element minOccurs="0" ref="ns3:returnNestedGroups"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ModifyGroupParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:group"/>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ValidatedInstructorParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element minOccurs="0" ref="ns3:guid"/>
+          <xs:element minOccurs="0" ref="ns3:username"/>
+          <xs:element ref="ns3:validatedInstructor"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RenameParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:newUid"/>
+          <xs:element ref="ns3:oldGuid"/>
+          <xs:element ref="ns3:oldUid"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AddUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:person"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UnmergeUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:adminToken"/>
+          <xs:element ref="ns3:ssoGuid"/>
+          <xs:element ref="ns3:partnerGuid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RemoveUniqueMemberParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="IsUrlProtectedParameters">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns3:hostNames"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AddUniqueMemberParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RemoveResourceItemParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:groupCn"/>
+          <xs:element ref="ns3:resourceItem"/>
+          <xs:element ref="ns3:token"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetUserInfoParameters">
+        <xs:sequence>
+          <xs:element ref="ns1:token"/>
+          <xs:element ref="ns1:guids"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetUserParameters">
+        <xs:sequence>
+          <xs:element ref="ns3:guid"/>
+          <xs:element ref="ns3:token"/>
+          <xs:element ref="ns3:uid"/>
+          <xs:element minOccurs="0" ref="ns3:returnGroups"/>
+          <xs:element minOccurs="0" ref="ns3:returnPassword"/>
+          <xs:element minOccurs="0" ref="ns3:returnNestedGroups"/>
+          <xs:element minOccurs="0" ref="ns3:retrieveMergedUser"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="addGroup" nillable="true" type="tns:AddGroupParameters"/>
+      <xs:element name="addGroupResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="isMemberOf" nillable="true" type="tns:IsMemberOfParameters"/>
+      <xs:element name="isMemberOfResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="addResourceItem" nillable="true" type="tns:AddResourceItemParameters"/>
+      <xs:element name="addResourceItemResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="suspendInstructor" nillable="true" type="tns:CrmsParameters"/>
+      <xs:element name="suspendInstructorResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="deleteGroup" nillable="true" type="tns:DeleteGroupParameters"/>
+      <xs:element name="deleteGroupResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getUserPasswordResetKey" nillable="true" type="tns:PasswordResetKeyParameters"/>
+      <xs:element name="getUserPasswordResetKeyResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="refreshToken" nillable="true" type="tns:RefreshTokenParameters"/>
+      <xs:element name="refreshTokenResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="hasAccessTo" nillable="true" type="tns:HasAccessToParameters"/>
+      <xs:element name="hasAccessToResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getToken" nillable="true" type="tns:GetTokenParameters"/>
+      <xs:element name="getTokenResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="testTimeOut" nillable="true" type="xs:int"/>
+      <xs:element name="testTimeOutResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="modifyUser" nillable="true" type="tns:ModifyUserParameters"/>
+      <xs:element name="modifyUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="doesUserExist" nillable="true" type="tns:DoesUserExistParameters"/>
+      <xs:element name="doesUserExistResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getTokenFromGuid" nillable="true" type="tns:GetTokenFromGuidParameters"/>
+      <xs:element name="getTokenFromGuidResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="mergeUser" nillable="true" type="tns:MergeUserParameters"/>
+      <xs:element name="mergeUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getGroupsProtecting" nillable="true" type="xs:string"/>
+      <xs:element name="getGroupsProtectingResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="deleteUser" nillable="true" type="tns:DeleteUserParameters"/>
+      <xs:element name="deleteUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="isInstructor" nillable="true" type="tns:IsInstructorParameters"/>
+      <xs:element name="isInstructorResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getGroup" nillable="true" type="tns:GetGroupParameters"/>
+      <xs:element name="getGroupResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getDirectGroupMembership" nillable="true" type="tns:GetDirectGroupMembershipParameters"/>
+      <xs:element name="getDirectGroupMembershipResponse" nillable="true" type="tns:GetDirectGroupMembershipResult"/>
+      <xs:element name="restrictionAddToUser" nillable="true" type="tns:RestrictionParameters"/>
+      <xs:element name="restrictionAddToUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getGroupsProtectingHostURL" nillable="true" type="tns:GetGroupsProtectingHostURLParameters"/>
+      <xs:element name="getGroupsProtectingHostURLResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getVersionResponse" nillable="true" type="xs:string"/>
+      <xs:element name="getUsers" nillable="true" type="tns:GetUsersParameters"/>
+      <xs:element name="getUsersResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="restrictionRemoveFromUser" nillable="true" type="tns:RestrictionParameters"/>
+      <xs:element name="restrictionRemoveFromUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="modifyGroup" nillable="true" type="tns:ModifyGroupParameters"/>
+      <xs:element name="modifyGroupResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="validatedInstructor" nillable="true" type="tns:ValidatedInstructorParameters"/>
+      <xs:element name="validatedInstructorResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="rename" nillable="true" type="tns:RenameParameters"/>
+      <xs:element name="renameResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="addUser" nillable="true" type="tns:AddUserParameters"/>
+      <xs:element name="addUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="unmergeUser" nillable="true" type="tns:UnmergeUserParameters"/>
+      <xs:element name="unmergeUserResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="deactivateInstructor" nillable="true" type="tns:CrmsParameters"/>
+      <xs:element name="deactivateInstructorResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="removeUniqueMember" nillable="true" type="tns:RemoveUniqueMemberParameters"/>
+      <xs:element name="removeUniqueMemberResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="isUrlProtected" nillable="true" type="tns:IsUrlProtectedParameters"/>
+      <xs:element name="isUrlProtectedResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="reactivateInstructor" nillable="true" type="tns:CrmsParameters"/>
+      <xs:element name="reactivateInstructorResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="addUniqueMember" nillable="true" type="tns:AddUniqueMemberParameters"/>
+      <xs:element name="addUniqueMemberResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="removeResourceItem" nillable="true" type="tns:RemoveResourceItemParameters"/>
+      <xs:element name="removeResourceItemResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="validateToken" nillable="true" type="xs:string"/>
+      <xs:element name="validateTokenResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getUserInfo" nillable="true" type="tns:GetUserInfoParameters"/>
+      <xs:element name="getUserInfoResponse" nillable="true" type="tns:SSOwsResult"/>
+      <xs:element name="getUser" nillable="true" type="tns:GetUserParameters"/>
+      <xs:element name="getUserResponse" nillable="true" type="tns:SSOwsResult"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="unmergeUser">
+    <wsdl:part element="tns:unmergeUser" name="unmergeUserParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getToken">
+    <wsdl:part element="tns:getToken" name="getTokenParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResourceItemResponse">
+    <wsdl:part element="tns:addResourceItemResponse" name="addResourceItemResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsers">
+    <wsdl:part element="tns:getUsers" name="getUsersParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTokenResponse">
+    <wsdl:part element="tns:getTokenResponse" name="getTokenResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addGroupResponse">
+    <wsdl:part element="tns:addGroupResponse" name="addGroupResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupResponse">
+    <wsdl:part element="tns:getGroupResponse" name="getGroupResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyUser">
+    <wsdl:part element="tns:modifyUser" name="modifyUserParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doesUserExist">
+    <wsdl:part element="tns:doesUserExist" name="doesUserExistParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isInstructor">
+    <wsdl:part element="tns:isInstructor" name="isInstructorParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserInfo">
+    <wsdl:part element="tns:getUserInfo" name="getUserInfoParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reactivateInstructor">
+    <wsdl:part element="tns:reactivateInstructor" name="reactivateInstructorParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTokenFromGuidResponse">
+    <wsdl:part element="tns:getTokenFromGuidResponse" name="getTokenFromGuidResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deactivateInstructorResponse">
+    <wsdl:part element="tns:deactivateInstructorResponse" name="deactivateInstructorResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validatedInstructor">
+    <wsdl:part element="tns:validatedInstructor" name="validatedInstructorParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="testTimeOut">
+    <wsdl:part element="tns:testTimeOut" name="integer"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUser">
+    <wsdl:part element="tns:getUser" name="getUserParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doesUserExistResponse">
+    <wsdl:part element="tns:doesUserExistResponse" name="doesUserExistResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isUrlProtectedResponse">
+    <wsdl:part element="tns:isUrlProtectedResponse" name="isUrlProtectedResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="restrictionRemoveFromUserResponse">
+    <wsdl:part element="tns:restrictionRemoveFromUserResponse" name="restrictionRemoveFromUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroup">
+    <wsdl:part element="tns:deleteGroup" name="deleteGroupParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeUniqueMember">
+    <wsdl:part element="tns:removeUniqueMember" name="removeUniqueMemberParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="mergeUserResponse">
+    <wsdl:part element="tns:mergeUserResponse" name="mergeUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="suspendInstructor">
+    <wsdl:part element="tns:suspendInstructor" name="crmsParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isUrlProtected">
+    <wsdl:part element="tns:isUrlProtected" name="isUrlProtectedParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTokenFromGuid">
+    <wsdl:part element="tns:getTokenFromGuid" name="getTokenFromGuidParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="suspendInstructorResponse">
+    <wsdl:part element="tns:suspendInstructorResponse" name="suspendInstructorResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getVersion"></wsdl:message>
+  <wsdl:message name="modifyGroup">
+    <wsdl:part element="tns:modifyGroup" name="modifyGroupParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeUniqueMemberResponse">
+    <wsdl:part element="tns:removeUniqueMemberResponse" name="removeUniqueMemberResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserResponse">
+    <wsdl:part element="tns:deleteUserResponse" name="deleteUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validatedInstructorResponse">
+    <wsdl:part element="tns:validatedInstructorResponse" name="validatedInstructorResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDirectGroupMembershipResponse">
+    <wsdl:part element="tns:getDirectGroupMembershipResponse" name="getDirectGroupMembershipResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validateTokenResponse">
+    <wsdl:part element="tns:validateTokenResponse" name="validateTokenResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserPasswordResetKey">
+    <wsdl:part element="tns:getUserPasswordResetKey" name="passwordResetKeyParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyGroupResponse">
+    <wsdl:part element="tns:modifyGroupResponse" name="modifyGroupResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupResponse">
+    <wsdl:part element="tns:deleteGroupResponse" name="deleteGroupResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersResponse">
+    <wsdl:part element="tns:getUsersResponse" name="getUsersResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyUserResponse">
+    <wsdl:part element="tns:modifyUserResponse" name="modifyUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deactivateInstructor">
+    <wsdl:part element="tns:deactivateInstructor" name="deactivateInstructorParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="hasAccessToResponse">
+    <wsdl:part element="tns:hasAccessToResponse" name="hasAccessToResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="mergeUser">
+    <wsdl:part element="tns:mergeUser" name="mergeUserParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUser">
+    <wsdl:part element="tns:deleteUser" name="deleteUserParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="restrictionAddToUser">
+    <wsdl:part element="tns:restrictionAddToUser" name="restrictionParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUniqueMember">
+    <wsdl:part element="tns:addUniqueMember" name="addUniqueMemberParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reactivateInstructorResponse">
+    <wsdl:part element="tns:reactivateInstructorResponse" name="reactivateInstructorResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="hasAccessTo">
+    <wsdl:part element="tns:hasAccessTo" name="hasAccessToParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="restrictionAddToUserResponse">
+    <wsdl:part element="tns:restrictionAddToUserResponse" name="restrictionAddToUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="unmergeUserResponse">
+    <wsdl:part element="tns:unmergeUserResponse" name="unmergeUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResourceItem">
+    <wsdl:part element="tns:addResourceItem" name="addResourceItemParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isMemberOf">
+    <wsdl:part element="tns:isMemberOf" name="isMemberOfParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserPasswordResetKeyResponse">
+    <wsdl:part element="tns:getUserPasswordResetKeyResponse" name="getUserPasswordResetKeyResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupsProtectingHostURL">
+    <wsdl:part element="tns:getGroupsProtectingHostURL" name="GetGroupsProtectingHostURLParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isMemberOfResponse">
+    <wsdl:part element="tns:isMemberOfResponse" name="isMemberOfResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="refreshToken">
+    <wsdl:part element="tns:refreshToken" name="refreshTokenParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="testTimeOutResponse">
+    <wsdl:part element="tns:testTimeOutResponse" name="testTimeOutResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupsProtectingHostURLResponse">
+    <wsdl:part element="tns:getGroupsProtectingHostURLResponse" name="GetGroupsProtectingHostURLResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserInfoResponse">
+    <wsdl:part element="tns:getUserInfoResponse" name="getUserInfoResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupsProtectingResponse">
+    <wsdl:part element="tns:getGroupsProtectingResponse" name="getGroupsProtectingResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="renameResponse">
+    <wsdl:part element="tns:renameResponse" name="renameResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUniqueMemberResponse">
+    <wsdl:part element="tns:addUniqueMemberResponse" name="addUniqueMemberResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroup">
+    <wsdl:part element="tns:getGroup" name="getGroupParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupsProtecting">
+    <wsdl:part element="tns:getGroupsProtecting" name="string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserResponse">
+    <wsdl:part element="tns:getUserResponse" name="getUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDirectGroupMembership">
+    <wsdl:part element="tns:getDirectGroupMembership" name="getDirectGroupMembershipParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="restrictionRemoveFromUser">
+    <wsdl:part element="tns:restrictionRemoveFromUser" name="restrictionParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validateToken">
+    <wsdl:part element="tns:validateToken" name="string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isInstructorResponse">
+    <wsdl:part element="tns:isInstructorResponse" name="isInstructorResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUser">
+    <wsdl:part element="tns:addUser" name="addUserParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getVersionResponse">
+    <wsdl:part element="tns:getVersionResponse" name="getVersionResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="refreshTokenResponse">
+    <wsdl:part element="tns:refreshTokenResponse" name="refreshTokenResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addGroup">
+    <wsdl:part element="tns:addGroup" name="addGroupParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeResourceItem">
+    <wsdl:part element="tns:removeResourceItem" name="removeResourceItemParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeResourceItemResponse">
+    <wsdl:part element="tns:removeResourceItemResponse" name="removeResourceItemResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="rename">
+    <wsdl:part element="tns:rename" name="renameParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addUserResponse">
+    <wsdl:part element="tns:addUserResponse" name="addUserResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SSOwsPort">
+    <wsdl:operation name="addGroup">
+      <wsdl:input message="tns:addGroup" name="addGroup"></wsdl:input>
+      <wsdl:output message="tns:addGroupResponse" name="addGroupResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isMemberOf">
+      <wsdl:input message="tns:isMemberOf" name="isMemberOf"></wsdl:input>
+      <wsdl:output message="tns:isMemberOfResponse" name="isMemberOfResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResourceItem">
+      <wsdl:input message="tns:addResourceItem" name="addResourceItem"></wsdl:input>
+      <wsdl:output message="tns:addResourceItemResponse" name="addResourceItemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="suspendInstructor">
+      <wsdl:input message="tns:suspendInstructor" name="suspendInstructor"></wsdl:input>
+      <wsdl:output message="tns:suspendInstructorResponse" name="suspendInstructorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <wsdl:input message="tns:deleteGroup" name="deleteGroup"></wsdl:input>
+      <wsdl:output message="tns:deleteGroupResponse" name="deleteGroupResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserPasswordResetKey">
+      <wsdl:input message="tns:getUserPasswordResetKey" name="getUserPasswordResetKey"></wsdl:input>
+      <wsdl:output message="tns:getUserPasswordResetKeyResponse" name="getUserPasswordResetKeyResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="refreshToken">
+      <wsdl:input message="tns:refreshToken" name="refreshToken"></wsdl:input>
+      <wsdl:output message="tns:refreshTokenResponse" name="refreshTokenResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hasAccessTo">
+      <wsdl:input message="tns:hasAccessTo" name="hasAccessTo"></wsdl:input>
+      <wsdl:output message="tns:hasAccessToResponse" name="hasAccessToResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getToken">
+      <wsdl:input message="tns:getToken" name="getToken"></wsdl:input>
+      <wsdl:output message="tns:getTokenResponse" name="getTokenResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testTimeOut">
+      <wsdl:input message="tns:testTimeOut" name="testTimeOut"></wsdl:input>
+      <wsdl:output message="tns:testTimeOutResponse" name="testTimeOutResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyUser">
+      <wsdl:input message="tns:modifyUser" name="modifyUser"></wsdl:input>
+      <wsdl:output message="tns:modifyUserResponse" name="modifyUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doesUserExist">
+      <wsdl:input message="tns:doesUserExist" name="doesUserExist"></wsdl:input>
+      <wsdl:output message="tns:doesUserExistResponse" name="doesUserExistResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTokenFromGuid">
+      <wsdl:input message="tns:getTokenFromGuid" name="getTokenFromGuid"></wsdl:input>
+      <wsdl:output message="tns:getTokenFromGuidResponse" name="getTokenFromGuidResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mergeUser">
+      <wsdl:input message="tns:mergeUser" name="mergeUser"></wsdl:input>
+      <wsdl:output message="tns:mergeUserResponse" name="mergeUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupsProtecting">
+      <wsdl:input message="tns:getGroupsProtecting" name="getGroupsProtecting"></wsdl:input>
+      <wsdl:output message="tns:getGroupsProtectingResponse" name="getGroupsProtectingResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <wsdl:input message="tns:deleteUser" name="deleteUser"></wsdl:input>
+      <wsdl:output message="tns:deleteUserResponse" name="deleteUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isInstructor">
+      <wsdl:input message="tns:isInstructor" name="isInstructor"></wsdl:input>
+      <wsdl:output message="tns:isInstructorResponse" name="isInstructorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroup">
+      <wsdl:input message="tns:getGroup" name="getGroup"></wsdl:input>
+      <wsdl:output message="tns:getGroupResponse" name="getGroupResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDirectGroupMembership">
+      <wsdl:input message="tns:getDirectGroupMembership" name="getDirectGroupMembership"></wsdl:input>
+      <wsdl:output message="tns:getDirectGroupMembershipResponse" name="getDirectGroupMembershipResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restrictionAddToUser">
+      <wsdl:input message="tns:restrictionAddToUser" name="restrictionAddToUser"></wsdl:input>
+      <wsdl:output message="tns:restrictionAddToUserResponse" name="restrictionAddToUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupsProtectingHostURL">
+      <wsdl:input message="tns:getGroupsProtectingHostURL" name="getGroupsProtectingHostURL"></wsdl:input>
+      <wsdl:output message="tns:getGroupsProtectingHostURLResponse" name="getGroupsProtectingHostURLResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVersion">
+      <wsdl:input message="tns:getVersion" name="getVersion"></wsdl:input>
+      <wsdl:output message="tns:getVersionResponse" name="getVersionResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <wsdl:input message="tns:getUsers" name="getUsers"></wsdl:input>
+      <wsdl:output message="tns:getUsersResponse" name="getUsersResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restrictionRemoveFromUser">
+      <wsdl:input message="tns:restrictionRemoveFromUser" name="restrictionRemoveFromUser"></wsdl:input>
+      <wsdl:output message="tns:restrictionRemoveFromUserResponse" name="restrictionRemoveFromUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyGroup">
+      <wsdl:input message="tns:modifyGroup" name="modifyGroup"></wsdl:input>
+      <wsdl:output message="tns:modifyGroupResponse" name="modifyGroupResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validatedInstructor">
+      <wsdl:input message="tns:validatedInstructor" name="validatedInstructor"></wsdl:input>
+      <wsdl:output message="tns:validatedInstructorResponse" name="validatedInstructorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rename">
+      <wsdl:input message="tns:rename" name="rename"></wsdl:input>
+      <wsdl:output message="tns:renameResponse" name="renameResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUser">
+      <wsdl:input message="tns:addUser" name="addUser"></wsdl:input>
+      <wsdl:output message="tns:addUserResponse" name="addUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unmergeUser">
+      <wsdl:input message="tns:unmergeUser" name="unmergeUser"></wsdl:input>
+      <wsdl:output message="tns:unmergeUserResponse" name="unmergeUserResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deactivateInstructor">
+      <wsdl:input message="tns:deactivateInstructor" name="deactivateInstructor"></wsdl:input>
+      <wsdl:output message="tns:deactivateInstructorResponse" name="deactivateInstructorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeUniqueMember">
+      <wsdl:input message="tns:removeUniqueMember" name="removeUniqueMember"></wsdl:input>
+      <wsdl:output message="tns:removeUniqueMemberResponse" name="removeUniqueMemberResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUrlProtected">
+      <wsdl:input message="tns:isUrlProtected" name="isUrlProtected"></wsdl:input>
+      <wsdl:output message="tns:isUrlProtectedResponse" name="isUrlProtectedResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reactivateInstructor">
+      <wsdl:input message="tns:reactivateInstructor" name="reactivateInstructor"></wsdl:input>
+      <wsdl:output message="tns:reactivateInstructorResponse" name="reactivateInstructorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUniqueMember">
+      <wsdl:input message="tns:addUniqueMember" name="addUniqueMember"></wsdl:input>
+      <wsdl:output message="tns:addUniqueMemberResponse" name="addUniqueMemberResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeResourceItem">
+      <wsdl:input message="tns:removeResourceItem" name="removeResourceItem"></wsdl:input>
+      <wsdl:output message="tns:removeResourceItemResponse" name="removeResourceItemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateToken">
+      <wsdl:input message="tns:validateToken" name="validateToken"></wsdl:input>
+      <wsdl:output message="tns:validateTokenResponse" name="validateTokenResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserInfo">
+      <wsdl:input message="tns:getUserInfo" name="getUserInfo"></wsdl:input>
+      <wsdl:output message="tns:getUserInfoResponse" name="getUserInfoResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input message="tns:getUser" name="getUser"></wsdl:input>
+      <wsdl:output message="tns:getUserResponse" name="getUserResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SSOwsSoapBinding" type="tns:SSOwsPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isMemberOf">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isMemberOf">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isMemberOfResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResourceItem">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addResourceItem">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addResourceItemResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="suspendInstructor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="suspendInstructor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="suspendInstructorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserPasswordResetKey">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUserPasswordResetKey">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserPasswordResetKeyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getToken">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getToken">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTokenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hasAccessTo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="hasAccessTo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="hasAccessToResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="refreshToken">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="refreshToken">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="refreshTokenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modifyUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modifyUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testTimeOut">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="testTimeOut">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="testTimeOutResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doesUserExist">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="doesUserExist">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="doesUserExistResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTokenFromGuid">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTokenFromGuid">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTokenFromGuidResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupsProtecting">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGroupsProtecting">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupsProtectingResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mergeUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="mergeUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="mergeUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isInstructor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isInstructor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isInstructorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDirectGroupMembership">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDirectGroupMembership">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDirectGroupMembershipResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restrictionAddToUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="restrictionAddToUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="restrictionAddToUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupsProtectingHostURL">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGroupsProtectingHostURL">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupsProtectingHostURLResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVersion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getVersion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getVersionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modifyGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modifyGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restrictionRemoveFromUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="restrictionRemoveFromUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="restrictionRemoveFromUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validatedInstructor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="validatedInstructor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validatedInstructorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rename">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="rename">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="renameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unmergeUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="unmergeUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="unmergeUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deactivateInstructor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deactivateInstructor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deactivateInstructorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUrlProtected">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isUrlProtected">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isUrlProtectedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeUniqueMember">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="removeUniqueMember">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeUniqueMemberResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reactivateInstructor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="reactivateInstructor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="reactivateInstructorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUniqueMember">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addUniqueMember">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addUniqueMemberResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeResourceItem">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="removeResourceItem">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeResourceItemResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUserInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateToken">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="validateToken">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validateTokenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SSOws">
+    <wsdl:port binding="tns:SSOwsSoapBinding" name="SSOwsPort">
+      <soap:address location="https://s-ws.cengage.com/ssows/SSOws"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="addGroup" bindingOperationName="addGroup" type="Request-Response" outputName="addGroupResponse" inputName="addGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:addGroup>
+         <java:group>
+            <java1:businessCategory>?</java1:businessCategory>
+            <java1:businessUnit>?</java1:businessUnit>
+            <java1:cn>?</java1:cn>
+            <java1:createTimestamp>?</java1:createTimestamp>
+            <java1:creatorsName>?</java1:creatorsName>
+            <java1:description>?</java1:description>
+            <java1:dn>?</java1:dn>
+            <java1:groupRefs>
+               <!--1 or more repetitions:-->
+               <java1:GroupRef>
+                  <java1:cn>?</java1:cn>
+                  <java1:ERightsId>?</java1:ERightsId>
+                  <java1:host>?</java1:host>
+                  <java1:resourceItems>
+                     <!--1 or more repetitions:-->
+                     <java2:string>?</java2:string>
+                  </java1:resourceItems>
+               </java1:GroupRef>
+            </java1:groupRefs>
+            <java1:groups>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:groups>
+            <java1:host>?</java1:host>
+            <java1:modifiersName>?</java1:modifiersName>
+            <java1:modifyTimestamp>?</java1:modifyTimestamp>
+            <java1:numSubordinates>?</java1:numSubordinates>
+            <java1:owner>?</java1:owner>
+            <java1:resourceItems>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:resourceItems>
+            <java1:searchBase>?</java1:searchBase>
+            <java1:seeAlso>?</java1:seeAlso>
+            <java1:TLErightsId>?</java1:TLErightsId>
+            <java1:uniqueGroupMembers>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:uniqueGroupMembers>
+         </java:group>
+         <java:token>?</java:token>
+      </ssow:addGroup>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addResourceItem" bindingOperationName="addResourceItem" type="Request-Response" outputName="addResourceItemResponse" inputName="addResourceItem" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:addResourceItem>
+         <java:groupCn>?</java:groupCn>
+         <java:resourceItem>?</java:resourceItem>
+         <java:token>?</java:token>
+      </ssow:addResourceItem>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addResourceItem"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addUniqueMember" bindingOperationName="addUniqueMember" type="Request-Response" outputName="addUniqueMemberResponse" inputName="addUniqueMember" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:addUniqueMember>
+         <java:groupCn>?</java:groupCn>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:addUniqueMember>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addUniqueMember"/></con:call></con:operation><con:operation isOneWay="false" action="" name="addUser" bindingOperationName="addUser" type="Request-Response" outputName="addUserResponse" inputName="addUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:addUser>
+         <java:person>
+            <java1:c>?</java1:c>
+            <java1:cn>?</java1:cn>
+            <java1:createTimestamp>?</java1:createTimestamp>
+            <java1:creatorsName>?</java1:creatorsName>
+            <java1:departmentNumber>?</java1:departmentNumber>
+            <java1:dn>?</java1:dn>
+            <java1:employeeNumber>?</java1:employeeNumber>
+            <java1:facsimileTelephoneNumber>?</java1:facsimileTelephoneNumber>
+            <java1:givenName>?</java1:givenName>
+            <java1:groups>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:groups>
+            <!--Optional:-->
+            <java1:guid>?</java1:guid>
+            <java1:homePhone>?</java1:homePhone>
+            <java1:homePostalAddress>?</java1:homePostalAddress>
+            <java1:instructor>?</java1:instructor>
+            <java1:l>?</java1:l>
+            <java1:mail>?</java1:mail>
+            <java1:middleInitial>?</java1:middleInitial>
+            <java1:mobile>?</java1:mobile>
+            <java1:modifiersName>?</java1:modifiersName>
+            <java1:modifyTimestamp>?</java1:modifyTimestamp>
+            <java1:orclSecondaryUID>?</java1:orclSecondaryUID>
+            <java1:ou>?</java1:ou>
+            <java1:pager>?</java1:pager>
+            <java1:postalCode>?</java1:postalCode>
+            <java1:resourceItems>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:resourceItems>
+            <java1:restrictedUser>?</java1:restrictedUser>
+            <java1:searchBase>?</java1:searchBase>
+            <java1:sn>?</java1:sn>
+            <java1:st>?</java1:st>
+            <java1:street>?</java1:street>
+            <java1:TLAgeRange>?</java1:TLAgeRange>
+            <java1:TLB2BSiteId>?</java1:TLB2BSiteId>
+            <java1:TLCheckPointA>?</java1:TLCheckPointA>
+            <java1:TLCheckPointQ>?</java1:TLCheckPointQ>
+            <java1:TLCity>?</java1:TLCity>
+            <java1:TLCrms8AccountId>?</java1:TLCrms8AccountId>
+            <java1:TLCrms8ContactId>?</java1:TLCrms8ContactId>
+            <java1:TLCrmsContactId>?</java1:TLCrmsContactId>
+            <java1:TLCrmsValidatedInstructor>?</java1:TLCrmsValidatedInstructor>
+            <java1:TLErightsId>?</java1:TLErightsId>
+            <java1:TLEveningPhone>?</java1:TLEveningPhone>
+            <java1:TLGender>?</java1:TLGender>
+            <java1:TLInstitutionId>?</java1:TLInstitutionId>
+            <java1:TLJDEBillTo>?</java1:TLJDEBillTo>
+            <java1:TLJDEShipTo>?</java1:TLJDEShipTo>
+            <java1:TLPWHint>?</java1:TLPWHint>
+            <java1:TLPrefLang>?</java1:TLPrefLang>
+            <java1:TLPubcoId>?</java1:TLPubcoId>
+            <java1:TLRegion>?</java1:TLRegion>
+            <java1:TLSchoolAffiliation>?</java1:TLSchoolAffiliation>
+            <java1:TLSealedMediaUser>?</java1:TLSealedMediaUser>
+            <java1:TLSerialNumbers>?</java1:TLSerialNumbers>
+            <java1:TLShipToC>?</java1:TLShipToC>
+            <java1:TLShipToCity>?</java1:TLShipToCity>
+            <java1:TLShipToL>?</java1:TLShipToL>
+            <java1:TLShipToPostalAddress>?</java1:TLShipToPostalAddress>
+            <java1:TLShipToPostalCode>?</java1:TLShipToPostalCode>
+            <java1:TLShipToSt>?</java1:TLShipToSt>
+            <java1:TLTCCreationDate>?</java1:TLTCCreationDate>
+            <java1:TLTCExpireDate>?</java1:TLTCExpireDate>
+            <java1:TLTCIdCode>?</java1:TLTCIdCode>
+            <java1:TLTCOriginalZone>?</java1:TLTCOriginalZone>
+            <java1:TLTCServices>?</java1:TLTCServices>
+            <java1:TLTCStatus>?</java1:TLTCStatus>
+            <java1:TLThomsonNowInstitutionId>?</java1:TLThomsonNowInstitutionId>
+            <java1:TLUserType>?</java1:TLUserType>
+            <java1:uid>?</java1:uid>
+            <java1:userPassword>?</java1:userPassword>
+            <java1:workPhone>?</java1:workPhone>
+            <java1:TLOptInCengage>?</java1:TLOptInCengage>
+            <java1:TLOptInIchapters>?</java1:TLOptInIchapters>
+            <!--Optional:-->
+            <java1:emailValidated>?</java1:emailValidated>
+            <!--Optional:-->
+            <java1:timeZone>?</java1:timeZone>
+            <!--Optional:-->
+            <java1:apliaTcAccepted>?</java1:apliaTcAccepted>
+            <!--Optional:-->
+            <java1:TLInstitutionName>?</java1:TLInstitutionName>
+            <java1:pendingInstructor>?</java1:pendingInstructor>
+            <!--Optional:-->
+            <java1:userType>?</java1:userType>
+            <!--Optional:-->
+            <java1:cengageCrowdId>?</java1:cengageCrowdId>
+            <!--Optional:-->
+            <java1:source>?</java1:source>
+         </java:person>
+         <java:token>?</java:token>
+      </ssow:addUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/addUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deactivateInstructor" bindingOperationName="deactivateInstructor" type="Request-Response" outputName="deactivateInstructorResponse" inputName="deactivateInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:deactivateInstructor>
+         <!--Optional:-->
+         <java:tlCrms8ContactId>?</java:tlCrms8ContactId>
+         <!--Optional:-->
+         <java:token>?</java:token>
+      </ssow:deactivateInstructor>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deactivateInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deleteGroup" bindingOperationName="deleteGroup" type="Request-Response" outputName="deleteGroupResponse" inputName="deleteGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:deleteGroup>
+         <java:dn>?</java:dn>
+         <java:token>?</java:token>
+      </ssow:deleteGroup>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deleteGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="deleteUser" bindingOperationName="deleteUser" type="Request-Response" outputName="deleteUserResponse" inputName="deleteUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:deleteUser>
+         <java:dn>?</java:dn>
+         <java:token>?</java:token>
+      </ssow:deleteUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/deleteUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="doesUserExist" bindingOperationName="doesUserExist" type="Request-Response" outputName="doesUserExistResponse" inputName="doesUserExist" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:doesUserExist>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:doesUserExist>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/doesUserExist"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getDirectGroupMembership" bindingOperationName="getDirectGroupMembership" type="Request-Response" outputName="getDirectGroupMembershipResponse" inputName="getDirectGroupMembership" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getDirectGroupMembership>
+         <!--Optional:-->
+         <java:adminToken>?</java:adminToken>
+         <!--Optional:-->
+         <java:username>?</java:username>
+         <!--Optional:-->
+         <java:guid>?</java:guid>
+         <!--Optional:-->
+         <java:userToken>?</java:userToken>
+         <!--Optional:-->
+         <java:groupName>?</java:groupName>
+      </ssow:getDirectGroupMembership>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getDirectGroupMembership"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroup" bindingOperationName="getGroup" type="Request-Response" outputName="getGroupResponse" inputName="getGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getGroup>
+         <java:ERightsId>?</java:ERightsId>
+         <java:getUniqueGroups>?</java:getUniqueGroups>
+         <java:groupCn>?</java:groupCn>
+         <java:token>?</java:token>
+         <!--Optional:-->
+         <java:returnNestedGroups>?</java:returnNestedGroups>
+      </ssow:getGroup>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroupsProtecting" bindingOperationName="getGroupsProtecting" type="Request-Response" outputName="getGroupsProtectingResponse" inputName="getGroupsProtecting" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getGroupsProtecting>?</ssow:getGroupsProtecting>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroupsProtecting"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getGroupsProtectingHostURL" bindingOperationName="getGroupsProtectingHostURL" type="Request-Response" outputName="getGroupsProtectingHostURLResponse" inputName="getGroupsProtectingHostURL" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getGroupsProtectingHostURL>
+         <!--Optional:-->
+         <java:hosts>
+            <!--1 or more repetitions:-->
+            <java1:string>?</java1:string>
+         </java:hosts>
+         <java:path>?</java:path>
+      </ssow:getGroupsProtectingHostURL>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getGroupsProtectingHostURL"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getToken" bindingOperationName="getToken" type="Request-Response" outputName="getTokenResponse" inputName="getToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint> ${#Project#EndPoint1}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getToken>
+          <java:password>T3sting</java:password>
+         <java:uid>4LTR-Dev-Inst@cengage.com</java:uid>
+      </ssow:getToken>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getToken"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getTokenFromGuid" bindingOperationName="getTokenFromGuid" type="Request-Response" outputName="getTokenFromGuidResponse" inputName="getTokenFromGuid" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getTokenFromGuid>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+      </ssow:getTokenFromGuid>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getTokenFromGuid"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUser" bindingOperationName="getUser" type="Request-Response" outputName="getUserResponse" inputName="getUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getUser>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+         <!--Optional:-->
+         <java:returnGroups>?</java:returnGroups>
+         <!--Optional:-->
+         <java:returnPassword>?</java:returnPassword>
+         <!--Optional:-->
+         <java:returnNestedGroups>?</java:returnNestedGroups>
+      </ssow:getUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUserInfo" bindingOperationName="getUserInfo" type="Request-Response" outputName="getUserInfoResponse" inputName="getUserInfo" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows" xmlns:java1="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getUserInfo>
+         <java:token>?</java:token>
+         <java:guids>
+            <!--1 or more repetitions:-->
+            <java1:string>?</java1:string>
+         </java:guids>
+      </ssow:getUserInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUserInfo"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUserPasswordResetKey" bindingOperationName="getUserPasswordResetKey" type="Request-Response" outputName="getUserPasswordResetKeyResponse" inputName="getUserPasswordResetKey" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getUserPasswordResetKey>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:getUserPasswordResetKey>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUserPasswordResetKey"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getUsers" bindingOperationName="getUsers" type="Request-Response" outputName="getUsersResponse" inputName="getUsers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getUsers>
+         <java:person>
+            <java1:c>?</java1:c>
+            <java1:cn>?</java1:cn>
+            <java1:createTimestamp>?</java1:createTimestamp>
+            <java1:creatorsName>?</java1:creatorsName>
+            <java1:departmentNumber>?</java1:departmentNumber>
+            <java1:dn>?</java1:dn>
+            <java1:employeeNumber>?</java1:employeeNumber>
+            <java1:facsimileTelephoneNumber>?</java1:facsimileTelephoneNumber>
+            <java1:givenName>?</java1:givenName>
+            <java1:groups>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:groups>
+            <!--Optional:-->
+            <java1:guid>?</java1:guid>
+            <java1:homePhone>?</java1:homePhone>
+            <java1:homePostalAddress>?</java1:homePostalAddress>
+            <java1:instructor>?</java1:instructor>
+            <java1:l>?</java1:l>
+            <java1:mail>?</java1:mail>
+            <java1:middleInitial>?</java1:middleInitial>
+            <java1:mobile>?</java1:mobile>
+            <java1:modifiersName>?</java1:modifiersName>
+            <java1:modifyTimestamp>?</java1:modifyTimestamp>
+            <java1:orclSecondaryUID>?</java1:orclSecondaryUID>
+            <java1:ou>?</java1:ou>
+            <java1:pager>?</java1:pager>
+            <java1:postalCode>?</java1:postalCode>
+            <java1:resourceItems>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:resourceItems>
+            <java1:restrictedUser>?</java1:restrictedUser>
+            <java1:searchBase>?</java1:searchBase>
+            <java1:sn>?</java1:sn>
+            <java1:st>?</java1:st>
+            <java1:street>?</java1:street>
+            <java1:TLAgeRange>?</java1:TLAgeRange>
+            <java1:TLB2BSiteId>?</java1:TLB2BSiteId>
+            <java1:TLCheckPointA>?</java1:TLCheckPointA>
+            <java1:TLCheckPointQ>?</java1:TLCheckPointQ>
+            <java1:TLCity>?</java1:TLCity>
+            <java1:TLCrms8AccountId>?</java1:TLCrms8AccountId>
+            <java1:TLCrms8ContactId>?</java1:TLCrms8ContactId>
+            <java1:TLCrmsContactId>?</java1:TLCrmsContactId>
+            <java1:TLCrmsValidatedInstructor>?</java1:TLCrmsValidatedInstructor>
+            <java1:TLErightsId>?</java1:TLErightsId>
+            <java1:TLEveningPhone>?</java1:TLEveningPhone>
+            <java1:TLGender>?</java1:TLGender>
+            <java1:TLInstitutionId>?</java1:TLInstitutionId>
+            <java1:TLJDEBillTo>?</java1:TLJDEBillTo>
+            <java1:TLJDEShipTo>?</java1:TLJDEShipTo>
+            <java1:TLPWHint>?</java1:TLPWHint>
+            <java1:TLPrefLang>?</java1:TLPrefLang>
+            <java1:TLPubcoId>?</java1:TLPubcoId>
+            <java1:TLRegion>?</java1:TLRegion>
+            <java1:TLSchoolAffiliation>?</java1:TLSchoolAffiliation>
+            <java1:TLSealedMediaUser>?</java1:TLSealedMediaUser>
+            <java1:TLSerialNumbers>?</java1:TLSerialNumbers>
+            <java1:TLShipToC>?</java1:TLShipToC>
+            <java1:TLShipToCity>?</java1:TLShipToCity>
+            <java1:TLShipToL>?</java1:TLShipToL>
+            <java1:TLShipToPostalAddress>?</java1:TLShipToPostalAddress>
+            <java1:TLShipToPostalCode>?</java1:TLShipToPostalCode>
+            <java1:TLShipToSt>?</java1:TLShipToSt>
+            <java1:TLTCCreationDate>?</java1:TLTCCreationDate>
+            <java1:TLTCExpireDate>?</java1:TLTCExpireDate>
+            <java1:TLTCIdCode>?</java1:TLTCIdCode>
+            <java1:TLTCOriginalZone>?</java1:TLTCOriginalZone>
+            <java1:TLTCServices>?</java1:TLTCServices>
+            <java1:TLTCStatus>?</java1:TLTCStatus>
+            <java1:TLThomsonNowInstitutionId>?</java1:TLThomsonNowInstitutionId>
+            <java1:TLUserType>?</java1:TLUserType>
+            <java1:uid>?</java1:uid>
+            <java1:userPassword>?</java1:userPassword>
+            <java1:workPhone>?</java1:workPhone>
+            <java1:TLOptInCengage>?</java1:TLOptInCengage>
+            <java1:TLOptInIchapters>?</java1:TLOptInIchapters>
+            <!--Optional:-->
+            <java1:emailValidated>?</java1:emailValidated>
+            <!--Optional:-->
+            <java1:timeZone>?</java1:timeZone>
+            <!--Optional:-->
+            <java1:apliaTcAccepted>?</java1:apliaTcAccepted>
+            <!--Optional:-->
+            <java1:TLInstitutionName>?</java1:TLInstitutionName>
+            <java1:pendingInstructor>?</java1:pendingInstructor>
+            <!--Optional:-->
+            <java1:userType>?</java1:userType>
+            <!--Optional:-->
+            <java1:cengageCrowdId>?</java1:cengageCrowdId>
+            <!--Optional:-->
+            <java1:source>?</java1:source>
+         </java:person>
+         <java:token>?</java:token>
+         <!--Optional:-->
+         <java:returnGroups>?</java:returnGroups>
+         <!--Optional:-->
+         <java:returnPassword>?</java:returnPassword>
+         <!--Optional:-->
+         <java:returnNestedGroups>?</java:returnNestedGroups>
+      </ssow:getUsers>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getUsers"/></con:call></con:operation><con:operation isOneWay="false" action="" name="getVersion" bindingOperationName="getVersion" type="Request-Response" outputName="getVersionResponse" inputName="getVersion" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   &lt;soapenv:Header/>
+   &lt;soapenv:Body/>
+&lt;/soapenv:Envelope></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getVersion"/></con:call></con:operation><con:operation isOneWay="false" action="" name="hasAccessTo" bindingOperationName="hasAccessTo" type="Request-Response" outputName="hasAccessToResponse" inputName="hasAccessTo" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:hasAccessTo>
+         <java:guid>?</java:guid>
+         <java:resourceItem>?</java:resourceItem>
+         <java:token>?</java:token>
+      </ssow:hasAccessTo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/hasAccessTo"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isInstructor" bindingOperationName="isInstructor" type="Request-Response" outputName="isInstructorResponse" inputName="isInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:isInstructor>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:isInstructor>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isMemberOf" bindingOperationName="isMemberOf" type="Request-Response" outputName="isMemberOfResponse" inputName="isMemberOf" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:isMemberOf>
+         <java:groupCn>?</java:groupCn>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:isMemberOf>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isMemberOf"/></con:call></con:operation><con:operation isOneWay="false" action="" name="isUrlProtected" bindingOperationName="isUrlProtected" type="Request-Response" outputName="isUrlProtectedResponse" inputName="isUrlProtected" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:isUrlProtected>
+         <!--Optional:-->
+         <java:hostNames>
+            <!--1 or more repetitions:-->
+            <java1:string>?</java1:string>
+         </java:hostNames>
+         <java:resourceItem>?</java:resourceItem>
+         <java:token>?</java:token>
+      </ssow:isUrlProtected>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/isUrlProtected"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modifyGroup" bindingOperationName="modifyGroup" type="Request-Response" outputName="modifyGroupResponse" inputName="modifyGroup" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:modifyGroup>
+         <java:group>
+            <java1:businessCategory>?</java1:businessCategory>
+            <java1:businessUnit>?</java1:businessUnit>
+            <java1:cn>?</java1:cn>
+            <java1:createTimestamp>?</java1:createTimestamp>
+            <java1:creatorsName>?</java1:creatorsName>
+            <java1:description>?</java1:description>
+            <java1:dn>?</java1:dn>
+            <java1:groupRefs>
+               <!--1 or more repetitions:-->
+               <java1:GroupRef>
+                  <java1:cn>?</java1:cn>
+                  <java1:ERightsId>?</java1:ERightsId>
+                  <java1:host>?</java1:host>
+                  <java1:resourceItems>
+                     <!--1 or more repetitions:-->
+                     <java2:string>?</java2:string>
+                  </java1:resourceItems>
+               </java1:GroupRef>
+            </java1:groupRefs>
+            <java1:groups>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:groups>
+            <java1:host>?</java1:host>
+            <java1:modifiersName>?</java1:modifiersName>
+            <java1:modifyTimestamp>?</java1:modifyTimestamp>
+            <java1:numSubordinates>?</java1:numSubordinates>
+            <java1:owner>?</java1:owner>
+            <java1:resourceItems>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:resourceItems>
+            <java1:searchBase>?</java1:searchBase>
+            <java1:seeAlso>?</java1:seeAlso>
+            <java1:TLErightsId>?</java1:TLErightsId>
+            <java1:uniqueGroupMembers>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:uniqueGroupMembers>
+         </java:group>
+         <java:groupCn>?</java:groupCn>
+         <java:token>?</java:token>
+      </ssow:modifyGroup>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/modifyGroup"/></con:call></con:operation><con:operation isOneWay="false" action="" name="modifyUser" bindingOperationName="modifyUser" type="Request-Response" outputName="modifyUserResponse" inputName="modifyUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters" xmlns:java1="java:com.tl.ssows" xmlns:java2="java:language_builtins.lang">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:modifyUser>
+         <java:guid>?</java:guid>
+         <java:person>
+            <java1:c>?</java1:c>
+            <java1:cn>?</java1:cn>
+            <java1:createTimestamp>?</java1:createTimestamp>
+            <java1:creatorsName>?</java1:creatorsName>
+            <java1:departmentNumber>?</java1:departmentNumber>
+            <java1:dn>?</java1:dn>
+            <java1:employeeNumber>?</java1:employeeNumber>
+            <java1:facsimileTelephoneNumber>?</java1:facsimileTelephoneNumber>
+            <java1:givenName>?</java1:givenName>
+            <java1:groups>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:groups>
+            <!--Optional:-->
+            <java1:guid>?</java1:guid>
+            <java1:homePhone>?</java1:homePhone>
+            <java1:homePostalAddress>?</java1:homePostalAddress>
+            <java1:instructor>?</java1:instructor>
+            <java1:l>?</java1:l>
+            <java1:mail>?</java1:mail>
+            <java1:middleInitial>?</java1:middleInitial>
+            <java1:mobile>?</java1:mobile>
+            <java1:modifiersName>?</java1:modifiersName>
+            <java1:modifyTimestamp>?</java1:modifyTimestamp>
+            <java1:orclSecondaryUID>?</java1:orclSecondaryUID>
+            <java1:ou>?</java1:ou>
+            <java1:pager>?</java1:pager>
+            <java1:postalCode>?</java1:postalCode>
+            <java1:resourceItems>
+               <!--1 or more repetitions:-->
+               <java2:string>?</java2:string>
+            </java1:resourceItems>
+            <java1:restrictedUser>?</java1:restrictedUser>
+            <java1:searchBase>?</java1:searchBase>
+            <java1:sn>?</java1:sn>
+            <java1:st>?</java1:st>
+            <java1:street>?</java1:street>
+            <java1:TLAgeRange>?</java1:TLAgeRange>
+            <java1:TLB2BSiteId>?</java1:TLB2BSiteId>
+            <java1:TLCheckPointA>?</java1:TLCheckPointA>
+            <java1:TLCheckPointQ>?</java1:TLCheckPointQ>
+            <java1:TLCity>?</java1:TLCity>
+            <java1:TLCrms8AccountId>?</java1:TLCrms8AccountId>
+            <java1:TLCrms8ContactId>?</java1:TLCrms8ContactId>
+            <java1:TLCrmsContactId>?</java1:TLCrmsContactId>
+            <java1:TLCrmsValidatedInstructor>?</java1:TLCrmsValidatedInstructor>
+            <java1:TLErightsId>?</java1:TLErightsId>
+            <java1:TLEveningPhone>?</java1:TLEveningPhone>
+            <java1:TLGender>?</java1:TLGender>
+            <java1:TLInstitutionId>?</java1:TLInstitutionId>
+            <java1:TLJDEBillTo>?</java1:TLJDEBillTo>
+            <java1:TLJDEShipTo>?</java1:TLJDEShipTo>
+            <java1:TLPWHint>?</java1:TLPWHint>
+            <java1:TLPrefLang>?</java1:TLPrefLang>
+            <java1:TLPubcoId>?</java1:TLPubcoId>
+            <java1:TLRegion>?</java1:TLRegion>
+            <java1:TLSchoolAffiliation>?</java1:TLSchoolAffiliation>
+            <java1:TLSealedMediaUser>?</java1:TLSealedMediaUser>
+            <java1:TLSerialNumbers>?</java1:TLSerialNumbers>
+            <java1:TLShipToC>?</java1:TLShipToC>
+            <java1:TLShipToCity>?</java1:TLShipToCity>
+            <java1:TLShipToL>?</java1:TLShipToL>
+            <java1:TLShipToPostalAddress>?</java1:TLShipToPostalAddress>
+            <java1:TLShipToPostalCode>?</java1:TLShipToPostalCode>
+            <java1:TLShipToSt>?</java1:TLShipToSt>
+            <java1:TLTCCreationDate>?</java1:TLTCCreationDate>
+            <java1:TLTCExpireDate>?</java1:TLTCExpireDate>
+            <java1:TLTCIdCode>?</java1:TLTCIdCode>
+            <java1:TLTCOriginalZone>?</java1:TLTCOriginalZone>
+            <java1:TLTCServices>?</java1:TLTCServices>
+            <java1:TLTCStatus>?</java1:TLTCStatus>
+            <java1:TLThomsonNowInstitutionId>?</java1:TLThomsonNowInstitutionId>
+            <java1:TLUserType>?</java1:TLUserType>
+            <java1:uid>?</java1:uid>
+            <java1:userPassword>?</java1:userPassword>
+            <java1:workPhone>?</java1:workPhone>
+            <java1:TLOptInCengage>?</java1:TLOptInCengage>
+            <java1:TLOptInIchapters>?</java1:TLOptInIchapters>
+            <!--Optional:-->
+            <java1:emailValidated>?</java1:emailValidated>
+            <!--Optional:-->
+            <java1:timeZone>?</java1:timeZone>
+            <!--Optional:-->
+            <java1:apliaTcAccepted>?</java1:apliaTcAccepted>
+            <!--Optional:-->
+            <java1:TLInstitutionName>?</java1:TLInstitutionName>
+            <java1:pendingInstructor>?</java1:pendingInstructor>
+            <!--Optional:-->
+            <java1:userType>?</java1:userType>
+            <!--Optional:-->
+            <java1:cengageCrowdId>?</java1:cengageCrowdId>
+            <!--Optional:-->
+            <java1:source>?</java1:source>
+         </java:person>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:modifyUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/modifyUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="reactivateInstructor" bindingOperationName="reactivateInstructor" type="Request-Response" outputName="reactivateInstructorResponse" inputName="reactivateInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:reactivateInstructor>
+         <!--Optional:-->
+         <java:tlCrms8ContactId>?</java:tlCrms8ContactId>
+         <!--Optional:-->
+         <java:token>?</java:token>
+      </ssow:reactivateInstructor>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/reactivateInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="refreshToken" bindingOperationName="refreshToken" type="Request-Response" outputName="refreshTokenResponse" inputName="refreshToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:refreshToken>
+         <java:adminToken>?</java:adminToken>
+         <java:userToken>?</java:userToken>
+      </ssow:refreshToken>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/refreshToken"/></con:call></con:operation><con:operation isOneWay="false" action="" name="removeResourceItem" bindingOperationName="removeResourceItem" type="Request-Response" outputName="removeResourceItemResponse" inputName="removeResourceItem" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:removeResourceItem>
+         <java:groupCn>?</java:groupCn>
+         <java:resourceItem>?</java:resourceItem>
+         <java:token>?</java:token>
+      </ssow:removeResourceItem>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/removeResourceItem"/></con:call></con:operation><con:operation isOneWay="false" action="" name="removeUniqueMember" bindingOperationName="removeUniqueMember" type="Request-Response" outputName="removeUniqueMemberResponse" inputName="removeUniqueMember" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:removeUniqueMember>
+         <java:groupCn>?</java:groupCn>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+         <java:uid>?</java:uid>
+      </ssow:removeUniqueMember>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/removeUniqueMember"/></con:call></con:operation><con:operation isOneWay="false" action="" name="rename" bindingOperationName="rename" type="Request-Response" outputName="renameResponse" inputName="rename" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:rename>
+         <java:newUid>?</java:newUid>
+         <java:oldGuid>?</java:oldGuid>
+         <java:oldUid>?</java:oldUid>
+         <java:token>?</java:token>
+      </ssow:rename>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/rename"/></con:call></con:operation><con:operation isOneWay="false" action="" name="restrictionAddToUser" bindingOperationName="restrictionAddToUser" type="Request-Response" outputName="restrictionAddToUserResponse" inputName="restrictionAddToUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:restrictionAddToUser>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+      </ssow:restrictionAddToUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/restrictionAddToUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="restrictionRemoveFromUser" bindingOperationName="restrictionRemoveFromUser" type="Request-Response" outputName="restrictionRemoveFromUserResponse" inputName="restrictionRemoveFromUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:restrictionRemoveFromUser>
+         <java:guid>?</java:guid>
+         <java:token>?</java:token>
+      </ssow:restrictionRemoveFromUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/restrictionRemoveFromUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="suspendInstructor" bindingOperationName="suspendInstructor" type="Request-Response" outputName="suspendInstructorResponse" inputName="suspendInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:suspendInstructor>
+         <!--Optional:-->
+         <java:tlCrms8ContactId>?</java:tlCrms8ContactId>
+         <!--Optional:-->
+         <java:token>?</java:token>
+      </ssow:suspendInstructor>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/suspendInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="testTimeOut" bindingOperationName="testTimeOut" type="Request-Response" outputName="testTimeOutResponse" inputName="testTimeOut" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:testTimeOut>?</ssow:testTimeOut>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/testTimeOut"/></con:call></con:operation><con:operation isOneWay="false" action="" name="validatedInstructor" bindingOperationName="validatedInstructor" type="Request-Response" outputName="validatedInstructorResponse" inputName="validatedInstructor" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:validatedInstructor>
+         <java:adminToken>?</java:adminToken>
+         <!--Optional:-->
+         <java:guid>?</java:guid>
+         <!--Optional:-->
+         <java:username>?</java:username>
+         <java:validatedInstructor>?</java:validatedInstructor>
+      </ssow:validatedInstructor>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/validatedInstructor"/></con:call></con:operation><con:operation isOneWay="false" action="" name="validateToken" bindingOperationName="validateToken" type="Request-Response" outputName="validateTokenResponse" inputName="validateToken" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:validateToken>?</ssow:validateToken>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/validateToken"/></con:call></con:operation><con:operation isOneWay="false" action="" name="mergeUser" bindingOperationName="mergeUser" type="Request-Response" outputName="mergeUserResponse" inputName="mergeUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:mergeUser>
+         <java:adminToken>?</java:adminToken>
+         <java:ssoGuid>?</java:ssoGuid>
+         <java:partnerGuid>?</java:partnerGuid>
+      </ssow:mergeUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/mergeUser"/></con:call></con:operation><con:operation isOneWay="false" action="" name="unmergeUser" bindingOperationName="unmergeUser" type="Request-Response" outputName="unmergeUserResponse" inputName="unmergeUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://s-ws.cengage.com/ssows/SSOws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:unmergeUser>
+         <java:adminToken>?</java:adminToken>
+         <java:ssoGuid>?</java:ssoGuid>
+         <java:partnerGuid>?</java:partnerGuid>
+      </ssow:unmergeUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/unmergeUser"/></con:call></con:operation></con:interface><con:testSuite name="Gradebook_Stage_Env"><con:description>TestSuite generated for REST Service [http://gradebook-api-qa.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetTokenTestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="getToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SSOwsSoapBinding</con:interface><con:operation>getToken</con:operation><con:request name="getToken"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#EndPoint1}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssow="http://ws.thomsonlearning.com:80/ssows" xmlns:java="java:com.tl.ssows.parameters">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ssow:getToken>
+         <java:password>T3sting</java:password>
+         <java:uid>matthew.grover@cengage.com</java:uid>
+      </ssow:getToken>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_token"><con:configuration><token>token</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://ws.thomsonlearning.com:80/ssows/SSOwsPort/getToken" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script11"><con:settings/><con:config><script>log.info("Script Starts**************************************************************")
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+ def holder = groovyUtils.getXmlHolder("getToken#response")
+ //log.info holder.getNodeValue("//*:token")
+ def token = holder['//*:token']
+ log.info token
+//testRunner.project.setPropertyValue("Token",token)
+testRunner.testCase.testSuite.project.setPropertyValue("Token",token)
+
+log.info("Script Starts**************************************************************")</script></con:config></con:testStep><con:properties><con:property><con:name>Token</con:name><con:value>1BF92608B1873C7056BA9DC4E5CF4858D76918AD7DE2B154BCB6E4987CB01E921201AE07CB1A67FDCADC05C492F5ED73B1B7C0F9D0BD90FA</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-allStudentCategoryAndAssignmentGrades" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="allStudentCategoryAndAssignmentGrades | Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,2).getContents() 
+
+c_info = objSheet.getCell(3,2).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="allStudentCategoryAndAssignmentGrades"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="allStudentCategoryAndAssignmentGrades" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${SetToken#result}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>4000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_userId"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>finalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_possibleScore"><con:configuration><token>possibleScore</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:WBREW9JZLM5JJVSUT026</con:value></con:property><con:property><con:name>c_info</con:name><con:value>allStudentCategoryAndAssignmentGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-allStudentCategoryGrades1" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="allStudentCategoryGrades | Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,3).getContents() 
+
+c_info = objSheet.getCell(3,3).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="allStudentCategoryGrades"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="allStudentCategoryGrades" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>4000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_userId"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>finalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_possibleScore"><con:configuration><token>possibleScore</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:WBREW9JZLM5JJVSUT026</con:value></con:property><con:property><con:name>c_info</con:name><con:value>allStudentCategoryGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-CourseStructure" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="structure | Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,4).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="structure"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="structure" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${SetToken#result}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/allStudentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_users"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignments"><con:configuration><token>assignments</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_categories"><con:configuration><token>categoryUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_students"><con:configuration><token>students</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>c_info</con:name><con:value>structure</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-Specific_Student_score_information" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user${#TestCase#user_id}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+user_id = objSheet.getCell(4,2).getContents() 
+c_info = objSheet.getCell(3,5).getContents() 	
+
+	
+
+      log.info("Course Cgi for: " + course_cgi)
+      log.info("Course user Information: " + user_id)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("user_id", user_id)	
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="Specific_Student_Score"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/${#TestCase#c_info}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Specific_Student_Score" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${SetToken#result}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:qa:course:JWPJQQSZYXQ6P5C9G475.1428683543203/userce515d21c4c24193:1a3b98bf:14c550af290:-9fjk/studentCategoryAndAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_userId"><con:configuration><token>userId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignmentGrades"><con:configuration><token>assignmentGrades</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_categoryGrades"><con:configuration><token>categoryGrades</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>4000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade"><con:configuration><token>finalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>user_id</con:name><con:value>39bc2c0461d026a3:-6bfd6247:14d1f7505a8:-7e99</con:value></con:property><con:property><con:name>c_info</con:name><con:value>studentCategoryAndAssignmentGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-AssignmentsInformation" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="Assignmnet"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,6).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook - Assignmnets"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook - Assignmnets" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>https://gradebook-api-qaint.cengage.info/gradebookapi/ajax/gradebook/v1/soa:int:course:HCZGVQJU5021ZGWFE621/assignments</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_activityUri"><con:configuration><token>activityUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignments"><con:configuration><token>assignments</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_weight"><con:configuration><token>weight</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="APLI_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>c_info</con:name><con:value>assignments</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-Specific_StudentScore_Specific_Assignmnet" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="Specific_StudentScore_Specific_Assignmnet"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+user_id = objSheet.getCell(4,2).getContents() 
+assignment_id = objSheet.getCell(5,2).getContents()
+c_info = objSheet.getCell(3,7).getContents() 	
+
+	
+
+      log.info("Course Cgi for: " + course_cgi)
+      log.info("Course user Information: " + user_id)
+      log.info("Course assignment Information: " + assignment_id)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("user_id", user_id)	
+	testRunner.testCase.setPropertyValue("assignment_id", assignment_id)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook - Specific_StudentScore_Specific_Assignmnet"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/user/${#TestCase#user_id}/assignment/${#TestCase#assignment_id}/${#TestCase#c_info}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook - Specific_StudentScore_Specific_Assignmnet" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook/v1/soa:int:course:WBREW9JZLM5JJVSUT026/user/fc51d175fdfec90e:60a21ece:14d90e66747:-76c2/assignment//studentAttemptGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_weightedFinalGrade" disabled="true"><con:configuration><token>weightedFinalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGrade" disabled="true"><con:configuration><token>finalGrade</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_taken" disabled="true"><con:configuration><token>taken</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assignmentUri"><con:configuration><token>assignmentUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>user_id</con:name><con:value>39bc2c0461d026a3:-6bfd6247:14d1f7505a8:-7e99</con:value></con:property><con:property><con:name>assignment_id</con:name><con:value>soa:int:activity:ZRTPW45BGYXHM8ES5440</con:value></con:property><con:property><con:name>c_info</con:name><con:value>studentAttemptGrades</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-CourseAverage" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="CourseAverage"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,8).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="Gradebook-Course Average"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Gradebook-Course Average" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request/><con:originalUri>http://gradebook-api-qaint.cengage.info/gradebookapi/ajax/gradebook/v1/soa:int:course:WBREW9JZLM5JJVSUT026/user//courseGradeAverages</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA" disabled="true"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>soa:int:course:MVZH0SJUZXAQA7QGU429</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_generationDate"><con:configuration><token>generationDate</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_initialGradeAverage"><con:configuration><token>initialGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_finalGradeAverage"><con:configuration><token>finalGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_taken"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_weightedFinalGradeAverage"><con:configuration><token>weightedFinalGradeAverage</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="API_URL"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>c_info</con:name><con:value>courseGradeAverages</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook-studentsAssignmentGrades" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}]</con:description><con:settings/><con:testStep type="groovy" name="studentsAssignmentGrades"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi = objSheet.getCell(2,4).getContents() 
+
+c_info = objSheet.getCell(3,9).getContents() 	
+
+log.info("Course Cgi for: " + course_cgi)
+	log.info("Course specific Information: " + c_info)
+
+	testRunner.testCase.setPropertyValue("course_cgi", course_cgi)
+	testRunner.testCase.setPropertyValue("c_info", c_info)	
+
+//testRunner.runTestStepByName("Course Flat view")	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="groovy" name="SetToken"><con:settings/><con:config><script>def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "Token" )</script></con:config></con:testStep><con:testStep type="restrequest" name="InstructorView-StudentsAssignmentGrades"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook/${#Project#version}/${#TestCase#course_cgi}/${#TestCase#c_info}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="InstructorView-StudentsAssignmentGrades" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{"students":["${#TestCase#Student1}", "${#TestCase#Student2}"]}</con:request><con:originalUri>https://gradebook-api-qaint.cengage.info/gradebookapi/ajax/gradebook/v1/soa:int:course:MVZH0SJUZXAQA7QGU429/studentsAssignmentGrades</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>3000</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_studentGrades"><con:configuration><token>studentGrades</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_generationDate"><con:configuration><token>generationDate</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_gradebookUri"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_userId"><con:configuration><token>39bc2c0461d026a3:-6bfd6247:14d1f7505a8:-7e99</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>c_info</con:name><con:value>studentsAssignmentGrades</con:value></con:property><con:property><con:name>Student1</con:name><con:value>39bc2c0461d026a3:-6bfd6247:14d1f7505a8:-7e99</con:value></con:property><con:property><con:name>Student2</con:name><con:value>ba8a5d349fd8e57d:-411b1887:14c73f19f61:-7f12</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Gradebook- ChangeAssignmnetDueDate" searchProperties="true"><con:description>TestCase generated for REST Resource [] located at [/gradebookapi/ajax/gradebook-modification/${#Project#version}/${#TestCase#course_cgi1}/assignment/${#TestCase#Assignmentid}]</con:description><con:settings/><con:testStep type="groovy" name="AssignmnetDueDate"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+course_cgi1 = objSheet.getCell(2,4).getContents() 	
+assignmentid = objSheet.getCell(5,2).getContents() 
+ 
+
+
+log.info("Course Cgi for: " + course_cgi1)
+
+log.info("assignmentid: " + assignmentid)
+	
+
+testRunner.testCase.setPropertyValue("course_cgi1", course_cgi1)
+testRunner.testCase.setPropertyValue("Assignmentid", assignmentid)
+
+	  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="ChangeAssignmnetDueDate"><con:settings/><con:config service="http://gradebook-api-qa.cengage.info" resourcePath="/gradebookapi/ajax/gradebook-modification/${#Project#version}/${#TestCase#course_cgi1}/assignment/${#TestCase#Assignmentid}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ChangeAssignmnetDueDate" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cengage-sso-token" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint2}</con:endpoint><con:request>{
+  "activityUri": "${#TestCase#Assignmentid}",
+  "label": "Quiz",
+  "weight": 1,
+  "extraCredit":false,
+  "dueDate": 1446199903000,
+  "pastDue": false,
+  "exclude": false
+}</con:request><con:originalUri>http://gradebook-api-qa.cengage.info/gradebookapi/ajax/gradebook-modification/v1/soa:int:course:MVZH0SJUZXAQA7QGU429/assignment/soa:int:activity:ZRTPW45BGYXHM8ES5440</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>5000</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>gradebookUri</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>course_cgi1</con:name><con:value>soa:int:course:MVZH0SJUZXAQA7QGU429</con:value></con:property><con:property><con:name>Assignmentid</con:name><con:value>soa:int:activity:ZRTPW45BGYXHM8ES5440</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>Name</con:name><con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns5:getTokenResponse xmlns:ns2="java:language_builtins.lang" xmlns:ns3="java:com.tl.ssows.parameters" xmlns:ns4="java:com.tl.ssows" xmlns:ns5="http://ws.thomsonlearning.com:80/ssows">
+         <ns4:branchDesignator>0</ns4:branchDesignator>
+         <ns4:guid>17b15c068eb78893:1049f764:14c052de321:-3896</ns4:guid>
+         <ns4:resultCode>0</ns4:resultCode>
+         <ns4:resultDescription>Success</ns4:resultDescription>
+         <ns4:token>F8047055E90B3C6180B039B5E03939234E2C9CB9C7651BB9352FB347CAEB05C14E702652C22BDE2B8F658ACDBB073536997155EA202097E0</ns4:token>
+         <ns4:uid>4LTR-Dev-Inst@cengage.com</ns4:uid>
+      </ns5:getTokenResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/opt/code/ccs-soapui-tests/Data/SoapUI_Gradebook_Stage_Phase_2.xls</con:value></con:property><con:property><con:name>Token</con:name><con:value>4D09063443909A8E82778FDCD2BC8BFAD8686DAA4C755C3C5906D34D50F6D582A4776DD4ED4094D9BE69DE87A2337D0B5880BE189E440A278645B8172D0FAF8B4CDC59CEA8A13AFC</con:value></con:property><con:property><con:name>EndPoint1</con:name><con:value>https://s-ws.cengage.com/ssows/SSOws</con:value></con:property><con:property><con:name>EndPoint2</con:name><con:value>https://gradebook-api-qaint.cengage.info</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
