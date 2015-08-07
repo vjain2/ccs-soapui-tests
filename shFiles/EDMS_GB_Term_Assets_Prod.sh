@@ -1,6 +1,6 @@
 defhost=localhost
 HOST=${1-$defhost}
-defxls1=/opt/code/ccs-soapui-tests/Data/MTED_Prod.xls
+defxls1=/opt/code/ccs-soapui-tests/Data/GB_Prod.xls
 XLS1=${7-$defxls1}
 #-Denv.XLS=$XLS
 
