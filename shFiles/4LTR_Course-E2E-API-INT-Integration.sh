@@ -14,6 +14,8 @@ defolrpass=Techizen_123
 OLRPASS=${6-$defolrpass}
 defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_INT_e2e_4LTR_MTKG9_Variant.xls
 XLS=${7-$defxls}
+QUERY=kodak+and+Fisher-Price
+
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /opt/code/ccs-soapui-tests/Sel/cgi
@@ -34,6 +36,5 @@ echo !!!Maven test suite END’s!!!
 echo Running SOAPUI TestSuite on: $HOST
 #cd /Applications/SoapUI-5.0.0.app/Contents/java/app/bin
 
-sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course-E2E_project.xml
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$SHOST -s"4LTR E2E Search TestSuite" -PXLPath=$XLS -Ps_nar_query=$QUERY -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course-E2E_project.xml
 sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"4LTR E2E API Integration ProjectTestSuite" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course-E2E_project.xml
-
