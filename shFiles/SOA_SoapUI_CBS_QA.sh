@@ -10,15 +10,4 @@ echo Running SOAPUI
 TestSuite on: $HOST
 
 
-sh /opt/SoapUI-5.1.3/bin/testrunner.sh -s"QA_Course_Builder" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/Course_Builder_QA_Env.xml
-
-
-
-
-
-
-
-
-
-
-
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -s"QA_Course_Builder" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/Course-Builder-QA-Env-soapui-project.xml
