@@ -14,6 +14,7 @@ defolrpass=Techizen_321
 OLRPASS=${6-$defolrpass}
 defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_e2e_4LTR_PROD.xls
 XLS=${7-$defxls}
+QUERY=Biology+and+Psychology
 
 echo !!!Running Maven test suite START on: $HOST to capture Dynamic CGI from newly created Course!!!
 cd /opt/code/ccs-soapui-tests/Sel/cgi
