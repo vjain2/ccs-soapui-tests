@@ -28,7 +28,7 @@ echo $JAVA_HOME
 echo $PATH
 mvn -version
 
-mvn clean test -Denv.CBURL=https://s-c-login.cengage.com/cb/login.htm -Denv.OLRURL=http://s-c-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS -Denv.OLRUSER=$OLRUSER -Denv.OLRPASS=$OLRPASS -Denv.XLS=$XLS -Denv.PRODUCT='Rathus, PSYCH4 (with Online Printed Access Card), 4th Edition'
+mvn clean test -Denv.CBURL=https://s-c-login.cengage.com/cb/login.htm -Denv.OLRURL=http://s-c-olradmin.cengage.com/olr/admin/index.jsp -Denv.USER=$USER -Denv.PASS=$PASS -Denv.OLRUSER=$OLRUSER -Denv.OLRPASS=$OLRPASS -Denv.XLS=$XLS -Denv.PRODUCT='Rathus, PSYCH4 (with Online, 1 term (6 months) Printed Access Card), 4th Edition'
 
 echo !!!Maven test suite END’s!!!
 
