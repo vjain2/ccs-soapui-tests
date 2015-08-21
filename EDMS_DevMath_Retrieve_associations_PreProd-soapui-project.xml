@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="EDMS_DevMath_Retrieve_associations_PreProd" resourceRoot="" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/opt/code/Reports/"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edmspreprod.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://edmspreprod.cengage.info</con:endpoint></con:endpoints><con:resource name="Assets" path="/api/v1/learningLoop/${#Project#learningloop}/objectives/${#Project#objective}/assets"><con:settings/><con:parameters/><con:method name="Assets" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Learning Loop" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edmspreprod.cengage.info</con:endpoint><con:request/><con:originalUri>https://edmspreprod.cengage.info/api/v1/learningLoop//objectives//assets</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edmspreprod.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://edmspreprod.cengage.info</con:endpoint></con:endpoints><con:resource name="Assets" path="/api/v1/asset/${#Project#asset}/objectives/${#Project#objective}/assets"><con:settings/><con:parameters/><con:method name="Assets" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Assets" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edmspreprod.cengage.info</con:endpoint><con:request/><con:originalUri>https://edmspreprod.cengage.info/api/v1/asset//objectives//assets</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://edmspreprod.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://edmspreprod.cengage.info</con:endpoint></con:endpoints><con:resource name="Loops" path="/api/v1/course/${#Project#course}/outcomes/${#Project#outcome}/loops"><con:settings/><con:parameters/><con:method name="Loops" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:loop="https://edmspreprod.cengage.info/api/v1/course/DRSSZS51BSDQNXQNZ234/outcomes/objectives/loops">loop:Response</con:element></con:representation><con:request name="Loops" mediaType="application/json"><con:settings/><con:endpoint>https://edmspreprod.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite name="EDMS_DevMath_Retrieve_associations_PreProd"><con:description>TestSuite generated for REST Service [https://edmspreprod.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET_learningloop_Asset" searchProperties="true"><con:description>TestCase generated for REST Resource [Assets] located at [/api/v1/learningLoop/${#Project#learningloop}/objectives/${#Project#objective}/assets]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script1"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)   
+learningloop = objSheet.getCell(0,1).getContents() 
+objective = objSheet.getCell(1,1).getContents()
+ 
+log.info("learningloop_Value: " + learningloop)
+log.info("objective_Value: " + objective)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("learningloop", learningloop)
+testRunner.testCase.testSuite.project.setPropertyValue("objective", objective)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Learning Loop_Asset"><con:settings/><con:config service="https://edmspreprod.cengage.info" resourcePath="/api/v1/learningLoop/${#Project#learningloop}/objectives/${#Project#objective}/assets" methodName="Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edmspreprod.cengage.info</con:endpoint><con:request/><con:originalUri>https://edmspreprod.cengage.info/api/v1/learningLoop//objectives//assets</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET_Assets" searchProperties="true"><con:description>TestCase generated for REST Resource [Assets] located at [/api/v1/asset/${#Project#asset}/objectives/${#Project#objective}/assets]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script2"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)   
+asset = objSheet.getCell(2,1).getContents() 
+objective = objSheet.getCell(1,1).getContents()
+ 
+log.info("asset_Value: " + asset)
+log.info("objective_Value: " + objective)
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("asset", asset)
+testRunner.testCase.testSuite.project.setPropertyValue("objective", objective)
+
+
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Assets"><con:settings/><con:config service="https://edmspreprod.cengage.info" resourcePath="/api/v1/asset/${#Project#asset}/objectives/${#Project#objective}/assets" methodName="Assets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edmspreprod.cengage.info</con:endpoint><con:request/><con:originalUri>https://edmspreprod.cengage.info/api/v1/asset//objectives//assets</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get_Course_Loops" searchProperties="true"><con:description>TestCase generated for REST Resource [Loops] located at [/api/v1/course/${#Project#course}/outcomes/${#Project#outcome}/loops]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script3"><con:settings/><con:config><script>import jxl.* 
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath1") 
+ 
+log.info ("Path : " + XLPath)
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows() 
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)   
+course = objSheet.getCell(3,1).getContents()
+outcome = objSheet.getCell(4,1).getContents() 
+ 
+log.info("course_Value: " + course)
+log.info("outcome_Value: " + outcome)
+
+
+
+
+
+testRunner.testCase.testSuite.project.setPropertyValue("course", course)
+testRunner.testCase.testSuite.project.setPropertyValue("outcome", outcome)
+ 
+
+  
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Course_Loops"><con:settings/><con:config service="https://edmspreprod.cengage.info" resourcePath="/api/v1/course/${#Project#course}/outcomes/${#Project#outcome}/loops" methodName="Loops" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edmspreprod.cengage.info</con:endpoint><con:request/><con:originalUri>https://edmspreprod.cengage.info/api/v1/course/DRSSZS51BSDQNXQNZ234/outcomes/objectives/loops</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>XLPath1</con:name><con:value>/opt/code/ccs-soapui-tests/Data/DevMath_PreProd.xls</con:value></con:property><con:property><con:name>learningloop</con:name><con:value>MPSURF209504462</con:value></con:property><con:property><con:name>objective</con:name><con:value>outcomes</con:value></con:property><con:property><con:name>asset</con:name><con:value>THVTHH7DGT5N0SJPS586</con:value></con:property><con:property><con:name>course</con:name><con:value>DRSSZS51BSDQNXQNZ234</con:value></con:property><con:property><con:name>outcome</con:name><con:value>objectives</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
