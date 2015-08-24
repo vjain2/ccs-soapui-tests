@@ -6,4 +6,4 @@ XLS=${7-$defxls}
 echo Running SOAPUI TestSuite on: $HOST
 
 
-sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$SHOST -s"4LTR Course Metadata_Services TestSuite" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course_Metadata_Services.xml
+sh /opt/SoapUI-5.1.3/bin/testrunner.sh -e$HOST -s"4LTR Course Metadata_Services TestSuite" -PXLPath=$XLS -r -a -f/opt/code/Reports /opt/code/ccs-soapui-tests/4LTR_Course_Metadata_Services.xml
