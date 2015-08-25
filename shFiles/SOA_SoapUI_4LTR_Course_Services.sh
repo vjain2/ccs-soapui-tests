@@ -7,7 +7,6 @@ HOST=${1-$defhost}
 defxls=/opt/code/ccs-soapui-tests/Data/SoapUI_4LTR.xls
 XLS=${7-$defxls}
 
-
 # Run SoapUI test suite from Jenkin with Host as parameter
 
 echo Running SOAPUI TestSuite on: $HOST
