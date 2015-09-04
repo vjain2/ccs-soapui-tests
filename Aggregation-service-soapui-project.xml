@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="Aggregation_service" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="Aggregation Service"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.0.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/opt/code/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://abs-qad.cengage.info" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://abs-qad.cengage.info</con:endpoint></con:endpoints><con:resource name="Aggregate" path="/courses/aggregate"><con:settings/><con:parameters><con:parameter><con:name>cgi</con:name><con:value>JXHVBR4MGJHY858HB257</con:value><con:style>QUERY</con:style><con:default>JXHVBR4MGJHY858HB257</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>courseId</con:name><con:value>25319</con:value><con:style>QUERY</con:style><con:default>25319</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>isbn</con:name><con:value>9781305390676</con:value><con:style>QUERY</con:style><con:default>9781305390676</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>courseKey</con:name><con:value>MTPNH3LPNGPL</con:value><con:style>QUERY</con:style><con:default>MTPNH3LPNGPL</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Aggregate" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:agg="http://abs-qad.cengage.info/courses/aggregate">agg:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings/><con:endpoint>http://abs-qad.cengage.info</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="cgi" value="/${#Project#cgi}"/>
+  <con:entry key="isbn" value="/${#Project#isbn}"/>
+  <con:entry key="courseId" value="/${#Project#courseId}"/>
+  <con:entry key="courseKey" value="/${#Project#courseKey}"/>
+</con:parameters><con:parameterOrder><con:entry>cgi</con:entry><con:entry>courseId</con:entry><con:entry>isbn</con:entry><con:entry>courseKey</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite name="Aggregation Service"><con:description>TestSuite generated for REST Service [http://abs-qad.cengage.info]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Aggregate TestCase" searchProperties="true" id="bdc70e8d-84cb-46d5-85a9-3adf64af6a40"><con:description>TestCase generated for REST Resource [Aggregate] located at [/courses/aggregate]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+
+EndPoint = objSheet.getCell(1,1).getContents() 
+cgi = objSheet.getCell(2,1).getContents() 
+courseId = objSheet.getCell(3,1).getContents() 
+isbn = objSheet.getCell(4,1).getContents() 
+courseKey = objSheet.getCell(5,1).getContents() 
+
+log.info("********************************************Initilize the Json Parmater By setting the Values in Project Properties********************************************")
+	
+log.info("EndPoint: " +EndPoint)
+log.info("CGI: " +cgi)
+log.info("CourseId: " +courseId)
+log.info("ISBN: " +isbn)
+log.info("CourseKey: " +courseKey)
+testRunner.testCase.testSuite.project.setPropertyValue("EndPoint" ,EndPoint)
+
+testRunner.testCase.testSuite.project.setPropertyValue("cgi", cgi)
+testRunner.testCase.testSuite.project.setPropertyValue("courseId", courseId)
+testRunner.testCase.testSuite.project.setPropertyValue("isbn",isbn)
+testRunner.testCase.testSuite.project.setPropertyValue("courseKey", courseKey)
+
+log.info("********************************************Initilization Done********************************************")
+	  
+objWB.close()
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="GET_Aggregate"><con:settings/><con:config service="http://abs-qad.cengage.info" resourcePath="/courses/aggregate" methodName="Aggregate" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_Aggregate" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://abs-qad.cengage.info/courses/aggregate</con:originalUri><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>log.info(" API_URL: "+ messageExchange.getEndpoint())
+log.info(" Timetaken/SLA: "+ messageExchange.getTimeTaken() + " ms")</scriptText></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>30000</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="cgi" value="${#Project#cgi}"/>
+  <con:entry key="isbn" value="${#Project#isbn}"/>
+  <con:entry key="courseId" value="${#Project#courseId}"/>
+  <con:entry key="courseKey" value="${#Project#courseKey}"/>
+</con:parameters><con:parameterOrder><con:entry>cgi</con:entry><con:entry>courseId</con:entry><con:entry>isbn</con:entry><con:entry>courseKey</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>EndPoint</con:name><con:value>http://abs-qad.cengage.info</con:value></con:property><con:property><con:name>cgi</con:name><con:value>JXHVBR4MGJHY858HB257</con:value></con:property><con:property><con:name>courseId</con:name><con:value>25319</con:value></con:property><con:property><con:name>isbn</con:name><con:value>9781305390676</con:value></con:property><con:property><con:name>courseKey</con:name><con:value>MTPNH3LPNGPL</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>XLPath</con:name><con:value>/opt/code/ccs-soapui-tests/Data/aggregation_service.xls</con:value></con:property><con:property><con:name>EndPoint</con:name><con:value>http://abs-qad.cengage.info</con:value></con:property><con:property><con:name>cgi</con:name><con:value>JXHVBR4MGJHY858HB257</con:value></con:property><con:property><con:name>courseId</con:name><con:value>25319</con:value></con:property><con:property><con:name>isbn</con:name><con:value>9781305390676</con:value></con:property><con:property><con:name>courseKey</con:name><con:value>MTPNH3LPNGPL</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
