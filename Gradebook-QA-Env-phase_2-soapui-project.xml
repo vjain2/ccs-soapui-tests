@@ -453,7 +453,7 @@ log.info"Title = $Title"</script></con:config></con:testStep><con:testStep type=
   "exclude": true,
   "extraCredit": true,
   "required": true,
-  "weight": 0,
+  "weight": 0.0,
   "categoryUri": "analytics:gb:category:course",
   "label": "${#TestCase#Title}",
   "parentCategory": ""
