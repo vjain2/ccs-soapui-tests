@@ -87,16 +87,16 @@ public class DeleteCourse {
 				//driver.setJavascriptEnabled(true);
 				
 				if(count<4){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[9]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[30]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);	
 				}else if(count<8){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[15]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[25]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<12){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[20]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[21]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<16){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[25]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[22]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else{
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[18]/td[8]/a/i")).click();
