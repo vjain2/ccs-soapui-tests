@@ -80,26 +80,44 @@ public class DeleteCourse {
 				Thread.sleep(1000);
 				System.out.println("**** Manage Courses Page ****");
 				
-				for (int count=2; count<=20; count++){
+				for (int count=1; count<=26; count++){
 				Thread.sleep(9000);
 				//driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				//System.out.println("*****Running Loop: " + count);
 				//driver.setJavascriptEnabled(true);
 				
-				if(count<4){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[30]/td[8]/a/i")).click();
+				if(count<3){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[27]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);	
-				}else if(count<8){
+				}else if(count<6){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[25]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<12){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[21]/td[8]/a/i")).click();
-				System.out.println("*****Running Loop: " + count);
-				}else if(count<16){
+				}else if(count<8){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[22]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
+				}else if(count<10){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[19]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else if(count<12){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[17]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else if(count<14){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[15]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else if(count<16){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[12]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else if(count<18){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[10]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else if(count<20){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
+				}else if(count<23){
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
+				System.out.println("*****Running Loop: " + count);
 				}else{
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[18]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[2]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}
 				
