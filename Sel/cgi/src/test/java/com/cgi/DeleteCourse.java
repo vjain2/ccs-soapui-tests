@@ -84,25 +84,25 @@ public class DeleteCourse {
 				Thread.sleep(9000);
 				
 				if(count<3){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[27]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[2]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);	
 				}else if(count<6){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[25]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[3]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<8){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[22]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<10){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[19]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<12){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[17]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[9]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<14){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[15]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<16){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[12]/td[8]/a/i")).click();
+				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else if(count<18){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[10]/td[8]/a/i")).click();
