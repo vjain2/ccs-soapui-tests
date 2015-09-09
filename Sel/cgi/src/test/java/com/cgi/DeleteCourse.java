@@ -80,37 +80,34 @@ public class DeleteCourse {
 				Thread.sleep(1000);
 				System.out.println("**** Manage Courses Page ****");
 				
-				for (int count=1; count<=26; count++){
+				for (int count=1; count<=21; count++){
 				Thread.sleep(9000);
 				
 				if(count<3){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[2]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);	
-				}else if(count<6){
+				}else if(count<5){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[3]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<8){
+				}else if(count<7){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<10){
+				}else if(count<9){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<12){
+				}else if(count<11){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[9]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<14){
+				}else if(count<13){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<16){
+				}else if(count<15){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<18){
+				}else if(count<17){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[10]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
-				}else if(count<20){
-				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
-				System.out.println("*****Running Loop: " + count);
-				}else if(count<23){
+				}else if(count<19){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[5]/td[8]/a/i")).click();
 				System.out.println("*****Running Loop: " + count);
 				}else{
