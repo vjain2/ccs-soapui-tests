@@ -82,9 +82,6 @@ public class DeleteCourse {
 				
 				for (int count=1; count<=26; count++){
 				Thread.sleep(9000);
-				//driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[7]/td[8]/a/i")).click();
-				//System.out.println("*****Running Loop: " + count);
-				//driver.setJavascriptEnabled(true);
 				
 				if(count<3){
 				driver.findElement(By.xpath("//*[@id='manageCourseForm']/table/tbody/tr[27]/td[8]/a/i")).click();
